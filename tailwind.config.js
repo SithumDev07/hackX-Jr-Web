@@ -13,6 +13,8 @@ module.exports = {
       '2xl': '1536px',
     },
     colors: {
+      stratingColorGradient: '#084448',
+      endColorGradient: '#2bbfcc',
       transparent: 'transparent',
       current: 'currentColor',
 
