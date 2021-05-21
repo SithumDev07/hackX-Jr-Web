@@ -12,10 +12,17 @@
         <main class="h-full bg-gradient-to-br from-stratingColorGradient to-endColorGradient">
             <div class="h-20 fixed z-10 w-full">
                 <nav class="flex h-full">
-                    <div class="flex items-center ml-10 mr-10">
-                        <img src="./public/images/hackxjrsm.png" alt="">
+                    <div class="flex items-center ml-10 mr-10 justify-between w-full md:w-auto">
+                        <a href="/">
+                            <img src="./public/images/hackxjrsm.png" alt="">
+                        </a>
+                        <div class="text-lg md:hidden cursor-pointer" id="burger">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                              </svg>
+                        </div>
                     </div>
-                    <ul class="flex items-center flex-1 border-2 border-red-500 justify-around ml-10 text-gray-100 text-xl">
+                    <ul class="md:flex items-center flex-1 border-2 border-red-500 justify-around ml-10 text-gray-100 text-xl hidden">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Info</a></li>
                         <li><a href="#">Schedule</a></li>
