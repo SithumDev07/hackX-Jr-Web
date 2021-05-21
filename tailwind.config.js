@@ -8,12 +8,15 @@ module.exports = {
     extend: {
       backgroundImage: (theme) => ({
         'mascotty-main' : "url('/public/images/Mas/mascotty.png')",
+        'mascotty-eye' : "url('/public/images/Mas/minion-eye.png')",
+        'mascotty-mobile' : "url('/public/images/Mas/mascotty-mobile.png')",
       })
     },
     screens: {
       sm: '640px',
       md: '768px',
       lg: '1024px',
+      tab: '1030px',
       xl: '1280px',
       '2xl': '1536px',
     },
@@ -418,6 +421,8 @@ module.exports = {
       '1/3': '33.333333%',
       '2/3': '66.666667%',
       '1/4': '25%',
+      top27 : '28%',
+      top17 : '12.9%',
       '2/4': '50%',
       '3/4': '75%',
       '1/5': '20%',
@@ -440,6 +445,8 @@ module.exports = {
       '1/3': '33.333333%',
       '2/3': '66.666667%',
       '1/4': '25%',
+      top27: '27%',
+      left16 : '16%',
       '2/4': '50%',
       '3/4': '75%',
       full: '100%',
@@ -769,6 +776,8 @@ module.exports = {
       '1/3': '33.333333%',
       '2/3': '66.666667%',
       '1/4': '25%',
+      width27: '27%',
+      width22 : '22%',      
       '2/4': '50%',
       '3/4': '75%',
       '1/5': '20%',

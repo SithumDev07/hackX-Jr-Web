@@ -12,17 +12,17 @@
         <div class="h-full bg-gradient-to-br from-stratingColorGradient to-endColorGradient">
             <div class="h-20 fixed z-10 w-full"> <!-- Starting Navigation-->
                 <nav class="flex h-full">
-                    <div class="flex items-center ml-10 mr-10 justify-between w-full md:w-auto">
+                    <div class="flex items-center ml-10 mr-10 justify-between w-full tab:w-auto">
                         <a href="/">
                             <img src="./public/images/hackxjrsm.png" alt="">
                         </a>
-                        <div class="text-lg md:hidden cursor-pointer" id="burger">
+                        <div class="text-lg tab:hidden cursor-pointer" id="burger">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                               </svg>
                         </div>
                     </div>
-                    <ul class="md:flex items-center flex-1 justify-around ml-10 text-gray-100 text-xl hidden">
+                    <ul class="tab:flex items-center flex-1 justify-around ml-10 text-gray-100 text-xl hidden">
                         <li><a href="#">Home</a></li>
                         <li><a href="#">Info</a></li>
                         <li><a href="#">Schedule</a></li>
@@ -35,7 +35,7 @@
             </div> <!-- End Navigation-->
             <main>
                 <div class="h-screen"> <!-- Hero Section -->
-                        <div class="h-full w-full flex md:flex-row flex-col-reverse">
+                        <div class="h-full w-full flex tab:flex-row flex-col-reverse">
                             <header class="flex flex-1 flex-col justify-center md:px-14 px-8">
                                 <h1 class="text-gray-100 text-6xl">HackX Jr. 2021</h1>
                                 <p class="text-justify text-lg text-gray-100 mt-6">
@@ -43,8 +43,19 @@
                                 </p>
                             </header>
                             <div class="flex-1 border-2 border-red-500 w-full flex justify-center items-center">
-                                <div class="bg-mascotty-main w-2/5 h-4/5 bg-no-repeat bg-contain border-2 border-blue-500 md:mt-0 mt-24">
-
+                                <div class="bg-mascotty-mobile md:bg-mascotty-main w-1/3 h-3/5 bg-no-repeat bg-contain border-2 border-blue-500">
+                                    <div class="relative w-full h-full">
+                                        <div class="absolute top-top27 2xl:top-1/4 w-full h-full">
+                                            <div class="md:flex w-full justify-between hidden border-2 border-blue-500 h-top17">
+                                                <div class="ml-8 2xl:ml-16 rounded-full border-2 border-red-600 w-width27 2xl:w-width22">
+                                                    <div class="bg-mascotty-eye w-5 h-5 2xl:w-7 2xl:h-7 bg-contain"></div>
+                                                </div>
+                                                <div class="mr-7 2xl:mr-14 rounded-full border-2 border-red-600 w-width27 2xl:w-width22">
+                                                    <div class="bg-mascotty-eye w-5 h-5 2xl:w-7 2xl:h-7 bg-contain" ></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
