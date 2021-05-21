@@ -4289,6 +4289,10 @@ video {
   background-image: linear-gradient(to top left, var(--tw-gradient-stops));
 }
 
+.bg-mascotty-main {
+  background-image: url('/public/images/Mas/mascotty.png');
+}
+
 .from-stratingColorGradient {
   --tw-gradient-from: #084448;
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 68, 72, 0));
@@ -35922,6 +35926,10 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .sm\:bg-mascotty-main {
+    background-image: url('/public/images/Mas/mascotty.png');
+  }
+
   .sm\:from-stratingColorGradient {
     --tw-gradient-from: #084448;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 68, 72, 0));
@@ -67383,6 +67391,10 @@ video {
 
   .md\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .md\:bg-mascotty-main {
+    background-image: url('/public/images/Mas/mascotty.png');
   }
 
   .md\:from-stratingColorGradient {
@@ -98848,6 +98860,10 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .lg\:bg-mascotty-main {
+    background-image: url('/public/images/Mas/mascotty.png');
+  }
+
   .lg\:from-stratingColorGradient {
     --tw-gradient-from: #084448;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 68, 72, 0));
@@ -130311,6 +130327,10 @@ video {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
   }
 
+  .xl\:bg-mascotty-main {
+    background-image: url('/public/images/Mas/mascotty.png');
+  }
+
   .xl\:from-stratingColorGradient {
     --tw-gradient-from: #084448;
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgba(8, 68, 72, 0));
@@ -161772,6 +161792,10 @@ video {
 
   .\32xl\:bg-gradient-to-tl {
     background-image: linear-gradient(to top left, var(--tw-gradient-stops));
+  }
+
+  .\32xl\:bg-mascotty-main {
+    background-image: url('/public/images/Mas/mascotty.png');
   }
 
   .\32xl\:from-stratingColorGradient {
