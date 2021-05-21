@@ -1,0 +1,76 @@
+.rotator span:nth-child(1) {
+  border: 150px solid #fff;
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  transition: 0.5s;
+  animation: anim-landing-circles-s 2s forwards 0.8s,
+    animate-circles 6s linear infinite;
+}
+
+.rotator span:nth-child(2) {
+  border: 2px solid #fff;
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  transition: 0.5s;
+  opacity: 0;
+  animation: animate-circles 4s linear infinite,
+    anim-landing-circles-other 1.6s forwards 0.8s;
+}
+
+.rotator span:nth-child(3) {
+  border: 2px solid #fff;
+  border-radius: 38% 62% 63% 37% / 41% 44% 56% 59%;
+  transition: 0.5s;
+  opacity: 0;
+  animation: animate-circles-2nd 4s linear infinite,
+    anim-landing-circles-other 1.6s forwards 0.8s;
+}
+
+@keyframes anim-landing-circles-s {
+  from {
+    border: 150px solid #fff;
+  }
+  to {
+    border: 2px solid #fff;
+  }
+}
+
+@keyframes animate-circles {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes anim-landing-circles-other {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animate-circles-2nd {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.rotator:hover span:nth-child(1) {
+  border: none !important;
+  background: rgba(42, 188, 201, 0.5);
+}
+
+.rotator:hover span:nth-child(2) {
+  border: none;
+  background: rgba(42, 188, 201, 0.5);
+}
+
+.rotator:hover span:nth-child(3) {
+  border: none;
+  background: rgba(42, 188, 201, 0.5);
+}

@@ -5,18 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/style.css">
+    <link rel="stylesheet" href="./public/rotatorStyle.css">
     <title>HackX Jr 2021</title>
 </head>
 <body>
     <div>
         <div class="h-full bg-gradient-to-br from-stratingColorGradient to-endColorGradient">
-            <div class="h-20 fixed z-10 w-full"> <!-- Starting Navigation-->
+            <div class="h-20 fixed z-20 w-full"> <!-- Starting Navigation-->
                 <nav class="flex h-full">
                     <div class="flex items-center ml-10 mr-10 justify-between w-full tab:w-auto">
                         <a href="/">
                             <img src="./public/images/hackxjrsm.png" alt="">
                         </a>
-                        <div class="text-lg tab:hidden cursor-pointer" id="burger">
+                        <div class="text-lg tab:hidden cursor-pointer text-gray-100" id="burger">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                               </svg>
@@ -34,23 +35,23 @@
                 </nav>
             </div> <!-- End Navigation-->
             <main>
-                <div class="h-screen"> <!-- Hero Section -->
+                <div class="hidden small:block h-screen"> <!-- Hero Section -->
                         <div class="h-full w-full flex tab:flex-row flex-col-reverse">
                             <header class="flex flex-1 flex-col justify-center md:px-14 px-8 tab:items-start items-center">
                                 <h1 class="text-gray-100 text-4xl small:text-5xl sm:text-8xl">HackX Jr. 2021</h1>
-                                <p class="text-justify text-lg text-gray-100 mt-6">
+                                <p class="text-justify text-base sm:text-lg text-gray-100 mt-6">
                                     HackX Jr is an inter-school hackathon which provides a platform for school students to transform their ideas into reality. It promotes school students to build technology-based solutions to problems they see in the society.
                                 </p>
                                 <button>Get Started</button>
                                 <button>Learn More</button>
                             </header>
-                            <div class="flex-1 border-2 border-red-500 w-full flex justify-center items-center">
-                                <div class="w-full h-full flex justify-center items-center relative">
-                                    <span class="absolute top-0 left-0 w-full h-full border-8 border-gray-100"></span>
+                            <div class="flex-1 w-full flex justify-center items-center mt-16 tab:mt-0">
+                                <div class="w-full h-full flex justify-center items-center relative rotator overflow-hidden">
+                                    <span class="absolute w-72 tab:w-width75 h-72 tab:h-height75"></span>
+                                    <span class="absolute w-72 tab:w-width75 h-72 tab:h-height75"></span>
+                                    <span class="absolute w-72 tab:w-width75 h-72 tab:h-height75"></span>
                                     <span></span>
-                                    <span></span>
-                                    <span></span>
-                                    <div class="bg-mascotty-mobile tab:bg-mascotty-main w-1/3 h-3/5 bg-no-repeat bg-contain">
+                                    <div class="bg-mascotty-mobile tab:bg-mascotty-main w-1/3 h-3/5 bg-no-repeat bg-contain z-10">
                                         <div class="relative w-full h-full">
                                             <div class="absolute top-top27 2xl:top-1/4 w-full h-full">
                                                 <div class="tab:flex w-full justify-between hidden h-top17">
@@ -68,6 +69,45 @@
                             </div>
                         </div>
                 </div> <!-- End of Hero Section -->
+                <div class="small:hidden h-full"> <!-- Hero Section 400px and lower -->
+                    <div class="h-full w-full flex tab:flex-row flex-col-reverse">
+                        <div class="h-screen flex justify-center items-center">
+                            <header class="flex flex-1 flex-col justify-center px-8 items-center h-fulls mt-10">
+                                <h1 class="text-gray-100 text-4xl small:text-5xl sm:text-8xl">HackX Jr. 2021</h1>
+                                <p class="text-justify text-lg text-gray-100 mt-6">
+                                    HackX Jr is an inter-school hackathon which provides a platform for school students to transform their ideas into reality. It promotes school students to build technology-based solutions to problems they see in the society.
+                                </p>
+                                <div class="flex flex-col mt-10 w-full items-center">
+                                    <button class=" bg-blue-500 px-4 py-3 rounded-full text-gray-100 text-base w-36">Get Started</button>
+                                    <button class="mt-5 bg-blue-500 px-4 py-3 rounded-full text-gray-100 text-base w-36">Learn More</button>
+                                </div>
+                            </header>
+                        </div>
+                        <div class="h-screen">
+                            <div class="flex-1 w-full flex justify-center items-center h-full">
+                                <div class="w-full h-full flex justify-center items-center relative rotator overflow-hidden">
+                                    <span class="absolute w-72 tab:w-width75 h-72 tab:h-height75"></span>
+                                    <span class="absolute w-72 tab:w-width75 h-72 tab:h-height75"></span>
+                                    <span class="absolute w-72 tab:w-width75 h-72 tab:h-height75"></span>
+                                    <div class="bg-mascotty-mobile tab:bg-mascotty-main w-1/3 h-1/3 bg-no-repeat bg-contain z-10">
+                                        <div class="relative w-full h-full">
+                                            <div class="absolute top-top27 2xl:top-1/4 w-full h-full">
+                                                <div class="tab:flex w-full justify-between hidden h-top17">
+                                                    <div class="ml-9 2xl:ml-16 rounded-full w-width27 2xl:w-width22">
+                                                        <div class="bg-mascotty-eye w-5 h-5 2xl:w-7 2xl:h-7 bg-contain ball"></div>
+                                                    </div>
+                                                    <div class="mr-7 2xl:mr-14 rounded-full w-width27 2xl:w-width22">
+                                                        <div class="bg-mascotty-eye w-5 h-5 2xl:w-7 2xl:h-7 bg-contain ball" ></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div> <!-- End of Hero Section 400px and lower -->
                 <div class="h-screen border-2 border-gray-900">
     
                 </div>
