@@ -24,6 +24,8 @@ module.exports = {
     colors: {
       stratingColorGradient: '#084448',
       endColorGradient: '#2bbfcc',
+      secondSectionStart: '#ff0844',
+      secondSectionEnd: '#ffb199',
       transparent: 'transparent',
       current: 'currentColor',
 
