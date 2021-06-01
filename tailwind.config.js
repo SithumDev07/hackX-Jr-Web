@@ -1,15 +1,18 @@
 const colors = require('tailwindcss/colors')
 
 module.exports = {
-  purge: [],
+  purge: {
+    enabled: true,
+    content: ['./index.html'],
+  },
   presets: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       backgroundImage: (theme) => ({
-        'mascotty-main' : "url('/public/images/Mas/mascotty.png')",
-        'mascotty-eye' : "url('/public/images/Mas/minion-eye.png')",
-        'mascotty-mobile' : "url('/public/images/Mas/mascotty-mobile.png')",
+        'mascotty-main' : "url('../public/images/Mas/mascotty.png')",
+        'mascotty-eye' : "url('../public/images/Mas/minion-eye.png')",
+        'mascotty-mobile' : "url('../public/images/Mas/mascotty-mobile.png')",
       })
     },
     screens: {
