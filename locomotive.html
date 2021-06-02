@@ -14,6 +14,13 @@
             /* height: 100vh; */
             padding: 1em;
         }
+        .swag-line{
+            transform: rotate(26deg);
+            top: 20%;
+        }
+        .swag-line2{
+            top: 65%;
+        }
     </style>
     <title>Locomotive</title>
 </head>
@@ -38,24 +45,26 @@
         
         <section data-scroll-section="1" class=" bg-gradient-to-br from-stratingColorGradient to-endColorGradient relative h-screen">
            <div class="absolute top-1/2 w-full flex text-9xl font-bold text-gray-100 left-1/4 transform -translate-x-1/4" data-scroll="1" data-scroll-speed="-10">
-                <h1 data-scroll="1" data-scroll-speed="1">h</h1>
-                <h1 data-scroll="1" data-scroll-speed="2">a</h1>
-                <h1 data-scroll="1" data-scroll-speed="3">c</h1>
-                <h1 data-scroll="1" data-scroll-speed="4">k</h1>
-                <h1 data-scroll="1" data-scroll-speed="2">x</h1>
-                <h1 data-scroll="1" data-scroll-speed="3">2</h1>
-                <h1 data-scroll="1" data-scroll-speed="2">0</h1>
-                <h1 data-scroll="1" data-scroll-speed="3">2</h1>
-                <h1 data-scroll="1" data-scroll-speed="4">1</h1>
+                <h1 data-scroll="1" data-scroll-speed="1" data-scroll-position="top">h</h1>
+                <h1 data-scroll="1" data-scroll-speed="2" data-scroll-position="top">a</h1>
+                <h1 data-scroll="1" data-scroll-speed="3" data-scroll-position="top">c</h1>
+                <h1 data-scroll="1" data-scroll-speed="4" data-scroll-position="top">k</h1>
+                <h1 data-scroll="1" data-scroll-speed="2" data-scroll-position="top">x</h1>
+                <h1 data-scroll="1" data-scroll-speed="3" data-scroll-position="top">2</h1>
+                <h1 data-scroll="1" data-scroll-speed="2" data-scroll-position="top">0</h1>
+                <h1 data-scroll="1" data-scroll-speed="3" data-scroll-position="top">2</h1>
+                <h1 data-scroll="1" data-scroll-speed="4" data-scroll-position="top">1</h1>
             </div>
         </section>
 
-        <section data-scroll-section="1" class="bg-red-400 h-screen">
-            <h2>What's up?</h2>
-            <p>😬</p>
+        <section data-scroll-section="1" class="bg-red-400 h-screen relative" id="Sticker">
+            <div class="absolute top-24 text-9xl text-gray-200 font-BebasNeue" data-scroll-target="#Sticker" data-scroll-sticky="1" data-scroll="1">
+                <h2>What's up?</h2>
+                <p>😬</p>
+            </div>
         </section>
         <section class="w-full bg-gray-800 hidden md:flex justify-center flex-col items-center" data-scroll-section="1" data-scroll-speed="0.1">
-                <div class="relative w-96 h-28 mt-24 cards" data-scroll="1" data-scroll-direction="horizontal" data-scroll-speed="6">
+                <div class="relative w-96 h-28 mt-24 cards" data-scroll="1" data-scroll-direction="horizontal" data-scroll-speed="6" data-scroll-delay="0.04">
                    <div class="w-28 h-28 rounded-full flex justify-center items-center right-0 transform translate-x-4/5 absolute">
                     <div class="relative w-full h-full">
                         <h2 class="font-Marcellus text-gray-100 text-4xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -74,7 +83,7 @@
                         </h2>
                     </div>
                 </div>
-                <div class="relative w-96 h-28 mt-24 cards" data-scroll="1" data-scroll-direction="horizontal" data-scroll-speed="-6">
+                <div class="relative w-96 h-28 mt-24 cards" data-scroll="1" data-scroll-direction="horizontal" data-scroll-speed="-6" data-scroll-delay="0.04">
                     <div class="w-28 h-28 rounded-full flex justify-center items-center left-0 transform -translate-x-4/5 absolute">
                      <div class="relative w-full h-full">
                          <h2 class="font-Marcellus text-gray-100 text-4xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -93,7 +102,7 @@
                          </h2>
                      </div>
                  </div>
-                 <div class="relative w-96 h-28 mt-24 cards" data-scroll="1" data-scroll-direction="horizontal" data-scroll-speed="6">
+                 <div class="relative w-96 h-28 mt-24 cards" data-scroll="1" data-scroll-direction="horizontal" data-scroll-speed="6" data-scroll-delay="0.04">
                     <div class="w-28 h-28 rounded-full flex justify-center items-center right-0 transform translate-x-4/5 absolute">
                      <div class="relative w-full h-full">
                          <h2 class="font-Marcellus text-gray-100 text-4xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -113,7 +122,7 @@
                          </h2>
                      </div>
                  </div>
-                 <div class="relative w-96 h-28 mt-24" data-scroll="1" data-scroll-direction="horizontal" data-scroll-speed="-6">
+                 <div class="relative w-96 h-28 mt-24" data-scroll="1" data-scroll-direction="horizontal" data-scroll-speed="-6" data-scroll-delay="0.04">
                     <div class="w-28 h-28 rounded-full flex justify-center items-center left-0 transform -translate-x-4/5 absolute">
                      <div class="relative w-full h-full">
                          <h2 class="font-Marcellus text-gray-100 text-4xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -132,7 +141,7 @@
                          </h2>
                      </div>
                  </div>
-                 <div class="relative w-96 h-28 mt-24" data-scroll="1" data-scroll-direction="horizontal" data-scroll-speed="6">
+                 <div class="relative w-96 h-28 mt-24" data-scroll="1" data-scroll-direction="horizontal" data-scroll-speed="6" data-scroll-delay="0.04">
                     <div class="w-28 h-28 rounded-full flex justify-center items-center right-0 transform translate-x-4/5 absolute">
                      <div class="relative w-full h-full">
                          <h2 class="font-Marcellus text-gray-100 text-4xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -151,7 +160,7 @@
                          </h2>
                      </div>
                  </div>
-                 <div class="relative w-96 h-28 mt-24" data-scroll="1" data-scroll-direction="horizontal" data-scroll-speed="-6">
+                 <div class="relative w-96 h-28 mt-24" data-scroll="1" data-scroll-direction="horizontal" data-scroll-speed="-6" data-scroll-delay="0.04">
                     <div class="w-28 h-28 rounded-full flex justify-center items-center left-0 transform -translate-x-4/5 absolute">
                      <div class="relative w-full h-full">
                          <h2 class="font-Marcellus text-gray-100 text-4xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -173,7 +182,7 @@
                          </h2>
                      </div>
                  </div>
-                 <div class="relative w-96 h-28 mt-24 mb-24" data-scroll="1" data-scroll-direction="horizontal" data-scroll-speed="6">
+                 <div class="relative w-96 h-28 mt-24 mb-24" data-scroll="1" data-scroll-direction="horizontal" data-scroll-speed="6" data-scroll-delay="0.04">
                     <div class="w-28 h-28 rounded-full flex justify-center items-center right-0 transform translate-x-4/5 absolute">
                      <div class="relative w-full h-full">
                          <h2 class="font-Marcellus text-gray-100 text-4xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
@@ -196,7 +205,50 @@
                      </div>
                  </div>
         </section>
-        <section class="h-screen bg-stratingColorGradient"></section>
+        <section class="h-screen bg-gradient-to-tr from-StartColorSwag to-EndColorSwag relative" data-scroll-section="1" id="swag">
+            <div class="absolute w-4/5 h-36 bg-gray-50 flex justify-center items-center swag-line" data-scroll="1" data-scroll-speed="-20" data-scroll-direction="horizontal" data-scroll-delay="0.05" data-scroll-target="#swag">
+                <h1 class="uppercase font-BebasNeue text-gray-900 text-9xl">Make ideas Happen</h1>
+            </div>
+
+            <div class="absolute w-4/5 h-36 bg-gray-50 flex justify-center items-center swag-line2" data-scroll="1" data-scroll-speed="20" data-scroll-direction="horizontal" data-scroll-delay="0.08" data-scroll-target="#swag">
+                <h1 class="uppercase font-BebasNeue text-gray-900 text-9xl">Things to keep in mind</h1>
+            </div>
+        </section>
+        <section class="h-screen bg-gradient-to-br from-stratingColorGradient to-endColorGradient relative" data-scroll-section="1" id="scoring">
+           <div class="w-full h-full flex justify-between">
+            <div class="w-1/4 h-full relative">
+                <h2 class="font-BebasNeue text-gray-50 text-9xl absolute top-1/2 right-0 z-20 translate-x-1/4 transform -translate-y-1/2" data-scroll="1" data-scroll-speed="1" data-scroll-target="#swag">Scoring</h2>
+                <div class="bg-ScoreCircle shadow-2xl w-85 h-85 rounded-full absolute -left-1/4 top-1/2 transform -translate-y-1/2" data-scroll="1" data-scroll-speed="3" data-scroll-target="#swag"></div>
+            </div>
+            <div class="h-full w-3/5 flex flex-col justify-around">
+                <div class="w-full flex flex-col">
+                    <h1 class="font-Marcellus text-gray-50 text-6xl">Concept</h1>
+                    <h3 class="font-Noto text-gray-100 text-4xl mt-5">Marks will be allocated for,</h3>
+                    <div class="w-full flex justify-center">
+                        <ul class="font-Noto text-gray-100 text-2xl flex flex-col items-start w-1/2 mt-4">
+                            <li>Novelty / Distinctively competency</li>
+                            <li>Societal impact</li>
+                            <li>Feasibility of the idea</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="w-full flex flex-col">
+                    <h1 class="font-Marcellus text-gray-50 text-6xl">Presentation</h1>
+                    <h3 class="font-Noto text-gray-100 text-4xl mt-5">Marks will be allocated for,</h3>
+                    <div class="w-full flex justify-center">
+                        <ul class="font-Noto text-gray-100 text-2xl flex flex-col items-start w-1/2 mt-4">
+                            <li>Clarity and completeness</li>
+                            <li>Sustainability</li>
+                            <li>Business/marketing plan</li>
+                            <li>Adhering to the time constraints</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+           </div>
+        </section>
+        <section class="h-screen bg-gray-800" data-scroll-section="1"></section>
     </div>
 </body>
 <script src="./locomotive-scroll.min.js"></script>

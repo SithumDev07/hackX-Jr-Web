@@ -32,6 +32,9 @@ module.exports = {
       secondSectionEnd: '#ffb199',
       transparent: 'transparent',
       current: 'currentColor',
+      StartColorSwag: '#00CDAC',
+      EndColorSwag: '#8DDAD5',
+      ScoreCircle: '#187E86',
 
       black: colors.black,
       white: colors.white,
@@ -79,6 +82,7 @@ module.exports = {
       64: '16rem',
       72: '18rem',
       80: '20rem',
+      85: '21rem',
       96: '24rem',
     },
     animation: {
@@ -253,6 +257,7 @@ module.exports = {
     fontFamily: {
       Noto: ['Noto Sans'],
       Marcellus: ['Marcellus'],
+      BebasNeue: ['Bebas Neue'],
       sans: [
         'ui-sans-serif',
         'system-ui',
@@ -651,6 +656,7 @@ module.exports = {
       '-180': '-180deg',
       '-90': '-90deg',
       '-45': '-45deg',
+      '-55': '-55deg',
       '-12': '-12deg',
       '-6': '-6deg',
       '-3': '-3deg',
