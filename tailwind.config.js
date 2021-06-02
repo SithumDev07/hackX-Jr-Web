@@ -2,8 +2,8 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: {
-    enabled: true,
-    content: ['./index.html'],
+    // enabled: true,
+    // content: ['./index.html'],
   },
   presets: [],
   darkMode: false, // or 'media' or 'class'
@@ -25,6 +25,7 @@ module.exports = {
       '2xl': '1536px',
     },
     colors: {
+      TimelineBoxed: '#124E53',
       stratingColorGradient: '#084448',
       endColorGradient: '#2bbfcc',
       secondSectionStart: '#ff0844',
@@ -250,6 +251,8 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
+      Noto: ['Noto Sans'],
+      Marcellus: ['Marcellus'],
       sans: [
         'ui-sans-serif',
         'system-ui',
@@ -454,8 +457,11 @@ module.exports = {
       '1/4': '25%',
       top27: '27%',
       left16 : '16%',
+      left5: '5%',
+      '1/10': '10%',
       '2/4': '50%',
       '3/4': '75%',
+      '4/5': '80%',
       full: '100%',
       '-1/2': '-50%',
       '-1/3': '-33.333333%',
@@ -463,6 +469,7 @@ module.exports = {
       '-1/4': '-25%',
       '-2/4': '-50%',
       '-3/4': '-75%',
+      '-4/5': '-80%',
       '-full': '-100%',
     }),
     keyframes: {
@@ -767,6 +774,7 @@ module.exports = {
       '1/4': '25%',
       '2/4': '50%',
       '3/4': '75%',
+      '4/5': '80%',
       full: '100%',
       '-1/2': '-50%',
       '-1/3': '-33.333333%',
