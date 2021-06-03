@@ -21,6 +21,44 @@
         .swag-line2{
             top: 65%;
         }
+
+        .eye {
+            width: 18px;
+            height: 30px;
+            background-color: #191919;
+            border-radius: 100%;
+        }
+
+        .eye-ball{
+            width: 4px;
+            height: 8px;
+            border-radius: 100%;
+            background-color: #fff;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,10%);
+        }
+
+        .eye-container{
+            top: 215px;
+            width: 187px;
+            left: 229px;
+            height: 77px;
+        }
+
+        .single-eye-container{
+            width: 61px;
+            height: 66px;
+            /* margin-left: 6%; */
+        }
+        .single-eye-container:nth-child(1){
+            margin-left: 5px;
+        }
+
+        .single-eye-container:nth-child(2){
+            margin-right: 3px;
+            margin-top: 4%;
+        }
     </style>
     <title>Locomotive</title>
 </head>
@@ -31,7 +69,7 @@
                 <img src="./public/images/hackxjrsm.png" alt="">
             </div>
             <ul class="text-xl font-medium text-gray-100 flex-1 flex justify-around items-center">
-                <li class="cursor-pointer">Home</li>
+                <li class="cursor-pointer"><a href="./locomotive.html">Home</a></li>
                 <li class="cursor-pointer">Info</li>
                 <li class="cursor-pointer">Schedule</li>
                 <li class="cursor-pointer">Rules</li>
@@ -44,7 +82,7 @@
     <div data-scroll-container>
         
         <section data-scroll-section="1" class=" bg-gradient-to-br from-stratingColorGradient to-endColorGradient relative h-screen">
-           <div class="absolute top-1/2 w-full flex text-9xl font-bold text-gray-100 left-1/4 transform -translate-x-1/4" data-scroll="1" data-scroll-speed="-10">
+           <!-- <div class="absolute top-1/2 w-full flex text-9xl font-bold text-gray-100 left-1/4 transform -translate-x-1/4" data-scroll="1" data-scroll-speed="-10">
                 <h1 data-scroll="1" data-scroll-speed="1" data-scroll-position="top">h</h1>
                 <h1 data-scroll="1" data-scroll-speed="2" data-scroll-position="top">a</h1>
                 <h1 data-scroll="1" data-scroll-speed="3" data-scroll-position="top">c</h1>
@@ -54,6 +92,30 @@
                 <h1 data-scroll="1" data-scroll-speed="2" data-scroll-position="top">0</h1>
                 <h1 data-scroll="1" data-scroll-speed="3" data-scroll-position="top">2</h1>
                 <h1 data-scroll="1" data-scroll-speed="4" data-scroll-position="top">1</h1>
+            </div> -->
+
+            <div class="w-full h-full border-2 flex justify-end">
+                <div class="w-1/2 h-full border-2 border-blue-600 flex justify-center items-center">
+                    <div class="w-auto h-auto border-2 relative">
+                        <div class="absolute eye-container flex items-center justify-between">
+                          <div class="rounded-full single-eye-container relative">
+                            <div class="absolute eye-ball-interact">
+                                <div class="eye relative">
+                                    <div class="eye-ball absolute"></div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="rounded-full single-eye-container relative">
+                            <div class="absolute eye-ball-interact">
+                                <div class="eye relative">
+                                    <div class="eye-ball absolute"></div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                        <img src="./public/images/mascotty 1920 eyes-null.png" alt="">
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -261,5 +323,17 @@
             multiplier: 0.5,
         });
     })();
+
+    var ball = document.getElementsByClassName('eye-ball-interact')
+    document.onmousemove = function(){
+        var x = event.clientX*100/window.innerWidth + "%";
+            var y = event.clientY*100 / window.innerHeight + "%";
+
+            for(var i=0; i<2; i++){
+                ball[i].style.left = x/2;
+                ball[i].style.top = y/2;
+                ball[i].style.transform = "translate(" + x + "," + y + ")";
+            }
+    }
 </script>
 </html>
