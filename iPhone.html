@@ -10,20 +10,48 @@
 </head>
 <body>
     <div class="w-full h-full">
-        <div>
-            <nav></nav>
+        <div class="w-full fixed z-50">
+            <nav class="w-full flex justify-between mt-4 px-3">
+                <div>
+                    <img src="./public/images/Logos/hackxjrLogo-5s.png" alt="">
+                </div>
+                <div class="">
+                    <img src="./public/images/BurgerIcons/Burger-5s.png" alt="">
+                </div>
+            </nav>
         </div>
-        <main>
-            <div class="h-screen w-full bg-gradient-to-br from-stratingColorGradient to-endColorGradient">
-                <div class="w-full flex justify-center h-full items-center rotator relative">
-                    <div class="h-full w-full">
-                        <span class="w-72 h-72 absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2"></span>
-                        <span class="w-72 h-72 absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2"></span>
-                        <span class="w-72 h-72 absolute top-1/2 left-1/2 transform -translate-y-1/2 -translate-x-1/2"></span>
+        <main class="bg-gradient-to-br from-stratingColorGradient to-endColorGradient">
+            <!-- Hero Section -->
+            <div class="h-screen w-full overflow-hidden">
+                <div class="w-full flex justify-center h-full items-center relative">
+                    <div class="w-full h-1/2 relative flex items-center justify-center">
+                        <div class="w-72 h-72 absolute rotator"></div>
+                        <div class="w-72 h-72 absolute rotator"></div>
+                        <div class="w-72 h-72 absolute rotator"></div>
+                        <div class="w-full flex justify-center z-10">
+                            <img src="./public/images/Characters/5s.png" alt="">
+                       </div>
                     </div>
-                   <div class="w-full flex justify-center absolute">
-                    <img src="./public/images/Characters/5s.png" alt="">
-                   </div>
+
+                    <div class="w-full absolute top-9/10 flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-gray-50 motion-safe:animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
+                          </svg>
+                    </div>
+                   
+                </div>
+                
+            </div>
+            <!-- End of Hero Section -->
+            <div class="h-screen">
+                <div class="w-full flex justify-center mt-8 flex-col items-center">
+                    <h1 class="text-4xl text-gray-50 font-Noto">hackX Jr 2021</h1>
+                    <p class="text-center text-xl text-gray-100 font-Noto mt-6 px-2">
+                        HackX Jr is an inter-school hackathon which provides a platform for school students to transform their ideas into reality. It promotes school students to build technology-based solutions to problems they see in the society.
+                    </p>
+                    <div class="bg-getStartedButtonColor w-4/5 flex justify-center rounded-3xl mt-6 shadow-2xl">
+                        <h2 class="text-gray-100 font-Noto text-2xl py-3 px-2">Get Started</h2>
+                    </div>
                 </div>
             </div>
         </main>

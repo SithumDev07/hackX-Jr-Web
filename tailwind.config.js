@@ -35,6 +35,7 @@ module.exports = {
       StartColorSwag: '#00CDAC',
       EndColorSwag: '#8DDAD5',
       ScoreCircle: '#187E86',
+      getStartedButtonColor: '#3B82F6',
 
       black: colors.black,
       white: colors.white,
@@ -451,6 +452,7 @@ module.exports = {
       '5/6': '83.333333%',
       full: '100%',
       screen: '100vh',
+      twice: '200vh',
     }),
     inset: (theme, { negative }) => ({
       auto: 'auto',
@@ -467,6 +469,7 @@ module.exports = {
       '2/4': '50%',
       '3/4': '75%',
       '4/5': '80%',
+      '9/10': '90%',
       full: '100%',
       '-1/2': '-50%',
       '-1/3': '-33.333333%',
@@ -859,7 +862,7 @@ module.exports = {
     alignContent: ['responsive'],
     alignItems: ['responsive'],
     alignSelf: ['responsive'],
-    animation: ['responsive'],
+    animation: ['responsive', 'motion-safe'],
     appearance: ['responsive'],
     backdropBlur: ['responsive'],
     backdropBrightness: ['responsive'],
