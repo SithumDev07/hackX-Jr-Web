@@ -43,6 +43,22 @@ module.exports = {
       awardsStartingColor: '#0BA360',
       awardsEndColor: '#299581',
 
+      competitionStartingColor: '#1D7872',
+      competitionEndColor: '#F6D365',
+
+      awarenessStartingColor: '#48C6EF',
+      awarenessEndingColor: '#4D80B5',
+
+      awarenessBoxStartingColor: '#C4C4C4',
+      awarenessBoxEndColor: '#5BB4DC',
+
+      timelineStartingColor: '#434343',
+      timelineEndColor: '#0C3E42',
+      timelineBoxColor: '#124E53',
+
+      swaggerStartingColor: '#1C838B',
+      swaggersEndColor: '#0AC7AB',
+
       black: colors.black,
       white: colors.white,
       gray: colors.coolGray,
@@ -263,6 +279,7 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
+      NorthHead: ['NorthHead'],
       PlayFair: ['Playfair Display'],
       Noto: ['Noto Sans'],
       Marcellus: ['Marcellus'],
@@ -460,6 +477,7 @@ module.exports = {
       '5/6': '83.333333%',
       full: '100%',
       screen: '100vh',
+      height110: '110vh',
       twice: '200vh',
     }),
     inset: (theme, { negative }) => ({
