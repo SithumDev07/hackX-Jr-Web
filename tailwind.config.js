@@ -37,6 +37,28 @@ module.exports = {
       ScoreCircle: '#187E86',
       getStartedButtonColor: '#3B82F6',
 
+      whatIsStartingGradient: '#002200',
+      whatIsEndingGradient: '#1D918A',
+
+      awardsStartingColor: '#0BA360',
+      awardsEndColor: '#299581',
+
+      competitionStartingColor: '#1D7872',
+      competitionEndColor: '#F6D365',
+
+      awarenessStartingColor: '#48C6EF',
+      awarenessEndingColor: '#4D80B5',
+
+      awarenessBoxStartingColor: '#C4C4C4',
+      awarenessBoxEndColor: '#5BB4DC',
+
+      timelineStartingColor: '#434343',
+      timelineEndColor: '#0C3E42',
+      timelineBoxColor: '#124E53',
+
+      swaggerStartingColor: '#1C838B',
+      swaggersEndColor: '#0AC7AB',
+
       black: colors.black,
       white: colors.white,
       gray: colors.coolGray,
@@ -85,6 +107,8 @@ module.exports = {
       80: '20rem',
       85: '21rem',
       96: '24rem',
+      120: '40rem',
+      150: '55rem',
     },
     animation: {
       none: 'none',
@@ -217,6 +241,7 @@ module.exports = {
       lg: ['0 10px 8px rgba(0, 0, 0, 0.04)', '0 4px 3px rgba(0, 0, 0, 0.1)'],
       xl: ['0 20px 13px rgba(0, 0, 0, 0.03)', '0 8px 5px rgba(0, 0, 0, 0.08)'],
       '2xl': '0 25px 25px rgba(0, 0, 0, 0.15)',
+      '3xl': '0 25px 25px rgba(59,136,246,50)',
       none: '0 0 #0000',
     },
     fill: { current: 'currentColor' },
@@ -256,6 +281,8 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
+      NorthHead: ['NorthHead'],
+      PlayFair: ['Playfair Display'],
       Noto: ['Noto Sans'],
       Marcellus: ['Marcellus'],
       BebasNeue: ['Bebas Neue'],
@@ -452,6 +479,7 @@ module.exports = {
       '5/6': '83.333333%',
       full: '100%',
       screen: '100vh',
+      height110: '110vh',
       twice: '200vh',
     }),
     inset: (theme, { negative }) => ({
