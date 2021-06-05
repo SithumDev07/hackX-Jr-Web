@@ -37,6 +37,12 @@ module.exports = {
       ScoreCircle: '#187E86',
       getStartedButtonColor: '#3B82F6',
 
+      whatIsStartingGradient: '#002200',
+      whatIsEndingGradient: '#1D918A',
+
+      awardsStartingColor: '#0BA360',
+      awardsEndColor: '#299581',
+
       black: colors.black,
       white: colors.white,
       gray: colors.coolGray,
@@ -257,6 +263,7 @@ module.exports = {
       DEFAULT: '1',
     },
     fontFamily: {
+      PlayFair: ['Playfair Display'],
       Noto: ['Noto Sans'],
       Marcellus: ['Marcellus'],
       BebasNeue: ['Bebas Neue'],
