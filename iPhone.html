@@ -1,494 +1,1257 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>hackX Jr 2021</title>
-    <link rel="stylesheet" href="./public/style.css">
-    <link rel="stylesheet" href="./public/styles/circles.css">
-    <link rel="stylesheet" href="./base.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./public/style.css" />
+    <link rel="stylesheet" href="./public/styles/circles.css" />
+    <link rel="stylesheet" href="./base.css" />
+
+    <style>
+        .visionBG{
+            background-position: 50%;
+        }
+    </style>
+  </head>
+  <body>
     <div class="w-full h-full">
-        <div class="w-full fixed z-50">
-            <nav class="w-full flex justify-between mt-4 px-3">
-                <div>
-                    <img src="./public/images/Logos/hackxjrLogo-5s.png" alt="logo-5s">
+      <div class="w-full fixed z-50">
+        <nav class="w-full flex justify-between mt-4 px-3">
+          <div>
+            <img src="./public/images/Logos/hackxjrLogo-5s.png" alt="logo-5s" />
+          </div>
+          <div class="">
+            <img
+              src="./public/images/BurgerIcons/Burger-5s.png"
+              alt="burger-5s"
+            />
+          </div>
+        </nav>
+      </div>
+      <main
+        class="bg-gradient-to-br from-stratingColorGradient to-endColorGradient"
+        data-scroll-container
+      >
+        <!-- Hero Section -->
+        <section
+          class="h-screen w-full overflow-hidden"
+          data-scroll-section="1"
+        >
+          <div class="w-full flex justify-center h-full items-center relative">
+            <div
+              class="w-full h-1/2 relative flex items-center justify-center"
+              data-scroll="1"
+              data-scroll-speed="-3"
+            >
+              <div class="w-72 h-72 absolute rotator"></div>
+              <div class="w-72 h-72 absolute rotator"></div>
+              <div class="w-72 h-72 absolute rotator"></div>
+              <div class="w-full flex justify-center z-10">
+                <img
+                  src="./public/images/Characters/5s.png"
+                  alt="mascotty-5s"
+                />
+              </div>
+            </div>
+
+            <div class="w-full absolute top-9/10 flex justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-10 w-10 text-gray-50 motion-safe:animate-bounce"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
+                />
+              </svg>
+            </div>
+          </div>
+        </section>
+
+        <section class="h-auto flex" data-scroll-section="1">
+          <div
+            class="w-full flex justify-center mt-16 flex-col items-center mb-20"
+          >
+            <h1 class="text-4xl text-gray-50 font-Noto">hackX Jr 2021</h1>
+            <p class="text-center text-xl text-gray-100 font-Noto mt-10 px-4">
+              HackX Jr is an inter-school hackathon which provides a platform
+              for school students to transform their ideas into reality. It
+              promotes school students to build technology-based solutions to
+              problems they see in the society.
+            </p>
+            <div
+              class="
+                bg-getStartedButtonColor
+                w-4/5
+                flex
+                justify-center
+                rounded-full
+                mt-10
+                shadow-3xl
+              "
+            >
+              <h2 class="text-gray-100 font-Noto text-2xl py-4 px-2">
+                Get Started
+              </h2>
+            </div>
+          </div>
+        </section>
+        <!-- End of Hero Section -->
+
+        <!-- What is hackX -->
+        <section
+          class="
+            h-auto
+            bg-gradient-to-tr
+            from-whatIsStartingGradient
+            to-whatIsEndingGradient
+            flex flex-col
+          "
+          data-scroll-section="1"
+          id="WhatIs"
+        >
+          <div class="w-full flex justify-center mt-16">
+            <img
+              src="./public/images/Mascotty-New/jr-5s.png"
+              data-scroll="1"
+              data-scroll-speed="1"
+              data-scroll-target="#WhatIs"
+              data-scroll-delay="0.03"
+              alt="Mascotte-New"
+            />
+          </div>
+          <div
+            class="w-full flex flex-col items-center text-gray-50 mb-16 h-full"
+          >
+            <h1 class="text-4xl font-Noto">What is hackX Jr?</h1>
+            <div class="px-4 font-Noto text-lg mt-14 flex flex-col text-center">
+              <p>
+                HackX Jr is an inter-school hackathon which provides a platform
+                for school students to transform their ideas into reality. It
+                promotes school students to build technology-based solutions to
+                problems they see in the society.
+              </p>
+              <p class="mt-8">
+                Participants are enabled the opportunity to develop their soft
+                skills and find inspiration to their creativity as well as
+                problem-solving capabilities through this competition. It paves
+                the path for school children to be introduced to the IT pathway,
+                create interest and eventually assess the possibilities as well
+                as benefits of IT – based entrepreneurship. It also provides a
+                platform for industries to address the school children, evaluate
+                their potential and benefit from their unbiased and open-minded
+                solutions.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- End of What is hackX -->
+
+        <!-- Awards Section -->
+        <section
+          class="
+            h-auto
+            bg-gradient-to-tr
+            from-awardsStartingColor
+            to-awardsEndColor
+            flex
+          "
+          data-scroll-section="1"
+          id="Awards"
+        >
+          <div
+            class="
+              w-full
+              flex
+              justify-center
+              items-center
+              flex-col
+              relative
+              mb-24
+            "
+          >
+            <div class="w-4/5 flex justify-center mt-12">
+              <img src="./public/images/awards/Awards-5s.png" alt="awards-5s" />
+            </div>
+            <div class="w-full flex justify-end">
+              <img
+                src="./public/images/cups/cup-5s.png"
+                data-scroll="1"
+                data-scroll-delay="0.03"
+                data-scroll-speed="-1"
+                data-scroll-target="#Awards"
+                alt="Cup-5s"
+              />
+            </div>
+            <div class="w-full absolute top-2/3 px-4">
+              <div class="w-full flex justify-start">
+                <img src="./public/images/quotes/quote-left-5s.png" alt="" />
+              </div>
+              <p class="text-2xl text-gray-50 font-PlayFair px-4 my-4">
+                Winning takes precedence over all. There’s no gray area. No
+                almosts.
+              </p>
+              <div class="w-full flex justify-end">
+                <img src="./public/images/quotes/quote-right-5s.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End of Awards Section -->
+
+        <!-- Competition Details -->
+        <section
+          class="
+            h-auto
+            bg-gradient-to-bl
+            from-competitionStartingColor
+            to-competitionEndColor
+          "
+          data-scroll-section="1"
+        >
+          <div class="w-full h-full flex flex-col">
+            <h1
+              class="text-gray-50 font-NorthHead text-7xl text-center px-3 mt-8"
+            >
+              Competition Details
+            </h1>
+            <div class="w-full flex justify-center mt-12 flex-col items-center">
+              <img
+                src="./public/images/places/Place-1-5s.png"
+                alt="Places-1-5s"
+              />
+              <img
+                src="./public/images/places/Place-2-5s.png"
+                class="mt-10"
+                alt="Places-2-5s"
+              />
+              <img
+                src="./public/images/places/Place-3-5s.png"
+                class="mt-10"
+                alt="Places-3-5s"
+              />
+            </div>
+            <div
+              class="w-full px-4 text-base text-gray-50 font-Noto mt-12 mb-16"
+            >
+              <p>
+                Students from any age group can participate in groups of 5
+                members and 1 mentor. (A/L students studying ICT from Physical
+                Science stream or Technology stream are highly encouraged to
+                take part)
+              </p>
+              <p class="mt-6">
+                More than one team can participate from one school.
+              </p>
+              <p class="mt-6">Idea must be novel and feasible.</p>
+              <p class="mt-6">
+                A fully functional prototype for the final demonstration is not
+                compulsory, but encouraged.
+              </p>
+              <p class="mt-6">
+                Proposal and the final pitching can be done in either Sinhala or
+                English medium.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- End of Competition Details -->
+
+        <!-- Awareness -->
+        <section
+          class="
+            h-auto
+            bg-gradient-to-tr
+            from-awarenessStartingColor
+            to-awarenessEndingColor
+          "
+          data-scroll-section="1"
+        >
+          <div class="w-full h-full flex flex-col">
+            <div class="relative w-full flex justify-center mt-16">
+              <div class="absolute w-72 z-10 text-gray-50 font-Noto">
+                <h1 class="text-2xl text-center mt-4">Awareness Session</h1>
+                <p class="text-base px-5 mt-8">
+                  The awareness session will be conducted prior to the hackathon
+                  focusing on several aspects including introduction to
+                  hackathons, areas to focus on developing the solutions,
+                  technological tools that might be helpful and potential clues
+                  on how to market their product.
+                </p>
+                <p class="text-base mt-5 px-5">
+                  Lecturers from the Department of Industrial Management,
+                  professionals and experts from the related fields will guide
+                  teams through brainstorming.
+                </p>
+                <h2 class="font-bold text-lg text-center px-4 mt-5">
+                  22nd November 2020 from 10.00 a.m. to 12.00 p.m.
+                </h2>
+                <div class="w-72 flex justify-between px-4 items-center mt-4">
+                  <div>
+                    <img src="./public/images/zoom/zoom-5s.png" alt="" />
+                  </div>
+                  <h2 class="font-bold text-lg">via Zoom Platform</h2>
                 </div>
-                <div class="">
-                    <img src="./public/images/BurgerIcons/Burger-5s.png" alt="burger-5s">
+              </div>
+              <div
+                class="
+                  bg-gradient-to-bl
+                  from-awarenessBoxStartingColor
+                  to-awarenessBoxEndColor
+                  w-72
+                  h-height110
+                  opacity-60
+                  rounded-2xl
+                "
+              ></div>
+            </div>
+
+            <div class="relative w-full flex justify-center mt-16 mb-12">
+              <div class="absolute w-72 z-10 text-gray-50 font-Noto">
+                <h1 class="text-2xl text-center mt-4">Finale</h1>
+                <p class="text-base px-5 mt-8">
+                  The Final event will require the finalist teams to present
+                  their idea or product infront of a judge panel.
+                </p>
+                <p class="text-base mt-5 px-5">
+                  (Finalist teams are shortlisted through proposal selection) A
+                  prototype is preferred although not compulsory. The evaluation
+                  will be done under several criteria such as feasibility,
+                  technologies used, marketability, sustainability and adherance
+                  to time constraints.
+                </p>
+                <h2 class="font-bold text-lg text-center px-4 mt-5">
+                  17th December 2020 from 10.00 a.m.
+                </h2>
+                <div class="w-72 flex justify-between px-4 items-center mt-4">
+                  <div>
+                    <img src="./public/images/zoom/zoom-5s.png" alt="" />
+                  </div>
+                  <h2 class="font-bold text-lg">via Zoom Platform</h2>
                 </div>
-            </nav>
-        </div>
-        <main class="bg-gradient-to-br from-stratingColorGradient to-endColorGradient" data-scroll-container>
-            <!-- Hero Section -->
-            <section class="h-screen w-full overflow-hidden" data-scroll-section="1">
-                <div class="w-full flex justify-center h-full items-center relative">
-                    <div class="w-full h-1/2 relative flex items-center justify-center" data-scroll="1" data-scroll-speed="-3">
-                        <div class="w-72 h-72 absolute rotator"></div>
-                        <div class="w-72 h-72 absolute rotator"></div>
-                        <div class="w-72 h-72 absolute rotator"></div>
-                        <div class="w-full flex justify-center z-10">
-                            <img src="./public/images/Characters/5s.png" alt="mascotty-5s">
-                       </div>
-                    </div>
+              </div>
+              <div
+                class="
+                  bg-gradient-to-bl
+                  from-awarenessBoxStartingColor
+                  to-awarenessBoxEndColor
+                  w-72
+                  h-height110
+                  opacity-60
+                  rounded-2xl
+                "
+              ></div>
+            </div>
+          </div>
+        </section>
+        <!-- End of Awareness -->
 
-                    <div class="w-full absolute top-9/10 flex justify-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-gray-50 motion-safe:animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 13l-7 7-7-7m14-8l-7 7-7-7" />
-                          </svg>
-                    </div>
-                   
+        <!-- Timeline -->
+        <section
+          class="
+            h-auto
+            bg-gradient-to-tr
+            from-timelineStartingColor
+            to-timelineEndColor
+            flex flex-col
+          "
+          data-scroll-section="1"
+        >
+          <div
+            class="w-72 flex relative justify-start px-3 mt-16"
+            data-scroll="1"
+            data-scroll-direction="horizontal"
+            data-scroll-speed="-3"
+            data-scroll-delay="0.04"
+          >
+            <div
+              class="
+                w-64
+                h-28
+                bg-TimelineBoxed
+                rounded-2xl
+                flex
+                items-center
+                justify-start
+              "
+            >
+              <p class="text-gray-50 font-Noto pl-1 pr-8 text-center">
+                Registrations Open for HackX Jr!
+              </p>
+            </div>
+            <div class="w-28 h-28 absolute transform translate-x-1/4 right-0">
+              <div class="w-full h-full relative">
+                <div
+                  class="
+                    absolute
+                    z-10
+                    top-1/2
+                    left-1/2
+                    transform
+                    -translate-x-1/2 -translate-y-1/2
+                    font-Marcellus
+                    text-gray-50
+                  "
+                >
+                  <h1 class="text-center text-3xl">09</h1>
+                  <h2>NOV</h2>
                 </div>
-                
-            </section>
-            
-            <section class="h-auto flex" data-scroll-section="1">
-                <div class="w-full flex justify-center mt-16 flex-col items-center mb-20">
-                    <h1 class="text-4xl text-gray-50 font-Noto">hackX Jr 2021</h1>
-                    <p class="text-center text-xl text-gray-100 font-Noto mt-10 px-4">
-                        HackX Jr is an inter-school hackathon which provides a platform for school students to transform their ideas into reality. It promotes school students to build technology-based solutions to problems they see in the society.
-                    </p>
-                    <div class="bg-getStartedButtonColor w-4/5 flex justify-center rounded-full mt-10 shadow-3xl">
-                        <h2 class="text-gray-100 font-Noto text-2xl py-4 px-2">Get Started</h2>
-                    </div>
+                <div class="w-28 h-28 rounded-full bg-gray-50 opacity-40"></div>
+              </div>
+            </div>
+            <div class="absolute bottom-0 left-6 transform translate-y-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 text-gray-50"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div
+            class="w-72 flex relative justify-end ml-4 mt-10"
+            data-scroll="1"
+            data-scroll-direction="horizontal"
+            data-scroll-speed="3"
+            data-scroll-delay="0.038"
+          >
+            <div
+              class="
+                w-64
+                h-28
+                bg-TimelineBoxed
+                rounded-2xl
+                flex
+                items-center
+                justify-end
+              "
+            >
+              <p class="text-gray-50 font-Noto pl-8 text-center pr-2 text-sm">
+                Registrations Closed for Awareness Session
+              </p>
+            </div>
+            <div class="w-28 h-28 absolute transform -translate-x-2 left-0">
+              <div class="w-full h-full relative">
+                <div
+                  class="
+                    absolute
+                    z-10
+                    top-1/2
+                    left-1/2
+                    transform
+                    -translate-x-1/2 -translate-y-1/2
+                    font-Marcellus
+                    text-gray-50
+                  "
+                >
+                  <h1 class="text-center text-3xl">20</h1>
+                  <h2>NOV</h2>
                 </div>
-            </section>
-            <!-- End of Hero Section -->
+                <div class="w-28 h-28 rounded-full bg-gray-50 opacity-40"></div>
+              </div>
+            </div>
+            <div class="absolute bottom-0 right-4 transform translate-y-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 text-gray-50"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                />
+              </svg>
+            </div>
+          </div>
 
-            <!-- What is hackX -->
-            <section class="h-auto bg-gradient-to-tr from-whatIsStartingGradient to-whatIsEndingGradient flex flex-col" data-scroll-section="1" id="WhatIs">
-                <div class="w-full flex justify-center mt-16">
-                    <img src="./public/images/Mascotty-New/jr-5s.png" data-scroll="1" data-scroll-speed="1" data-scroll-target="#WhatIs" data-scroll-delay="0.03" alt="Mascotte-New">
+          <div
+            class="w-72 flex relative justify-start px-3 mt-8"
+            data-scroll="1"
+            data-scroll-direction="horizontal"
+            data-scroll-speed="-3"
+            data-scroll-delay="0.035"
+          >
+            <div
+              class="
+                w-64
+                h-28
+                bg-TimelineBoxed
+                rounded-2xl
+                flex
+                items-center
+                justify-start
+              "
+            >
+              <p class="text-gray-50 font-Noto pl-2 pr-8 text-center text-sm">
+                Awareness Session Awareness Session took place via Zoom Platform
+                from 10.00 a.m. to 12.00 p.m.
+              </p>
+            </div>
+            <div class="w-28 h-28 absolute transform translate-x-1/4 right-0">
+              <div class="w-full h-full relative">
+                <div
+                  class="
+                    absolute
+                    z-10
+                    top-1/2
+                    left-1/2
+                    transform
+                    -translate-x-1/2 -translate-y-1/2
+                    font-Marcellus
+                    text-gray-50
+                  "
+                >
+                  <h1 class="text-center text-3xl">22</h1>
+                  <h2>NOV</h2>
                 </div>
-                <div class="w-full flex flex-col items-center text-gray-50 mb-16 h-full"> 
-                    <h1 class="text-4xl font-Noto">What is hackX Jr?</h1>
-                    <div class="px-4 font-Noto text-lg mt-14 flex flex-col text-center">
-                        <p>HackX Jr is an inter-school hackathon which provides a platform for school students to transform their ideas into reality. It promotes school students to build technology-based solutions to problems they see in the society.
-                        </p>
-                        <p class="mt-8">
-                            Participants are enabled the opportunity to develop their soft skills and find inspiration to their creativity as well as problem-solving capabilities through this competition. It paves the path for school children to be introduced to the IT pathway, create interest and eventually assess the possibilities as well as benefits of IT – based entrepreneurship. It also provides a platform for industries to address the school children, evaluate their potential and benefit from their unbiased and open-minded solutions.
-                        </p>
-                    </div>
+                <div class="w-28 h-28 rounded-full bg-gray-50 opacity-40"></div>
+              </div>
+            </div>
+            <div
+              class="
+                absolute
+                bottom-0
+                left-4
+                transform
+                translate-y-5
+                -rotate-12
+              "
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 text-gray-50"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div
+            class="w-72 flex relative justify-end ml-4 mt-10"
+            data-scroll="1"
+            data-scroll-direction="horizontal"
+            data-scroll-speed="3"
+            data-scroll-delay="0.032"
+          >
+            <div
+              class="
+                w-64
+                h-28
+                bg-TimelineBoxed
+                rounded-2xl
+                flex
+                items-center
+                justify-end
+              "
+            >
+              <p class="text-gray-50 font-Noto pl-16 text-center pr-3 text-sm">
+                Registrations Closed for HackX Jr
+              </p>
+            </div>
+            <div class="w-28 h-28 absolute transform -translate-x-2 left-0">
+              <div class="w-full h-full relative">
+                <div
+                  class="
+                    absolute
+                    z-10
+                    top-1/2
+                    left-1/2
+                    transform
+                    -translate-x-1/2 -translate-y-1/2
+                    font-Marcellus
+                    text-gray-50
+                  "
+                >
+                  <h1 class="text-center text-3xl">03</h1>
+                  <h2>DEC</h2>
                 </div>
-            </section>
-            <!-- End of What is hackX -->
+                <div class="w-28 h-28 rounded-full bg-gray-50 opacity-40"></div>
+              </div>
+            </div>
+            <div class="absolute bottom-0 right-4 transform translate-y-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 text-gray-50"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                />
+              </svg>
+            </div>
+          </div>
 
-            <!-- Awards Section -->
-            <section class="h-auto bg-gradient-to-tr from-awardsStartingColor to-awardsEndColor flex" data-scroll-section="1" id="Awards">
-                <div class="w-full flex justify-center items-center flex-col relative mb-24">
-                    <div class="w-4/5 flex justify-center mt-12">
-                        <img src="./public/images/awards/Awards-5s.png" alt="awards-5s">
-                    </div>
-                    <div class="w-full flex justify-end">
-                        <img src="./public/images/cups/cup-5s.png" data-scroll="1" data-scroll-delay="0.03" data-scroll-speed="-1" data-scroll-target="#Awards" alt="Cup-5s">
-                    </div>
-                    <div class="w-full absolute top-2/3 px-4">
-                        <div class="w-full flex justify-start">
-                            <img src="./public/images/quotes/quote-left-5s.png" alt="">
-                        </div>
-                        <p class="text-2xl text-gray-50 font-PlayFair px-4 my-4">
-                            Winning takes precedence over all. There’s no gray area. No almosts.
-                        </p>
-                        <div class="w-full flex justify-end">
-                            <img src="./public/images/quotes/quote-right-5s.png" alt="">
-                        </div>
-                    </div>
+          <div
+            class="w-72 flex relative justify-start px-3 mt-8"
+            data-scroll="1"
+            data-scroll-direction="horizontal"
+            data-scroll-speed="-3"
+            data-scroll-delay="0.031"
+          >
+            <div
+              class="
+                w-64
+                h-28
+                bg-TimelineBoxed
+                rounded-2xl
+                flex
+                items-center
+                justify-start
+              "
+            >
+              <p class="text-gray-50 font-Noto pl-2 pr-8 text-center text-sm">
+                Shortlisted Teams are Announced!
+              </p>
+            </div>
+            <div class="w-28 h-28 absolute transform translate-x-1/4 right-0">
+              <div class="w-full h-full relative">
+                <div
+                  class="
+                    absolute
+                    z-10
+                    top-1/2
+                    left-1/2
+                    transform
+                    -translate-x-1/2 -translate-y-1/2
+                    font-Marcellus
+                    text-gray-50
+                  "
+                >
+                  <h1 class="text-center text-3xl">06</h1>
+                  <h2>DEC</h2>
                 </div>
-            </section>
-            <!-- End of Awards Section -->
+                <div class="w-28 h-28 rounded-full bg-gray-50 opacity-40"></div>
+              </div>
+            </div>
+            <div class="absolute bottom-0 left-5 transform translate-y-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 text-gray-50"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                />
+              </svg>
+            </div>
+          </div>
 
-            <!-- Competition Details -->
-            <section class="h-auto bg-gradient-to-bl from-competitionStartingColor to-competitionEndColor" data-scroll-section="1"> 
-                <div class="w-full h-full flex flex-col">
-                    <h1 class="text-gray-50 font-NorthHead text-7xl text-center px-3 mt-8">Competition Details</h1>
-                    <div class="w-full flex justify-center mt-12 flex-col items-center">
-                        <img src="./public/images/places/Place-1-5s.png" alt="Places-1-5s">
-                        <img src="./public/images/places/Place-2-5s.png" class="mt-10" alt="Places-2-5s">
-                        <img src="./public/images/places/Place-3-5s.png" class="mt-10" alt="Places-3-5s">
-                    </div>
-                    <div class="w-full px-4 text-base text-gray-50 font-Noto mt-12 mb-16">
-                        <p>
-                            Students from any age group can participate in groups of 5 members and 1 mentor. (A/L students studying ICT from Physical Science stream or Technology stream are highly encouraged to take part)
-                        </p>
-                        <p class="mt-6">
-                            More than one team can participate from one school.
-                        </p>
-                        <p class="mt-6">
-                            Idea must be novel and feasible.
-                        </p>
-                        <p class="mt-6">
-                            A fully functional prototype for the final demonstration is not compulsory, but encouraged.
-                        </p>
-                        <p class="mt-6">
-                            Proposal and the final pitching can be done in either Sinhala or English medium.
-                        </p>
-                    </div>
+          <div
+            class="w-72 flex relative justify-end ml-4 mt-10"
+            data-scroll="1"
+            data-scroll-direction="horizontal"
+            data-scroll-speed="3"
+            data-scroll-delay="0.03"
+          >
+            <div
+              class="
+                w-64
+                h-28
+                bg-TimelineBoxed
+                rounded-2xl
+                flex
+                items-center
+                justify-center
+                flex-col
+              "
+            >
+              <p class="text-gray-50 font-Noto text-center text-lg pl-12">
+                'Good To Go!'
+              </p>
+              <p
+                class="
+                  text-gray-50
+                  font-Noto
+                  text-center
+                  px-4
+                  text-xs
+                  pl-12
+                  mt-2
+                "
+              >
+                A Session for the Finalist Teams via Zoom Platform
+              </p>
+            </div>
+            <div class="w-28 h-28 absolute transform -translate-x-2 left-0">
+              <div class="w-full h-full relative">
+                <div
+                  class="
+                    absolute
+                    z-10
+                    top-1/2
+                    left-1/2
+                    transform
+                    -translate-x-1/2 -translate-y-1/2
+                    font-Marcellus
+                    text-gray-50
+                  "
+                >
+                  <h1 class="text-center text-3xl">03</h1>
+                  <h2>DEC</h2>
                 </div>
-            </section>
-            <!-- End of Competition Details -->
+                <div class="w-28 h-28 rounded-full bg-gray-50 opacity-40"></div>
+              </div>
+            </div>
+            <div class="absolute bottom-0 right-4 transform translate-y-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 text-gray-50"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                />
+              </svg>
+            </div>
+          </div>
 
-                <!-- Awareness -->
-            <section class="h-auto bg-gradient-to-tr from-awarenessStartingColor to-awarenessEndingColor" data-scroll-section="1">
-                <div class="w-full h-full flex flex-col">
-                    <div class="relative w-full flex justify-center mt-16">
-                        <div class="absolute w-72 z-10 text-gray-50 font-Noto">
-                            <h1 class="text-2xl text-center mt-4">Awareness Session</h1>
-                            <p class="text-base px-5 mt-8">
-                                The awareness session will be conducted prior to the hackathon focusing on several aspects including introduction to hackathons, areas to focus on developing the solutions, technological tools that might be helpful and potential clues on how to market their product.
-                            </p>
-                            <p class="text-base mt-5 px-5">
-                                Lecturers from the Department of Industrial Management, professionals and experts from the related fields will guide teams through brainstorming.
-                            </p>
-                            <h2 class="font-bold text-lg text-center px-4 mt-5">
-                                22nd November 2020 from 10.00 a.m. to 12.00 p.m.
-                            </h2>
-                            <div class="w-72 flex justify-between px-4 items-center mt-4">
-                                <div>
-                                    <img src="./public/images/zoom/zoom-5s.png" alt="">
-                                </div>
-                                <h2 class="font-bold text-lg">via Zoom Platform</h2>
-                            </div>
-                        </div>
-                        <div class="bg-gradient-to-bl from-awarenessBoxStartingColor to-awarenessBoxEndColor w-72 h-height110 opacity-60 rounded-2xl"></div>
-                    </div>
-
-
-                    <div class="relative w-full flex justify-center mt-16 mb-12">
-                        <div class="absolute w-72 z-10 text-gray-50 font-Noto">
-                            <h1 class="text-2xl text-center mt-4">Finale</h1>
-                            <p class="text-base px-5 mt-8">
-                                The Final event will require the finalist teams to present their idea or product infront of a judge panel.    
-                            </p>
-                            <p class="text-base mt-5 px-5">
-                                (Finalist teams are shortlisted through proposal selection)
-A prototype is preferred although not compulsory. The evaluation will be done under several criteria such as feasibility, technologies used, marketability, sustainability and adherance to time constraints.
-                            </p>
-                            <h2 class="font-bold text-lg text-center px-4 mt-5">
-                                17th December 2020 from 10.00 a.m.
-                            </h2>
-                            <div class="w-72 flex justify-between px-4 items-center mt-4">
-                                <div>
-                                    <img src="./public/images/zoom/zoom-5s.png" alt="">
-                                </div>
-                                <h2 class="font-bold text-lg">via Zoom Platform</h2>
-                            </div>
-                        </div>
-                        <div class="bg-gradient-to-bl from-awarenessBoxStartingColor to-awarenessBoxEndColor w-72 h-height110 opacity-60 rounded-2xl"></div>
-                    </div>
+          <div
+            class="w-72 flex relative justify-start px-3 mt-8 mb-16"
+            data-scroll="1"
+            data-scroll-direction="horizontal"
+            data-scroll-speed="-3"
+            data-scroll-delay="0.028"
+          >
+            <div
+              class="
+                w-64
+                h-28
+                bg-TimelineBoxed
+                rounded-2xl
+                flex
+                items-center
+                justify-center
+                flex-col
+              "
+            >
+              <p class="text-gray-50 font-Noto pl-2 pr-8 text-center text-lg">
+                HackX Jr : Final Event
+              </p>
+              <p class="text-gray-50 font-Noto text-center text-sm mt-2">
+                via Zoom Platform
+              </p>
+            </div>
+            <div class="w-28 h-28 absolute transform translate-x-1/4 right-0">
+              <div class="w-full h-full relative">
+                <div
+                  class="
+                    absolute
+                    z-10
+                    top-1/2
+                    left-1/2
+                    transform
+                    -translate-x-1/2 -translate-y-1/2
+                    font-Marcellus
+                    text-gray-50
+                  "
+                >
+                  <h1 class="text-center text-3xl">06</h1>
+                  <h2>DEC</h2>
                 </div>
-            </section>
-            <!-- End of Awareness -->
+                <div class="w-28 h-28 rounded-full bg-gray-50 opacity-40"></div>
+              </div>
+            </div>
+            <div class="absolute bottom-0 left-5 transform translate-y-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 text-gray-50"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+          </div>
+        </section>
+        <!-- End of Timeline -->
 
-            <!-- Timeline -->
-            <section class="h-auto bg-gradient-to-tr from-timelineStartingColor to-timelineEndColor flex flex-col" data-scroll-section="1">
-                <div class="w-72 flex relative justify-start px-3 mt-16" data-scroll="1" data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-delay="0.04">
-                    <div class="w-64 h-28 bg-TimelineBoxed rounded-2xl flex items-center justify-start">
-                        <p class="text-gray-50 font-Noto pl-1 pr-8 text-center">
-                            Registrations Open for HackX Jr!
-                        </p>
-                    </div>
-                    <div class="w-28 h-28 absolute transform translate-x-1/4 right-0">
-                        <div class="w-full h-full relative">
-                            <div class="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-Marcellus text-gray-50">
-                                <h1 class="text-center text-3xl">09</h1>
-                                <h2>NOV</h2>
-                            </div>
-                            <div class="w-28 h-28 rounded-full bg-gray-50 opacity-40"></div>
-                        </div>
-                    </div>
-                    <div class="absolute bottom-0 left-6 transform translate-y-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                          </svg>
-                    </div>
+        <!-- Swaggers -->
+        <section
+          class="
+            bg-gradient-to-bl
+            from-swaggerStartingColor
+            to-swaggersEndColor
+            h-screen
+            relative
+            overflow-hidden
+          "
+          data-scroll-section="1"
+          id="swag"
+        >
+          <div
+            class="
+              w-120
+              h-24
+              bg-gray-50
+              absolute
+              flex
+              items-center
+              justify-center
+              top-1/4
+              transform
+              -rotate-12
+              -left-10
+            "
+            data-scroll="1"
+            data-scroll-speed="-20"
+            data-scroll-direction="horizontal"
+            data-scroll-delay="0.05"
+            data-scroll-target="#swag"
+          >
+            <h1 class="font-BebasNeue text-gray-800 text-8xl">
+              Make ideas happen
+            </h1>
+          </div>
+
+          <div
+            class="
+              w-150
+              h-24
+              bg-gray-50
+              absolute
+              flex
+              items-center
+              justify-center
+              top-2/3
+              transform
+              rotate-12
+              -left-10
+            "
+            data-scroll="1"
+            data-scroll-speed="20"
+            data-scroll-direction="horizontal"
+            data-scroll-delay="0.08"
+            data-scroll-target="#swag"
+          >
+            <h1 class="font-BebasNeue text-gray-800 text-8xl">
+              Things to keep in mind
+            </h1>
+          </div>
+        </section>
+
+        <!-- End of Swaggers -->
+
+        <!-- Scoring -->
+        <section
+          class="
+            h-auto
+            bg-gradient-to-tr
+            from-scoringStartingColor
+            to-scoringEndColor
+            flex
+          "
+          data-scroll-section="1"
+          id="scoring"
+        >
+          <div class="w-full mt-12 mb-16 relative">
+            <div class="w-full flex items-center flex-col text-gray-50">
+              <h1
+                class="font-BebasNeue text-7xl uppercase z-20"
+                data-scroll="1"
+                data-scroll-speed="2"
+                data-scroll-target="#scoring"
+              >
+                Scoring
+              </h1>
+              <h2 class="font-Marcellus text-5xl mt-8 z-20">Concept</h2>
+              <h3 class="font-Noto text-xl mt-5 z-20">
+                Marks will be allocated for,
+              </h3>
+              <div class="font-Noto text-base w-4/5 px-2 mt-4 z-20">
+                <p>Novelty / Distinctively competency</p>
+                <p>Societal impact</p>
+                <p>Feasibility of the idea</p>
+              </div>
+
+              <h2 class="font-Marcellus text-5xl mt-8 z-20">Presentation</h2>
+              <h3 class="font-Noto text-xl mt-5 z-20">
+                Marks will be allocated for,
+              </h3>
+              <div class="font-Noto text-base w-4/5 px-2 mt-4 z-20">
+                <p>Clarity and completeness</p>
+                <p>Sustainability</p>
+                <p>Business/marketing plan</p>
+                <p>Adhering to the time constraints</p>
+              </div>
+            </div>
+            <div
+              class="
+                absolute
+                w-72
+                h-72
+                rounded-full
+                shadow-2xl
+                bg-scoringCircleColor
+                left-0
+                transform
+                -translate-x-1/2
+                top-0
+                z-0
+              "
+              data-scroll="1"
+              data-scroll-speed="-1"
+              data-scroll-delay="0.03"
+              data-scroll-direction="horizontal"
+              data-scroll-target="#scoring"
+            ></div>
+          </div>
+        </section>
+        <!-- End of Scoring -->
+
+        <!-- Team Organization -->
+        <section
+          class="
+            h-auto
+            bg-gradient-to-tr
+            from-scoringEndColor
+            to-scoringStartingColor
+            flex
+          "
+          data-scroll-section="1"
+          id="TeamOrg"
+        >
+          <div class="w-full mt-12 mb-16 relative">
+            <div class="w-full flex items-center flex-col text-gray-50">
+              <h1
+                class="font-BebasNeue text-7xl uppercase z-20 text-center"
+                data-scroll="1"
+                data-scroll-speed="1"
+                data-scroll-target="#TeamOrg"
+              >
+                Team Organization
+              </h1>
+              <div class="font-Noto text-base w-full px-4 mt-12 z-20">
+                <p>A team should consist of a maximum of five members.</p>
+                <p>
+                  Every group must appoint a mentor for the team, preferably the
+                  teacher-in-charge of A/L ICT subject stream, or a teacher of a
+                  similar capacity.
+                </p>
+                <p>
+                  No participant is allowed to represent two groups. Inclusion
+                  of the same member in two different teams will lead to
+                  automatic disqualification of both groups.
+                </p>
+                <p>
+                  Participants are encouraged to design their own promotional
+                  material for their team.
+                </p>
+                <p>
+                  Participants can choose an appropriate title for their team.
+                </p>
+              </div>
+            </div>
+            <div
+              class="
+                absolute
+                w-72
+                h-72
+                rounded-full
+                shadow-2xl
+                bg-teamOrgCircleColor
+                right-0
+                transform
+                translate-x-1/2
+                top-0
+                z-0
+              "
+              data-scroll="1"
+              data-scroll-speed="1"
+              data-scroll-delay="0.03"
+              data-scroll-direction="horizontal"
+              data-scroll-target="#TeamOrg"
+            ></div>
+          </div>
+        </section>
+        <!-- End of Team Organization -->
+
+        <!-- Application Process -->
+        <section
+          class="
+            h-auto
+            bg-gradient-to-tr
+            from-whatIsStartingGradient
+            to-whatIsEndingGradient
+            flex
+          "
+          data-scroll-section="1"
+          id="Application"
+        >
+          <div class="w-full mt-12 mb-16 relative">
+            <div class="w-full flex items-center flex-col text-gray-50">
+              <h1
+                class="font-BebasNeue text-7xl uppercase z-20 text-center"
+                data-scroll="1"
+                data-scroll-speed="1"
+                data-scroll-target="#Application"
+              >
+                Application Process
+              </h1>
+              <div class="font-Noto text-base w-full px-4 mt-12 z-20">
+                <p>A team should consist of a maximum of five members.</p>
+                <p>
+                  Every group must appoint a mentor for the team, preferably the
+                  teacher-in-charge of A/L ICT subject stream, or a teacher of a
+                  similar capacity.
+                </p>
+                <p>
+                  No participant is allowed to represent two groups. Inclusion
+                  of the same member in two different teams will lead to
+                  automatic disqualification of both groups.
+                </p>
+                <p>
+                  Participants are encouraged to design their own promotional
+                  material for their team.
+                </p>
+                <p>
+                  Participants can choose an appropriate title for their team.
+                </p>
+              </div>
+            </div>
+            <div
+              class="
+                absolute
+                w-72
+                h-72
+                rounded-full
+                shadow-2xl
+                bg-applicationCircleColor
+                left-0
+                transform
+                -translate-x-1/2
+                top-0
+                z-0
+              "
+              data-scroll="1"
+              data-scroll-speed="-1"
+              data-scroll-delay="0.03"
+              data-scroll-direction="horizontal"
+              data-scroll-target="#Application"
+            ></div>
+          </div>
+        </section>
+        <!-- End of Application Process -->
+
+        <!-- Awareness Session -->
+        <section
+          class="
+            h-auto
+            bg-gradient-to-br
+            from-awarenessSessionStartingColor
+            to-awarenessSessionEndColor
+            flex
+          "
+          data-scroll-section="1"
+        >
+          <div class="w-full h-full flex flex-col items-center mb-24">
+            <h2 class="font-BebasNeue text-7xl text-center text-gray-50 mt-12">
+              Awareness Session
+            </h2>
+
+            <div
+              class="
+                w-72
+                h-auto
+                bg-awarenessSessionBox1Color
+                text-gray-50
+                font-Noto
+                text-base
+                rounded-2xl
+                flex
+                justify-center
+                items-center
+                py-4
+                px-3
+                mt-10
+              "
+            >
+              <p>
+                An awareness session for the competition will be conducted on
+                22nd November 2020 from 10.00 a.m. to 12.00 p.m. via Zoom
+                Platform (more details will be informed to registered
+                participants through email, and website).
+              </p>
+            </div>
+
+            <div
+              class="
+                w-72
+                h-auto
+                bg-awarenessSessionBox1Color
+                text-gray-50
+                font-Noto
+                text-base
+                rounded-2xl
+                flex
+                justify-center
+                items-center
+                mt-6
+                py-4
+                px-3
+              "
+            >
+              <p>
+                During this session, the students will be provided with
+                information about the hackathon, areas to focus on developing
+                the solutions, technological tools that might be helpful and
+                potential clues on how to market their product.
+              </p>
+            </div>
+
+            <div
+              class="
+                w-72
+                h-auto
+                bg-awarenessSessionBox1Color
+                text-gray-50
+                font-Noto
+                text-base
+                rounded-2xl
+                flex
+                justify-center
+                items-center
+                mt-6
+                py-4
+                px-3
+              "
+            >
+              <p>
+                Confirmation of the participation for the awareness session is
+                required to be made on or before 20th November 2020 by
+                completing the Awareness Session Registration Form through the
+                www.hackxjr.lk website.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- End of Awareness Session -->
+
+        <!-- Finale -->
+        <section
+          class="
+            h-auto
+            bg-gradient-to-tr
+            from-finaleStartingColor
+            to-finaleEndColor
+            flex
+          "
+          data-scroll-section="1"
+        >
+          <div
+            class="
+              w-full
+              h-full
+              flex flex-col
+              items-center
+              text-gray-50
+              mt-12
+              mb-16
+            "
+          >
+            <h1 class="font-BebasNeue text-8xl text-center">Finale</h1>
+            <div class="w-full flex flex-col px-4 font-Noto text-base mt-6">
+              <p>
+                Final round selected teams will compete on the hackathon, which
+                is scheduled to be held on 17th December 2020 via Zoom Platform.
+              </p>
+              <p class="mt-4">
+                Each individual team needs to present their idea and how they
+                expect to implement their solution (preferably with a prototype
+                demonstration).
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- End of Finale -->
+
+        <section class="h-auto flex flex-col items-center" data-scroll-section="1" id="fixTarget">
+          <div class="w-full flex flex-col items-center text-gray-50 mt-16 mb-16">
+            <h1 class="uppercase text-7xl font-BebasNeue text-center">
+              About Us
+            </h1>
+          </div>
+        </section>
+
+        <section class="h-twice bg-gray-800 flex justify-center" data-scroll-section="1"  id="fixTarget">
+            <div class="h-screen w-72 overflow-hidden relative mt-20" data-scroll="1" data-scroll-repeat="1">
+                <!-- <div class="absolute w-full h-full bg-red-700 z-10 top-0 transform -translate-y-full" ></div> -->
+                <div class="absolute w-full h-full bg-vision-bg-5s bg-cover visionBG" data-scroll="1" data-scroll-sticky="1" data-scroll-target="#fixTarget">
+                   <div class="w-full h-full relative">
+                    <h1 class="font-Marcellus text-gray-50 text-6xl absolute z-10 top-12 left-1/2 transform -translate-x-1/2">Vision</h1>
+                    <p class="w-full px-3 text-gray-50 font-Noto text-base text-center absolute top-1/2  transform -translate-y-1/4 z-10">Our vision is to be recognized as the pioneering platform for providing the school children of the country
+                        with an opportunity to bring forth their ideas and accelerate creation and development of new radical solutions.</p>
+                    <div class="w-ful h-full bg-gray-800 opacity-70"></div>
+                   </div>
                 </div>
+            </div>
+        </section>
 
-
-                <div class="w-72 flex relative justify-end ml-4 mt-10" data-scroll="1" data-scroll-direction="horizontal" data-scroll-speed="3" data-scroll-delay="0.038">
-                    <div class="w-64 h-28 bg-TimelineBoxed rounded-2xl flex items-center justify-end">
-                        <p class="text-gray-50 font-Noto pl-8 text-center pr-2 text-sm">
-                            Registrations Closed for Awareness Session
-                        </p>
-                    </div>
-                    <div class="w-28 h-28 absolute transform -translate-x-2 left-0">
-                        <div class="w-full h-full relative">
-                            <div class="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-Marcellus text-gray-50">
-                                <h1 class="text-center text-3xl">20</h1>
-                                <h2>NOV</h2>
-                            </div>
-                            <div class="w-28 h-28 rounded-full bg-gray-50 opacity-40"></div>
-                        </div>
-                    </div>
-                    <div class="absolute bottom-0 right-4 transform translate-y-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                          </svg>
-                    </div>
-                </div>
-
-                <div class="w-72 flex relative justify-start px-3 mt-8" data-scroll="1" data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-delay="0.035">
-                    <div class="w-64 h-28 bg-TimelineBoxed rounded-2xl flex items-center justify-start">
-                        <p class="text-gray-50 font-Noto pl-2 pr-8 text-center text-sm">
-                            Awareness Session
-Awareness Session took place via Zoom Platform from 10.00 a.m. to 12.00 p.m.
-                        </p>
-                    </div>
-                    <div class="w-28 h-28 absolute transform translate-x-1/4 right-0">
-                        <div class="w-full h-full relative">
-                            <div class="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-Marcellus text-gray-50">
-                                <h1 class="text-center text-3xl">22</h1>
-                                <h2>NOV</h2>
-                            </div>
-                            <div class="w-28 h-28 rounded-full bg-gray-50 opacity-40"></div>
-                        </div>
-                    </div>
-                    <div class="absolute bottom-0 left-4 transform translate-y-5 -rotate-12">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z" />
-                          </svg>
-                    </div>
-                </div>
-
-
-                <div class="w-72 flex relative justify-end ml-4 mt-10" data-scroll="1" data-scroll-direction="horizontal" data-scroll-speed="3" data-scroll-delay="0.032">
-                    <div class="w-64 h-28 bg-TimelineBoxed rounded-2xl flex items-center justify-end">
-                        <p class="text-gray-50 font-Noto pl-16 text-center pr-3 text-sm">
-                            Registrations Closed for HackX Jr
-                        </p>
-                    </div>
-                    <div class="w-28 h-28 absolute transform -translate-x-2 left-0">
-                        <div class="w-full h-full relative">
-                            <div class="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-Marcellus text-gray-50">
-                                <h1 class="text-center text-3xl">03</h1>
-                                <h2>DEC</h2>
-                            </div>
-                            <div class="w-28 h-28 rounded-full bg-gray-50 opacity-40"></div>
-                        </div>
-                    </div>
-                    <div class="absolute bottom-0 right-4 transform translate-y-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                          </svg>
-                    </div>
-                </div>
-
-
-                <div class="w-72 flex relative justify-start px-3 mt-8" data-scroll="1" data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-delay="0.031">
-                    <div class="w-64 h-28 bg-TimelineBoxed rounded-2xl flex items-center justify-start">
-                        <p class="text-gray-50 font-Noto pl-2 pr-8 text-center text-sm">
-                            Shortlisted Teams are Announced!
-                        </p>
-                    </div>
-                    <div class="w-28 h-28 absolute transform translate-x-1/4 right-0">
-                        <div class="w-full h-full relative">
-                            <div class="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-Marcellus text-gray-50">
-                                <h1 class="text-center text-3xl">06</h1>
-                                <h2>DEC</h2>
-                            </div>
-                            <div class="w-28 h-28 rounded-full bg-gray-50 opacity-40"></div>
-                        </div>
-                    </div>
-                    <div class="absolute bottom-0 left-5 transform translate-y-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                          </svg>
-                    </div>
-                </div>
-
-                <div class="w-72 flex relative justify-end ml-4 mt-10" data-scroll="1" data-scroll-direction="horizontal" data-scroll-speed="3" data-scroll-delay="0.03">
-                    <div class="w-64 h-28 bg-TimelineBoxed rounded-2xl flex items-center justify-center flex-col">
-                        <p class="text-gray-50 font-Noto text-center text-lg pl-12">
-                            'Good To Go!'
-                        </p>
-                        <p class="text-gray-50 font-Noto text-center px-4 text-xs pl-12 mt-2">
-                            A Session for the Finalist Teams via Zoom Platform
-                        </p>
-                    </div>
-                    <div class="w-28 h-28 absolute transform -translate-x-2 left-0">
-                        <div class="w-full h-full relative">
-                            <div class="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-Marcellus text-gray-50">
-                                <h1 class="text-center text-3xl">03</h1>
-                                <h2>DEC</h2>
-                            </div>
-                            <div class="w-28 h-28 rounded-full bg-gray-50 opacity-40"></div>
-                        </div>
-                    </div>
-                    <div class="absolute bottom-0 right-4 transform translate-y-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
-                          </svg>
-                    </div>
-                </div>
-
-
-                <div class="w-72 flex relative justify-start px-3 mt-8 mb-16" data-scroll="1" data-scroll-direction="horizontal" data-scroll-speed="-3" data-scroll-delay="0.028">
-                    <div class="w-64 h-28 bg-TimelineBoxed rounded-2xl flex items-center justify-center flex-col">
-                        <p class="text-gray-50 font-Noto pl-2 pr-8 text-center text-lg">
-                            HackX Jr : Final Event
-                        </p>
-                        <p class="text-gray-50 font-Noto text-center text-sm mt-2">
-                            via Zoom Platform
-                        </p>
-                    </div>
-                    <div class="w-28 h-28 absolute transform translate-x-1/4 right-0">
-                        <div class="w-full h-full relative">
-                            <div class="absolute z-10 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-Marcellus text-gray-50">
-                                <h1 class="text-center text-3xl">06</h1>
-                                <h2>DEC</h2>
-                            </div>
-                            <div class="w-28 h-28 rounded-full bg-gray-50 opacity-40"></div>
-                        </div>
-                    </div>
-                    <div class="absolute bottom-0 left-5 transform translate-y-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-gray-50" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                          </svg>
-                    </div>
-                </div>
-
-                
-            </section>
-            <!-- End of Timeline -->
-
-            <!-- Swaggers -->
-            <section class="bg-gradient-to-bl from-swaggerStartingColor to-swaggersEndColor h-screen relative overflow-hidden" data-scroll-section="1" id="swag">
-                <div class="w-120 h-24 bg-gray-50 absolute flex items-center justify-center top-1/4 transform -rotate-12 -left-10" data-scroll="1" data-scroll-speed="-20" data-scroll-direction="horizontal" data-scroll-delay="0.05" data-scroll-target="#swag">
-                    <h1 class="font-BebasNeue text-gray-800 text-8xl">Make ideas happen</h1>
-                </div>
-
-                <div class="w-150 h-24 bg-gray-50 absolute flex items-center justify-center top-2/3 transform rotate-12 -left-10" data-scroll="1" data-scroll-speed="20" data-scroll-direction="horizontal" data-scroll-delay="0.08" data-scroll-target="#swag">
-                    <h1 class="font-BebasNeue text-gray-800 text-8xl">Things to keep in mind</h1>
-                </div>
-            </section>
-
-            <!-- End of Swaggers -->
-
-            <!-- Scoring -->
-            <section class="h-auto bg-gradient-to-tr from-scoringStartingColor to-scoringEndColor flex" data-scroll-section="1" id="scoring">
-                <div class="w-full mt-12 mb-16 relative">
-                    <div class="w-full flex items-center flex-col text-gray-50">
-                    <h1 class="font-BebasNeue text-7xl uppercase z-20" data-scroll="1" data-scroll-speed="2" data-scroll-target="#scoring">Scoring</h1>
-                    <h2 class="font-Marcellus text-5xl mt-8 z-20">Concept</h2>
-                    <h3 class="font-Noto text-xl mt-5 z-20">Marks will be allocated for,</h3>
-                    <div class="font-Noto text-base w-4/5 px-2 mt-4 z-20">
-                        <p>Novelty / Distinctively competency</p>
-                        <p>Societal impact</p>
-                        <p>Feasibility of the idea</p>
-                    </div>
-
-                    <h2 class="font-Marcellus text-5xl mt-8 z-20">Presentation</h2>
-                    <h3 class="font-Noto text-xl mt-5 z-20">Marks will be allocated for,</h3>
-                    <div class="font-Noto text-base w-4/5 px-2 mt-4 z-20">
-                        <p>Clarity and completeness</p>
-                        <p>Sustainability</p>
-                        <p>Business/marketing plan</p>
-                        <p>Adhering to the time constraints</p>
-                    </div>
-                    </div>
-                    <div class="absolute w-72 h-72 rounded-full shadow-2xl bg-scoringCircleColor left-0 transform -translate-x-1/2 top-0 z-0" data-scroll="1" data-scroll-speed="-1" data-scroll-delay="0.03" data-scroll-direction="horizontal" data-scroll-target="#scoring"></div>
-                </div>
-            </section>
-            <!-- End of Scoring -->
-
-            <!-- Team Organization -->
-            <section class="h-auto bg-gradient-to-tr from-scoringEndColor to-scoringStartingColor flex" data-scroll-section="1" id="TeamOrg">
-                <div class="w-full mt-12 mb-16 relative">
-                    <div class="w-full flex items-center flex-col text-gray-50">
-                    <h1 class="font-BebasNeue text-7xl uppercase z-20 text-center" data-scroll="1" data-scroll-speed="1" data-scroll-target="#TeamOrg">Team Organization</h1>
-                    <div class="font-Noto text-base w-full px-4 mt-12 z-20">
-                        <p>A team should consist of a maximum of five members.</p>
-                        <p>Every group must appoint a mentor for the team, preferably the teacher-in-charge of A/L ICT subject stream, or a teacher of a similar capacity.</p>
-                        <p>No participant is allowed to represent two groups. Inclusion of the same member in two different teams will lead to automatic disqualification of both groups.</p>
-                        <p>Participants are encouraged to design their own promotional material for their team.</p>
-                        <p>Participants can choose an appropriate title for their team.</p>
-                    </div>
-                    </div>
-                    <div class="absolute w-72 h-72 rounded-full shadow-2xl bg-teamOrgCircleColor right-0 transform translate-x-1/2 top-0 z-0" data-scroll="1" data-scroll-speed="1" data-scroll-delay="0.03" data-scroll-direction="horizontal" data-scroll-target="#TeamOrg"></div>
-                </div>
-            </section>
-            <!-- End of Team Organization -->
-
-            <!-- Application Process -->
-            <section class="h-auto bg-gradient-to-tr from-whatIsStartingGradient to-whatIsEndingGradient flex" data-scroll-section="1" id="Application">
-                <div class="w-full mt-12 mb-16 relative">
-                    <div class="w-full flex items-center flex-col text-gray-50">
-                    <h1 class="font-BebasNeue text-7xl uppercase z-20 text-center" data-scroll="1" data-scroll-speed="1" data-scroll-target="#Application">Application Process</h1>
-                    <div class="font-Noto text-base w-full px-4 mt-12 z-20">
-                        <p>A team should consist of a maximum of five members.</p>
-                        <p>Every group must appoint a mentor for the team, preferably the teacher-in-charge of A/L ICT subject stream, or a teacher of a similar capacity.</p>
-                        <p>No participant is allowed to represent two groups. Inclusion of the same member in two different teams will lead to automatic disqualification of both groups.</p>
-                        <p>Participants are encouraged to design their own promotional material for their team.</p>
-                        <p>Participants can choose an appropriate title for their team.</p>
-                    </div>
-                    </div>
-                    <div class="absolute w-72 h-72 rounded-full shadow-2xl bg-applicationCircleColor left-0 transform -translate-x-1/2 top-0 z-0" data-scroll="1" data-scroll-speed="-1" data-scroll-delay="0.03" data-scroll-direction="horizontal" data-scroll-target="#Application"></div>
-                </div>
-            </section>
-            <!-- End of Application Process -->
-
-            <!-- Awareness Session -->
-            <section class="h-auto bg-gradient-to-br from-awarenessSessionStartingColor to-awarenessSessionEndColor flex" data-scroll-section="1">
-                <div class="w-full h-full flex flex-col items-center mb-24">
-                    <h2 class="font-BebasNeue text-7xl text-center text-gray-50 mt-12">Awareness Session</h2>
-
-                    <div class="w-72 h-auto bg-awarenessSessionBox1Color text-gray-50 font-Noto text-base rounded-2xl flex justify-center items-center py-4 px-3 mt-10">
-                        <p>
-                            An awareness session for the competition will be conducted on 22nd November 2020 from 10.00 a.m. to 12.00 p.m. via Zoom Platform (more details will be informed to registered participants through email, and website).
-                        </p>
-                    </div>
-
-                    <div class="w-72 h-auto bg-awarenessSessionBox1Color text-gray-50 font-Noto text-base rounded-2xl flex justify-center items-center mt-6 py-4 px-3">
-                        <p>
-                            During this session, the students will be provided with information about the hackathon, areas to focus on developing the solutions, technological tools that might be helpful and potential clues on how to market their product.    
-                        </p>
-                    </div>
-
-                    <div class="w-72 h-auto bg-awarenessSessionBox1Color text-gray-50 font-Noto text-base rounded-2xl flex justify-center items-center mt-6 py-4 px-3">
-                        <p>
-                            Confirmation of the participation for the awareness session is required to be made on or before 20th November 2020 by completing the Awareness Session Registration Form through the www.hackxjr.lk website.    
-                        </p>
-                    </div>
-
-
-                </div>
-            </section>
-
-            <!-- End of Awareness Session -->
-
-            <!-- Finale -->
-            <section class="h-auto bg-gradient-to-tr from-finaleStartingColor to-finaleEndColor flex" data-scroll-section="1">
-                <div class="w-full h-full flex flex-col items-center text-gray-50 mt-12 mb-16">
-                    <h1 class="font-BebasNeue text-8xl text-center">Finale</h1>
-                    <div class="w-full flex flex-col px-4 font-Noto text-base mt-6">
-                        <p>Final round selected teams will compete on the hackathon, which is scheduled to be held on 17th December 2020 via Zoom Platform.</p>
-                        <p class="mt-4">Each individual team needs to present their idea and how they expect to implement their solution (preferably with a prototype demonstration).</p>
-                    </div>
-                </div>
-            </section>
-            <!-- End of Finale -->
-
-            <section class="h-screen flex" data-scroll-section="1">
-                <div class="w-full flex flex-col items-center text-gray-50 mt-16">
-                    <h1 class="uppercase text-7xl font-BebasNeue text-center">About Us</h1>
-                </div>
-            </section>
-        </main>
+        <section class="h-twice bg-gray-900"></section>
+      </main>
     </div>
-</body>
-<script src="./locomotive-scroll.min.js"></script>
-<script>
-     (function () {
-        var scroll = new LocomotiveScroll({
-            el: document.querySelector('[data-scroll-container]'),
-            smooth: true,
-            lerp: 0.1,
-            multiplier: 0.5,
-            smartphone: {
-                smooth: true
-            },
-        });
+  </body>
+  <script src="./locomotive-scroll.min.js"></script>
+  <script>
+    (function () {
+      var scroll = new LocomotiveScroll({
+        el: document.querySelector("[data-scroll-container]"),
+        smooth: true,
+        lerp: 0.1,
+        multiplier: 1,
+        smartphone: {
+          smooth: true,
+        },
+      });
     })();
-</script>
+  </script>
 </html>

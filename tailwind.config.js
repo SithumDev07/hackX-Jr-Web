@@ -13,6 +13,7 @@ module.exports = {
         'mascotty-main' : "url('../public/images/Mas/mascotty.png')",
         'mascotty-eye' : "url('../public/images/Mas/minion-eye.png')",
         'mascotty-mobile' : "url('../public/images/Mas/mascotty-mobile.png')",
+        'vision-bg-5s': "url('../public/images/vision-bg/bg-vison-large-5s.png')",
       })
     },
     screens: {
