@@ -59,6 +59,10 @@ module.exports = {
       swaggerStartingColor: '#1C838B',
       swaggersEndColor: '#0AC7AB',
 
+      scoringStartingColor: '#084448',
+      scoringEndColor: '#2BBFCC',
+      scoringCircleColor: '#187E86',
+
       black: colors.black,
       white: colors.white,
       gray: colors.coolGray,
