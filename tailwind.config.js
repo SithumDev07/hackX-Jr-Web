@@ -3,7 +3,7 @@ const colors = require('tailwindcss/colors')
 module.exports = {
   purge: {
     // enabled: true,
-    // content: ['./index.html', './locomotive.html'],
+    // content: ['./index.html', './locomotive.html', 'iPhone.html'],
   },
   presets: [],
   darkMode: false, // or 'media' or 'class'
@@ -58,6 +58,21 @@ module.exports = {
 
       swaggerStartingColor: '#1C838B',
       swaggersEndColor: '#0AC7AB',
+
+      scoringStartingColor: '#084448',
+      scoringEndColor: '#2BBFCC',
+      scoringCircleColor: '#187E86',
+
+      teamOrgCircleColor: '#1E949D',
+
+      applicationCircleColor: '#1C8776',
+
+      awarenessSessionStartingColor: '#13547A',
+      awarenessSessionEndColor: '#2BBFCC',
+      awarenessSessionBox1Color: '#1E8498',
+
+      finaleStartingColor: '#434343',
+      finaleEndColor: '#000000',
 
       black: colors.black,
       white: colors.white,
