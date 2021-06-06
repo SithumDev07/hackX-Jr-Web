@@ -63,6 +63,17 @@ module.exports = {
       scoringEndColor: '#2BBFCC',
       scoringCircleColor: '#187E86',
 
+      teamOrgCircleColor: '#1E949D',
+
+      applicationCircleColor: '#1C8776',
+
+      awarenessSessionStartingColor: '#13547A',
+      awarenessSessionEndColor: '#2BBFCC',
+      awarenessSessionBox1Color: '#1E8498',
+
+      finaleStartingColor: '#434343',
+      finaleEndColor: '#000000',
+
       black: colors.black,
       white: colors.white,
       gray: colors.coolGray,
