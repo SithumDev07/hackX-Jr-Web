@@ -14,6 +14,7 @@ module.exports = {
         'mascotty-eye' : "url('../public/images/Mas/minion-eye.png')",
         'mascotty-mobile' : "url('../public/images/Mas/mascotty-mobile.png')",
         'vision-bg-5s': "url('../public/images/vision-bg/bg-vison-large-5s.png')",
+        'mission-bg-5s': "url('../public/images/mission-bg/bg-mission-large-5s.png')",
       })
     },
     screens: {
@@ -74,6 +75,9 @@ module.exports = {
 
       finaleStartingColor: '#434343',
       finaleEndColor: '#000000',
+
+      eventPartnerStartingColor: '#93A5CF',
+      eventPartnersEndColor: '#93CCD3',
 
       black: colors.black,
       white: colors.white,
