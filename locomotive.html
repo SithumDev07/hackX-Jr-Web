@@ -7,6 +7,16 @@
     <link rel="stylesheet" href="./public/style.css">
     <link rel="stylesheet" href="./base.css">
     <style>
+        body{
+            background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ background-blend-mode: multiply;
+        }
+
+        .nav-bg{
+            background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ background-blend-mode: multiply;
+        }
+
         section {
             /* height: 100vh; */
             padding: 1em;
@@ -140,7 +150,7 @@
 </head>
 <body>
     <div class="h-28 w-full md:flex hidden fixed z-50">
-        <nav class="w-full h-full flex items-center justify-around">
+        <nav class="w-full h-full flex items-center justify-around" aria-label="1">
             <div class="w-1/6 flex justify-center">
                 <img src="./public/images/Logos/hackxjrLogo-5s.png" alt="">
             </div>
@@ -157,7 +167,7 @@
     </div>
 
     <div class="w-full fixed z-50">
-        <nav class="w-full flex justify-between mt-4 px-3">
+        <nav class="w-full flex justify-between mt-4 px-3" aria-label="2">
           <div>
             <img src="./public/images/Logos/hackxjrLogo-5s.png" class="" id="logo-img" alt="logo-5s" />
           </div>
@@ -170,15 +180,26 @@
         </nav>
       </div>
 
-    <div class="relative">
+    <div class="relative w-screen h-screen">
 
-        <section class="w-full h-screen bg-gray-800 fixed z-10 -left-full" id="SideBR">
-            <div class="w-full flex justify-end">
+        <section class="w-full h-screen nav-bg fixed z-10 -left-full" id="SideBR">
+            <div class="w-full flex items-end flex-col">
                 <div class="mr-5" id="CloseButton">
                     <img
                       src="./public/images/arrows/left-arrow.png"
                       alt="burger-5s"
                     />
+                  </div>
+                  <div class="w-full flex justify-end">
+                    <ul class="text-2xl font-Noto text-gray-100 flex flex-col items-end h-96 justify-around w-full mt-8">
+                        <li class="cursor-pointer"><a href="./locomotive.html">Home</a></li>
+                        <li class="cursor-pointer">Info</li>
+                        <li class="cursor-pointer">Schedule</li>
+                        <li class="cursor-pointer">Rules</li>
+                        <li class="cursor-pointer">About</li>
+                        <li class="cursor-pointer">Register</li>
+                        <li class="cursor-pointer">Contact Us</li>
+                    </ul>
                   </div>
             </div>
         </section>
@@ -226,6 +247,7 @@
         Parent.classList.add('ParentMove')
         Parent.classList.remove('ParentDefault')
         Logo.classList.add('transit');
+        Burger.classList.add('opacity-0')
         console.log('Working')
     })
 
@@ -235,6 +257,7 @@
         Parent.classList.remove('ParentMove')
         Parent.classList.add('ParentDefault')
         Logo.classList.remove('transit');
+        Burger.classList.remove('opacity-0')
     })
 </script>
 <script src="./locomotive-scroll.min.js"></script>
