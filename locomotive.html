@@ -19,7 +19,7 @@
             top: 65%;
         }
 
-        .eye {
+        /* .eye {
             width: 18px;
             height: 30px;
             background-color: #191919;
@@ -47,7 +47,7 @@
             width: 61px;
             height: 66px;
             /* margin-left: 6%; */
-        }
+        /* }
         .single-eye-container:nth-child(1){
             margin-left: 5px;
         }
@@ -55,11 +55,86 @@
         .single-eye-container:nth-child(2){
             margin-right: 3px;
             margin-top: 4%;
+        } */ 
+
+
+        .sideBar {
+            transition:  all 0.4s ease-out;
+            animation: slideRight 0.4s forwards ease-in-out;
+            z-index: 50;
         }
 
-        .visionBG{
-            background-position: 50%;
+        @keyframes slideRight {
+            from{
+                left: -100%;
+                opacity: 0;
+            }
+            to{
+                left: -20%;
+                opacity: 1;
+            }
         }
+
+        .sideDefault {
+            transition:  all 0.4s ease-out;
+            animation: slideLeft 0.4s forwards ease-in-out;
+            z-index: 50;
+        }
+
+        @keyframes slideLeft{
+            from{
+                left: -20%;
+                opacity: 1;
+            }
+            to{
+                left: -100%;
+                opacity: 0;
+            }
+        }
+
+        .ParentMove{
+            transition: all 0.6s ease-out;
+            animation: GoRight 0.4s forwards ease-in-out;
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            transform: scale(0.8);
+            border-radius: 40px;
+        }
+
+        @keyframes GoRight {
+            from{
+                left: 0;
+            }
+            to{
+                left: 80%;
+            }
+        }
+
+        .ParentDefault{
+            transition: all 0.6s ease-out;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+            animation: GoLeft 0.4s forwards ease-in-out;
+            transform: scale(1);
+            border-radius: 0px;
+        }
+
+        @keyframes GoLeft {
+            from{
+                left: 80%;
+            }
+            to{
+                left: 0;
+            }
+        }
+
+        .transit{
+            transition: all 0.1s ease-in-out;
+            opacity: 0;
+        }
+       
     </style>
     <title>Locomotive</title>
 </head>
@@ -67,7 +142,7 @@
     <div class="h-28 w-full md:flex hidden fixed z-50">
         <nav class="w-full h-full flex items-center justify-around">
             <div class="w-1/6 flex justify-center">
-                <img src="./public/images/hackxjrsm.png" alt="">
+                <img src="./public/images/Logos/hackxjrLogo-5s.png" alt="">
             </div>
             <ul class="text-xl font-medium text-gray-100 flex-1 flex justify-around items-center">
                 <li class="cursor-pointer"><a href="./locomotive.html">Home</a></li>
@@ -80,10 +155,38 @@
             </ul>
         </nav>
     </div>
-    <div data-scroll-container>
-        
+
+    <div class="w-full fixed z-50">
+        <nav class="w-full flex justify-between mt-4 px-3">
+          <div>
+            <img src="./public/images/Logos/hackxjrLogo-5s.png" class="" id="logo-img" alt="logo-5s" />
+          </div>
+          <div class="" id="Burger">
+            <img
+              src="./public/images/BurgerIcons/Burger-5s.png"
+              alt="burger-5s"
+            />
+          </div>
+        </nav>
+      </div>
+
+    <div class="relative">
+
+        <section class="w-full h-screen bg-gray-800 fixed z-10 -left-full" id="SideBR">
+            <div class="w-full flex justify-end">
+                <div class="mr-5" id="CloseButton">
+                    <img
+                      src="./public/images/arrows/left-arrow.png"
+                      alt="burger-5s"
+                    />
+                  </div>
+            </div>
+        </section>
+    
+    <div data-scroll-container="1" class="overflow-hidden" id="ParentContainer">
+
         <section data-scroll-section="1" class=" bg-gradient-to-br from-stratingColorGradient to-endColorGradient relative h-screen">
-           <!-- <div class="absolute top-1/2 w-full flex text-9xl font-bold text-gray-100 left-1/4 transform -translate-x-1/4" data-scroll="1" data-scroll-speed="-10">
+           <div class="absolute top-1/2 w-full flex text-6xl font-bold text-gray-100" data-scroll="1" data-scroll-speed="-10">
                 <h1 data-scroll="1" data-scroll-speed="1" data-scroll-position="top">h</h1>
                 <h1 data-scroll="1" data-scroll-speed="2" data-scroll-position="top">a</h1>
                 <h1 data-scroll="1" data-scroll-speed="3" data-scroll-position="top">c</h1>
@@ -93,31 +196,9 @@
                 <h1 data-scroll="1" data-scroll-speed="2" data-scroll-position="top">0</h1>
                 <h1 data-scroll="1" data-scroll-speed="3" data-scroll-position="top">2</h1>
                 <h1 data-scroll="1" data-scroll-speed="4" data-scroll-position="top">1</h1>
-            </div> -->
-
-            <div class="w-full h-full border-2 flex justify-end">
-                <div class="w-1/2 h-full border-2 border-blue-600 flex justify-center items-center">
-                    <div class="w-auto h-auto border-2 relative">
-                        <div class="absolute eye-container flex items-center justify-between">
-                          <div class="rounded-full single-eye-container relative">
-                            <div class="absolute eye-ball-interact">
-                                <div class="eye relative">
-                                    <div class="eye-ball absolute"></div>
-                                </div>
-                            </div>
-                          </div>
-                          <div class="rounded-full single-eye-container relative">
-                            <div class="absolute eye-ball-interact">
-                                <div class="eye relative">
-                                    <div class="eye-ball absolute"></div>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                        <img src="./public/images/mascotty 1920 eyes-null.png" alt="">
-                    </div>
-                </div>
             </div>
+
+            
         </section>
 
         <section data-scroll-section="1" class="bg-red-400 h-screen relative" id="Sticker">
@@ -126,196 +207,66 @@
                 <p>😬</p>
             </div>
         </section>
-        <!-- <section class="w-full bg-gray-800 hidden md:flex justify-center flex-col items-center" data-scroll-section="1" data-scroll-speed="0.1">
-                <div class="relative w-96 h-28 mt-24 cards" data-scroll="1" data-scroll-direction="horizontal" data-scroll-speed="6" data-scroll-delay="0.04">
-                   <div class="w-28 h-28 rounded-full flex justify-center items-center right-0 transform translate-x-4/5 absolute">
-                    <div class="relative w-full h-full">
-                        <h2 class="font-Marcellus text-gray-100 text-4xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                            09
-                        </h2>
-                        <h3 class="font-Marcellus text-gray-100 text-lg absolute  bottom-1/4 left-1/2 transform -translate-x-1/2 translate-y-2/4">NOV</h3>
-                        <div class="rounded-full h-full w-full opacity-20 bg-gray-50"></div>
-                    </div>
-                   </div>
-                   <div class="absolute bottom-0 left-left5 transform translate-y-1/2">
-                       <img src="./public/images/u_calender.png" width="40%" alt="">
-                   </div>
-                    <div class="w-full h-full bg-TimelineBoxed rounded-xl flex justify-center items-center">
-                        <h2 class="text-xl text-gray-100 font-Noto">
-                            Registrations Open for HackX Jr!
-                        </h2>
-                    </div>
-                </div>
-                <div class="relative w-96 h-28 mt-24 cards" data-scroll="1" data-scroll-direction="horizontal" data-scroll-speed="-6" data-scroll-delay="0.04">
-                    <div class="w-28 h-28 rounded-full flex justify-center items-center left-0 transform -translate-x-4/5 absolute">
-                     <div class="relative w-full h-full">
-                         <h2 class="font-Marcellus text-gray-100 text-4xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                             20
-                         </h2>
-                         <h3 class="font-Marcellus text-gray-100 text-lg absolute  bottom-1/4 left-1/2 transform -translate-x-1/2 translate-y-2/4">NOV</h3>
-                         <div class="rounded-full h-full w-full opacity-20 bg-gray-50"></div>
-                     </div>
-                    </div>
-                    <div class="absolute bottom-0 left-left5 transform translate-y-1/2">
-                        <img src="./public/images/u_calender.png" width="40%" alt="">
-                    </div>
-                     <div class="w-full h-full bg-TimelineBoxed rounded-xl flex justify-center items-center">
-                         <h2 class="text-xl text-gray-100 font-Noto text-center">
-                             Registrations Closed for Awareness Session!
-                         </h2>
-                     </div>
-                 </div>
-                 <div class="relative w-96 h-28 mt-24 cards" data-scroll="1" data-scroll-direction="horizontal" data-scroll-speed="6" data-scroll-delay="0.04">
-                    <div class="w-28 h-28 rounded-full flex justify-center items-center right-0 transform translate-x-4/5 absolute">
-                     <div class="relative w-full h-full">
-                         <h2 class="font-Marcellus text-gray-100 text-4xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                             22
-                         </h2>
-                         <h3 class="font-Marcellus text-gray-100 text-lg absolute  bottom-1/4 left-1/2 transform -translate-x-1/2 translate-y-2/4">NOV</h3>
-                         <div class="rounded-full h-full w-full opacity-20 bg-gray-50"></div>
-                     </div>
-                    </div>
-                    <div class="absolute bottom-0 left-left5 transform translate-y-1/2">
-                        <img src="./public/images/u_calender.png" width="40%" alt="">
-                    </div>
-                     <div class="w-full h-full bg-TimelineBoxed rounded-xl flex justify-center items-center">
-                         <h2 class="text-lg text-gray-100 font-Noto text-center">
-                            Awareness Session
-                            Awareness Session took place via Zoom Platform from 10.00 a.m. to 12.00 p.m.
-                         </h2>
-                     </div>
-                 </div>
-                 <div class="relative w-96 h-28 mt-24" data-scroll="1" data-scroll-direction="horizontal" data-scroll-speed="-6" data-scroll-delay="0.04">
-                    <div class="w-28 h-28 rounded-full flex justify-center items-center left-0 transform -translate-x-4/5 absolute">
-                     <div class="relative w-full h-full">
-                         <h2 class="font-Marcellus text-gray-100 text-4xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                             03
-                         </h2>
-                         <h3 class="font-Marcellus text-gray-100 text-lg absolute  bottom-1/4 left-1/2 transform -translate-x-1/2 translate-y-2/4">DEC</h3>
-                         <div class="rounded-full h-full w-full opacity-20 bg-gray-50"></div>
-                     </div>
-                    </div>
-                    <div class="absolute bottom-0 left-left5 transform translate-y-1/2">
-                        <img src="./public/images/u_calender.png" width="40%" alt="">
-                    </div>
-                     <div class="w-full h-full bg-TimelineBoxed rounded-xl flex justify-center items-center">
-                         <h2 class="text-xl text-gray-100 font-Noto">
-                             Registrations Closed for HackX Jr!
-                         </h2>
-                     </div>
-                 </div>
-                 <div class="relative w-96 h-28 mt-24" data-scroll="1" data-scroll-direction="horizontal" data-scroll-speed="6" data-scroll-delay="0.04">
-                    <div class="w-28 h-28 rounded-full flex justify-center items-center right-0 transform translate-x-4/5 absolute">
-                     <div class="relative w-full h-full">
-                         <h2 class="font-Marcellus text-gray-100 text-4xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                             06
-                         </h2>
-                         <h3 class="font-Marcellus text-gray-100 text-lg absolute  bottom-1/4 left-1/2 transform -translate-x-1/2 translate-y-2/4">DEC</h3>
-                         <div class="rounded-full h-full w-full opacity-20 bg-gray-50"></div>
-                     </div>
-                    </div>
-                    <div class="absolute bottom-0 left-left5 transform translate-y-1/2">
-                        <img src="./public/images/u_calender.png" width="40%" alt="">
-                    </div>
-                     <div class="w-full h-full bg-TimelineBoxed rounded-xl flex justify-center items-center">
-                         <h2 class="text-xl text-gray-100 font-Noto">
-                             Shortlisted teams are announced!
-                         </h2>
-                     </div>
-                 </div>
-                 <div class="relative w-96 h-28 mt-24" data-scroll="1" data-scroll-direction="horizontal" data-scroll-speed="-6" data-scroll-delay="0.04">
-                    <div class="w-28 h-28 rounded-full flex justify-center items-center left-0 transform -translate-x-4/5 absolute">
-                     <div class="relative w-full h-full">
-                         <h2 class="font-Marcellus text-gray-100 text-4xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                             12|13
-                         </h2>
-                         <h3 class="font-Marcellus text-gray-100 text-lg absolute  bottom-1/4 left-1/2 transform -translate-x-1/2 translate-y-2/4">NOV</h3>
-                         <div class="rounded-full h-full w-full opacity-20 bg-gray-50"></div>
-                     </div>
-                    </div>
-                    <div class="absolute bottom-0 left-left5 transform translate-y-1/2">
-                        <img src="./public/images/u_calender.png" width="40%" alt="">
-                    </div>
-                     <div class="w-full h-full bg-TimelineBoxed rounded-xl flex flex-col justify-center items-center">
-                         <h2 class="text-xl text-gray-100 font-Noto">
-                            'Good To Go!'
-                         </h2>
-                         <h2 class="text-lg text-gray-100 font-Noto text-center">
-                            A Session for the Finalist Teams via Zoom Platform
-                         </h2>
-                     </div>
-                 </div>
-                 <div class="relative w-96 h-28 mt-24 mb-24" data-scroll="1" data-scroll-direction="horizontal" data-scroll-speed="6" data-scroll-delay="0.04">
-                    <div class="w-28 h-28 rounded-full flex justify-center items-center right-0 transform translate-x-4/5 absolute">
-                     <div class="relative w-full h-full">
-                         <h2 class="font-Marcellus text-gray-100 text-4xl absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                             09
-                         </h2>
-                         <h3 class="font-Marcellus text-gray-100 text-lg absolute  bottom-1/4 left-1/2 transform -translate-x-1/2 translate-y-2/4">NOV</h3>
-                         <div class="rounded-full h-full w-full opacity-20 bg-gray-50"></div>
-                     </div>
-                    </div>
-                    <div class="absolute bottom-0 left-left5 transform translate-y-1/2">
-                        <img src="./public/images/u_calender.png" width="40%" alt="">
-                    </div>
-                     <div class="w-full h-full bg-TimelineBoxed rounded-xl flex flex-col justify-center items-center">
-                         <h2 class="text-xl text-gray-100 font-Noto">
-                                HackX Jr : Final Event
-                         </h2>
-                         <h2 class="text-lg text-gray-100 font-Noto">
-                            via Zoom Platform
-                     </h2>
-                     </div>
-                 </div>
-        </section> -->
-        <!-- <section class="h-screen bg-gradient-to-tr from-StartColorSwag to-EndColorSwag relative" data-scroll-section="1" id="swag">
-            <div class="absolute w-4/5 h-36 bg-gray-50 flex justify-center items-center swag-line" data-scroll="1" data-scroll-speed="-20" data-scroll-direction="horizontal" data-scroll-delay="0.05" data-scroll-target="#swag">
-                <h1 class="uppercase font-BebasNeue text-gray-900 text-9xl">Make ideas Happen</h1>
-            </div>
-
-            <div class="absolute w-4/5 h-36 bg-gray-50 flex justify-center items-center swag-line2" data-scroll="1" data-scroll-speed="20" data-scroll-direction="horizontal" data-scroll-delay="0.08" data-scroll-target="#swag">
-                <h1 class="uppercase font-BebasNeue text-gray-900 text-9xl">Things to keep in mind</h1>
-            </div>
-        </section> -->
-       
-        <section class="h-twice bg-gray-800 flex justify-center" data-scroll-section="1"  id="fixTarget">
-            <div class="h-screen w-72 overflow-hidden relative" data-scroll="1" data-scroll-repeat="1">
-                <!-- <div class="absolute w-full h-full bg-red-700 z-10 top-0 transform -translate-y-full" ></div> -->
-                <div class="absolute w-full h-full bg-vision-bg-5s bg-cover visionBG" data-scroll="1" data-scroll-sticky="1" data-scroll-target="#fixTarget">
-                   <div class="w-full h-full relative">
-                    <h1 class="font-Marcellus text-gray-50 text-6xl absolute z-10 top-12 left-1/2 transform -translate-x-1/2">Vision</h1>
-                    <p class="w-full px-3 text-gray-50 font-Noto text-base text-center absolute top-1/2  transform -translate-y-1/4 z-10">Our vision is to be recognized as the pioneering platform for providing the school children of the country
-                        with an opportunity to bring forth their ideas and accelerate creation and development of new radical solutions.</p>
-                    <div class="w-ful h-full bg-gray-800 opacity-70"></div>
-                   </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="h-screen bg-yellow-200" data-scroll-section=""></section>
+    
+        
     </div>
+</div>
 </body>
+<script>
+     const Burger = document.querySelector('#Burger');
+    const SideBar = document.querySelector('#SideBR')
+    const Parent = document.querySelector('#ParentContainer')
+    const Logo = document.querySelector('#logo-img')
+
+    const Close = document.querySelector('#CloseButton')
+
+    Burger.addEventListener('click', () => {
+        SideBar.classList.add('sideBar')
+        SideBar.classList.remove('sideDefault')
+        Parent.classList.add('ParentMove')
+        Parent.classList.remove('ParentDefault')
+        Logo.classList.add('transit');
+        console.log('Working')
+    })
+
+    Close.addEventListener('click', () => {
+        SideBar.classList.remove('sideBar')
+        SideBar.classList.add('sideDefault')
+        Parent.classList.remove('ParentMove')
+        Parent.classList.add('ParentDefault')
+        Logo.classList.remove('transit');
+    })
+</script>
 <script src="./locomotive-scroll.min.js"></script>
 <script>
+
     (function () {
-        var scroll = new LocomotiveScroll({
-            el: document.querySelector('[data-scroll-container]'),
-            smooth: true,
-            lerp: 0.1,
-            multiplier: 0.5,
-        });
+      var scroll = new LocomotiveScroll({
+        el: document.querySelector("[data-scroll-container]"),
+        smooth: true,
+        lerp: 0.1,
+        multiplier: 1,
+        smartphone: {
+          smooth: true,
+        },
+      });
+
+      // scroll.on('call', func => {
+      //   console.log('Triggered First')
+      //   // $(document).trigger(HamburgerColor)
+      // })
     })();
 
-    var ball = document.getElementsByClassName('eye-ball-interact')
-    document.onmousemove = function(){
-        var x = event.clientX*100/window.innerWidth + "%";
-            var y = event.clientY*100 / window.innerHeight + "%";
+    // var ball = document.getElementsByClassName('eye-ball-interact')
+    // document.onmousemove = function(){
+    //     var x = event.clientX*100/window.innerWidth + "%";
+    //         var y = event.clientY*100 / window.innerHeight + "%";
 
-            for(var i=0; i<2; i++){
-                ball[i].style.left = x/2;
-                ball[i].style.top = y/2;
-                ball[i].style.transform = "translate(" + x + "," + y + ")";
-            }
-    }
+    //         for(var i=0; i<2; i++){
+    //             ball[i].style.left = x/2;
+    //             ball[i].style.top = y/2;
+    //             ball[i].style.transform = "translate(" + x + "," + y + ")";
+    //         }
+    // }
 </script>
 </html>
