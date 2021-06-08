@@ -3,7 +3,7 @@ const colors = require('tailwindcss/colors')
 module.exports = {
   purge: {
     // enabled: true,
-    // content: ['./index.html', './locomotive.html', 'iPhone.html'],
+    // content: ['./index.html', './locomotive.html', './iPhone.html', './Test.html'],
   },
   presets: [],
   darkMode: false, // or 'media' or 'class'
@@ -14,9 +14,14 @@ module.exports = {
         'mascotty-eye' : "url('../public/images/Mas/minion-eye.png')",
         'mascotty-mobile' : "url('../public/images/Mas/mascotty-mobile.png')",
         'vision-bg-5s': "url('../public/images/vision-bg/bg-vison-large-5s.png')",
+        'mission-bg-5s': "url('../public/images/mission-bg/bg-mission-large-5s.png')",
+        'coordinator-5s': "url('../public/images/coordinators/cordinator-5s.png')",
       })
     },
     screens: {
+      '5s': '325px',
+      'iPhones': '380px',
+      'pixel': '409px',
       small: '370px',
       sm: '640px',
       md: '768px',
@@ -24,6 +29,7 @@ module.exports = {
       tab: '1030px',
       xl: '1280px',
       '2xl': '1536px',
+      '3xl': '1920px',
     },
     colors: {
       TimelineBoxed: '#124E53',
@@ -74,6 +80,9 @@ module.exports = {
 
       finaleStartingColor: '#434343',
       finaleEndColor: '#000000',
+
+      eventPartnerStartingColor: '#93A5CF',
+      eventPartnersEndColor: '#93CCD3',
 
       black: colors.black,
       white: colors.white,
@@ -495,6 +504,12 @@ module.exports = {
       '5/6': '83.333333%',
       full: '100%',
       screen: '100vh',
+      '60vh': '60vh',
+      '70vh': '70vh',
+      '75vh': '75vh',
+      '80vh': '80vh',
+      '85vh': '85vh',
+      '90vh': '90vh',
       height110: '110vh',
       twice: '200vh',
     }),

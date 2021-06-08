@@ -7,22 +7,141 @@
     <title>hackX Jr 2021</title>
     <link rel="stylesheet" href="./public/style.css" />
     <link rel="stylesheet" href="./public/styles/circles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./base.css" />
 
     <style>
+
+body{
+            background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ background-blend-mode: multiply;
+        }
+
+        .nav-bg{
+            background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
+ background-blend-mode: multiply;
+        }
+
+
         .visionBG{
             background-position: 50%;
         }
+
+        .partner-text-wrapper {
+          left: -20%;
+          white-space: nowrap;
+          transition: 0.1s ease-out;
+          animation: float-left 40s linear infinite;
+          animation-delay: 0.3s;
+          padding: 10px 0;
+          z-index: 20;
+          color: black;
+        }
+
+        @keyframes float-left {
+          0%{
+            left: -20%;
+          }
+          50%{
+            left: -100%;
+          }
+          100%{
+            left: -20%;
+          }
+        }
+
+
+        .sideBar {
+            transition:  all 0.4s ease-out;
+            animation: slideRight 0.4s forwards ease-in-out;
+            z-index: 50;
+        }
+
+        @keyframes slideRight {
+            from{
+                left: -100%;
+                opacity: 0;
+            }
+            to{
+                left: -20%;
+                opacity: 1;
+            }
+        }
+
+        .sideDefault {
+            transition:  all 0.4s ease-out;
+            animation: slideLeft 0.4s forwards ease-in-out;
+            z-index: 50;
+        }
+
+        @keyframes slideLeft{
+            from{
+                left: -20%;
+                opacity: 1;
+            }
+            to{
+                left: -100%;
+                opacity: 0;
+            }
+        }
+
+        .ParentMove{
+            transition: all 0.6s ease-out;
+            animation: GoRight 0.4s forwards ease-in-out;
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            /* transform: scale(0.8); */
+            transform: scaleX(0.7);
+            border-radius: 40px;
+        }
+
+        @keyframes GoRight {
+            from{
+                left: 0;
+                top: 0;
+            }
+            to{
+                top: 20%;
+                left: 80%;
+            }
+        }
+
+        .ParentDefault{
+            transition: all 0.6s ease-out;
+            position: fixed;
+            width: 100%;
+            z-index: 1;
+            animation: GoLeft 0.4s forwards ease-in-out;
+            transform: scaleX(1);
+            border-radius: 0px;
+        }
+
+        @keyframes GoLeft {
+            from{
+                left: 80%;
+                top: 20%;
+            }
+            to{
+                left: 0;
+                top: 0;
+            }
+        }
+
+        .transit{
+            transition: all 0.1s ease-in-out;
+            opacity: 0;
+        }
+
     </style>
   </head>
   <body>
-    <div class="w-full h-full">
       <div class="w-full fixed z-50">
         <nav class="w-full flex justify-between mt-4 px-3">
           <div>
-            <img src="./public/images/Logos/hackxjrLogo-5s.png" alt="logo-5s" />
+            <img src="./public/images/Logos/hackxjrLogo-5s.png"  id="logo-img" alt="logo-5s" />
           </div>
-          <div class="">
+          <div class="" id="Burger">
             <img
               src="./public/images/BurgerIcons/Burger-5s.png"
               alt="burger-5s"
@@ -30,9 +149,40 @@
           </div>
         </nav>
       </div>
-      <main
-        class="bg-gradient-to-br from-stratingColorGradient to-endColorGradient"
-        data-scroll-container
+      
+
+
+      <div class="relative w-screen h-screen">
+
+      <section class="w-full h-screen nav-bg fixed z-10 -left-full" id="SideBR">
+            <div class="w-full flex items-end flex-col relative">
+                <div class="absolute w-full top-4/5 transform -translate-y-4/5">
+                    <img src="./public/images/Mascotty-New/jr-5s.png" alt="">
+                </div>
+                <div class="mr-5" id="CloseButton">
+                    <img
+                      src="./public/images/arrows/left-arrow.png"
+                      alt="burger-5s"
+                    />
+                  </div>
+                  <div class="w-full flex justify-end">
+                    <ul class="text-2xl font-Noto text-gray-100 flex flex-col items-end h-96 justify-around w-full mt-8 z-50">
+                        <li class="cursor-pointer"><a href="./locomotive.html">Home</a></li>
+                        <li class="cursor-pointer">Info</li>
+                        <li class="cursor-pointer"><a href="iPhone.html#Timeline">Schedule</a></li>
+                        <li class="cursor-pointer">Rules</li>
+                        <li class="cursor-pointer">About</li>
+                        <li class="cursor-pointer">Register</li>
+                        <li class="cursor-pointer">Contact Us</li>
+                    </ul>
+                  </div>
+            </div>
+        </section>
+
+      <div
+        class="bg-gradient-to-br from-stratingColorGradient to-endColorGradient overflow-hidden"
+        data-scroll-container="1"
+        id="ParentContainer"
       >
         <!-- Hero Section -->
         <section
@@ -59,7 +209,7 @@
             <div class="w-full absolute top-9/10 flex justify-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-10 w-10 text-gray-50 motion-safe:animate-bounce"
+                class="h-10 w-10 text-gray-50 motion-safe:animate-bounce hamburger"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -307,6 +457,7 @@
                   to-awarenessBoxEndColor
                   w-72
                   h-height110
+                  5s:h-90vh
                   opacity-60
                   rounded-2xl
                 "
@@ -344,6 +495,7 @@
                   to-awarenessBoxEndColor
                   w-72
                   h-height110
+                  5s:h-90vh
                   opacity-60
                   rounded-2xl
                 "
@@ -363,6 +515,7 @@
             flex flex-col
           "
           data-scroll-section="1"
+          id="Timeline"
         >
           <div
             class="w-72 flex relative justify-start px-3 mt-16"
@@ -1214,33 +1367,220 @@
         </section>
         <!-- End of Finale -->
 
+        <!-- About Us -->
         <section class="h-auto flex flex-col items-center" data-scroll-section="1" id="fixTarget">
-          <div class="w-full flex flex-col items-center text-gray-50 mt-16 mb-16">
+          <div class="w-full flex flex-col items-center text-gray-50 mt-16 mb-10">
             <h1 class="uppercase text-7xl font-BebasNeue text-center">
               About Us
             </h1>
           </div>
-        </section>
+          <div class="h-96 w-72 overflow-hidden relative">
+            <div class="absolute w-full h-full bg-vision-bg-5s bg-cover">
+               <div class="w-full h-full relative">
+                <h1 class="font-Marcellus text-gray-50 text-6xl absolute z-10 top-12 left-1/2 transform -translate-x-1/2">Vision</h1>
+                <p class="w-full px-3 text-gray-50 font-Noto text-base text-center absolute top-1/2  transform -translate-y-1/4 z-10">Our vision is to be recognized as the pioneering platform for providing the school children of the country
+                    with an opportunity to bring forth their ideas and accelerate creation and development of new radical solutions.</p>
+                <div class="w-ful h-full bg-gray-800 opacity-70"></div>
+               </div>
+            </div>
+        </div>
 
-        <section class="h-twice bg-gray-800 flex justify-center" data-scroll-section="1"  id="fixTarget">
-            <div class="h-screen w-72 overflow-hidden relative mt-20" data-scroll="1" data-scroll-repeat="1">
-                <!-- <div class="absolute w-full h-full bg-red-700 z-10 top-0 transform -translate-y-full" ></div> -->
-                <div class="absolute w-full h-full bg-vision-bg-5s bg-cover visionBG" data-scroll="1" data-scroll-sticky="1" data-scroll-target="#fixTarget">
-                   <div class="w-full h-full relative">
-                    <h1 class="font-Marcellus text-gray-50 text-6xl absolute z-10 top-12 left-1/2 transform -translate-x-1/2">Vision</h1>
-                    <p class="w-full px-3 text-gray-50 font-Noto text-base text-center absolute top-1/2  transform -translate-y-1/4 z-10">Our vision is to be recognized as the pioneering platform for providing the school children of the country
-                        with an opportunity to bring forth their ideas and accelerate creation and development of new radical solutions.</p>
-                    <div class="w-ful h-full bg-gray-800 opacity-70"></div>
-                   </div>
+        <div class="h-96 w-72 overflow-hidden relative mt-14">
+          <div class="absolute w-full h-full bg-mission-bg-5s bg-cover">
+             <div class="w-full h-full relative">
+              <h1 class="font-Marcellus text-gray-50 text-6xl absolute z-10 top-12 left-1/2 transform -translate-x-1/2">Mission</h1>
+              <p class="w-full px-3 text-gray-50 font-Noto text-base text-center absolute top-1/2  transform -translate-y-1/4 z-10">Our mission is to spark innovative ideas and develop a creative and entrepreneurial culture among the school community, who will in turn contribute to global knowledge and economy, by exposing them to the corporate sector.</p>
+              <div class="w-ful h-full bg-gray-800 opacity-70"></div>
+             </div>
+          </div>
+      </div>
+
+      <div class="w-full flex flex-col items-center mt-10 mb-16">
+        <div class="w-72">
+          <img src="./public/images/Logos/uok-images.png" alt="">
+        </div>
+        <div class="w-full px-4 text-gray-50 flex flex-col items-center mt-10">
+          <h1 class="font-Marcellus text-6xl text-center">About Us</h1>
+          <p class="font-Noto text-base text-center mt-8">
+            HackX Jr is organized by the Industrial Management Science Students' Association (IMSSA), which is the student body of the Department of Industrial Management of the University of Kelaniya.
+          </p>
+        </div>
+      </div>
+        </section>
+        <!-- End of About Us -->
+
+        <!-- Online Event Partner -->
+        <section class="h-auto bg-gradient-to-tr from-eventPartnerStartingColor to-eventPartnersEndColor" data-scroll-section="1">
+          <div class="w-full flex justify-center">
+            <div class="w-72 h-56 rounded-2xl bg-gray-50 flex items-center justify-center mt-14 mb-16 relative overflow-hidden px-1">
+              <div class="w-full flex justify-center">
+                <img src="./public/images/Logos/event-partner-logo-5s.png" alt="Event Partner Logo">
+              </div>
+                <div class="partner-text-wrapper absolute bottom-2 font-Noto px-3">Online Event Partner &mdash; Online Event Partner &mdash; Online Event Partner &mdash; Online Event Partner &mdash; Online Event Partner &mdash; Online Event Partner &mdash; Online Event Partner &mdash; Online Event Partner &mdash; Online Event Partner &mdash; Online Event Partner &mdash; </div>
+            </div>
+          </div>
+        </section>
+        <!-- End of Online Event Partner -->
+
+        <!-- Coordinators -->
+        <section class="h-auto" data-scroll-section="1">
+          <div class="w-full flex flex-col items-center">
+
+            <div class="w-full flex justify-center mt-14">
+              <h1 class="font-BebasNeue text-gray-50 text-5xl text-center">Coordinators</h1>
+            </div>
+
+            <!-- Card -->
+            <div class="w-60 h-80 rounded-3xl bg-gray-50 mt-8 overflow-hidden">
+              <div class="w-full h-48 bg-coordinator-5s bg-cover"></div>
+              <div class="w-full mt-2 flex flex-col items-center text-gray-800 font-Noto">
+                <h1 class="text-2xl font-Marcellus text-center">Thamindu Dilhara</h1>
+                <p class="text-base mt-1">Main Coordinator</p>
+                <a href="" class="text-xl mt-2">+94 076 125 1245</a>
+              </div>
+            </div>
+            <!-- End of Card -->
+
+             <!-- Card -->
+             <div class="w-60 h-80 rounded-3xl bg-gray-50 mt-10 overflow-hidden">
+              <div class="w-full h-48 bg-coordinator-5s bg-cover"></div>
+              <div class="w-full mt-2 flex flex-col items-center text-gray-800 font-Noto">
+                <h1 class="text-2xl font-Marcellus text-center">Thamindu Dilhara</h1>
+                <p class="text-base mt-1">Main Coordinator</p>
+                <a href="" class="text-xl mt-2">+94 076 125 1245</a>
+              </div>
+            </div>
+            <!-- End of Card -->
+
+            <!-- Card -->
+            <div class="w-60 h-80 rounded-3xl bg-gray-50 mt-10 overflow-hidden">
+              <div class="w-full h-48 bg-coordinator-5s bg-cover"></div>
+              <div class="w-full mt-2 flex flex-col items-center text-gray-800 font-Noto">
+                <h1 class="text-2xl font-Marcellus text-center">Thamindu Dilhara</h1>
+                <p class="text-base mt-1">Main Coordinator</p>
+                <a href="" class="text-xl mt-2">+94 076 125 1245</a>
+              </div>
+            </div>
+            <!-- End of Card -->
+
+            <!-- Card -->
+            <div class="w-60 h-80 rounded-3xl bg-gray-50 mt-10 overflow-hidden">
+              <div class="w-full h-48 bg-coordinator-5s bg-cover"></div>
+              <div class="w-full mt-2 flex flex-col items-center text-gray-800 font-Noto">
+                <h1 class="text-2xl font-Marcellus text-center">Thamindu Dilhara</h1>
+                <p class="text-base mt-1">Main Coordinator</p>
+                <a href="" class="text-xl mt-2">+94 076 125 1245</a>
+              </div>
+            </div>
+            <!-- End of Card -->
+
+            <!-- Card -->
+            <div class="w-60 h-80 rounded-3xl bg-gray-50 mt-10 mb-16 overflow-hidden">
+              <div class="w-full h-48 bg-coordinator-5s bg-cover"></div>
+              <div class="w-full mt-2 flex flex-col items-center text-gray-800 font-Noto">
+                <h1 class="text-2xl font-Marcellus text-center">Thamindu Dilhara</h1>
+                <p class="text-base mt-1">Main Coordinator</p>
+                <a href="" class="text-xl mt-2">+94 076 125 1245</a>
+              </div>
+            </div>
+            <!-- End of Card -->
+            
+          </div>
+        </section>
+        <!-- End of Coordinators -->
+
+        <!-- Follow Us -->
+        <section class="h-auto bg-gradient-to-tr from-finaleStartingColor to-finaleEndColor" data-scroll-section="1">
+          <div class="w-full h-full flex">
+            <div class="w-full flex items-center flex-col mt-14 mb-16">
+                <h1 class="text-center text-gray-50 font-Marcellus text-5xl">Folow Us</h1>
+                <div class="w-full flex justify-around items-center text-4xl text-gray-50 mt-8">
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-youtube"></i>
                 </div>
             </div>
+          </div>
         </section>
+        <!-- End of Follow Us -->
 
-        <section class="h-twice bg-gray-900"></section>
-      </main>
+        <!-- Footer -->
+        <section class="h-auto bg-gray-50" data-scroll-section="1">
+          <div class="w-full h-full flex flex-col">
+            <div class="w-full flex flex-col mt-14 items-center text-gray-800 font-Noto">
+              <h1 class="text-4xl text-center">General Links</h1>
+              <p class="text-center px-5 text-base mt-4">Department of Industrial Management
+                University of Kelaniya
+                </p>
+                <div class="w-full flex justify-center mt-8">
+                  <img src="./public/images/Logos/uok-images.png" alt="">
+                </div>
+            </div>
+
+            <div class="w-full flex flex-col mt-14 items-center text-gray-800 font-Noto">
+              <h1 class="text-4xl text-center">General information</h1>
+              <p class="text-center px-5 text-base mt-4">Industrial Management Science Students' Association.
+              </p>
+              <p class="text-center px-5 text-base mt-4">Department of Industrial Management,
+                University of Kelaniya,
+                Dalugama
+              </p>
+            </div>
+
+            <div class="w-full flex flex-col mt-14 items-center text-gray-800 font-Noto mb-28">
+              <p class="text-center px-5 text-base mt-4"><a href="#">
+                Phone: +94 11 290 3282-5
+              </a>
+              </p>
+              <p class="text-center px-5 text-base mt-4">
+                <a href="#">
+                  hackjr.mit@gmail.com
+                </a>
+              </p>
+              <div class="w-full justify-center flex text-gray-800 mt-8">
+                <a href="#" class="w-full flex items-center justify-center">
+                  <i class="fab fa-facebook mr-5 text-2xl"></i>
+                  <p class="text-xl">HackXJunior</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End of Footer -->
+
+      </div>
+
     </div>
   </body>
+  <script>
+    const Burger = document.querySelector('#Burger');
+   const SideBar = document.querySelector('#SideBR')
+   const Parent = document.querySelector('#ParentContainer')
+   const Logo = document.querySelector('#logo-img')
+
+   const Close = document.querySelector('#CloseButton')
+
+   Burger.addEventListener('click', () => {
+       SideBar.classList.add('sideBar')
+       SideBar.classList.remove('sideDefault')
+       Parent.classList.add('ParentMove')
+       Parent.classList.remove('ParentDefault')
+       Logo.classList.add('transit');
+       Burger.classList.add('opacity-0')
+       console.log('Working')
+   })
+
+   Close.addEventListener('click', () => {
+       SideBar.classList.remove('sideBar')
+       SideBar.classList.add('sideDefault')
+       Parent.classList.remove('ParentMove')
+       Parent.classList.add('ParentDefault')
+       Logo.classList.remove('transit');
+       Burger.classList.remove('opacity-0')
+   })
+</script>
   <script src="./locomotive-scroll.min.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
   <script>
     (function () {
       var scroll = new LocomotiveScroll({
@@ -1252,6 +1592,19 @@
           smooth: true,
         },
       });
+
+      // scroll.on('call', func => {
+      //   console.log('Triggered First')
+      //   // $(document).trigger(HamburgerColor)
+      // })
     })();
+
+
+    // const triggerHamburger = () => {
+    //   const hamburger = document.querySelector('.hamburger')
+    //     hamburger.classList.remove('text-gray-50');
+    //     hamburger.classList.add('text-gray-800');
+    //     console.log('Triggered')
+    // }
   </script>
 </html>
