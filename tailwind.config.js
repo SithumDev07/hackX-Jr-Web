@@ -21,7 +21,7 @@ module.exports = {
     screens: {
       '5s': '325px',
       'iPhones': '380px',
-      'pixel': '420px',
+      'pixel': '409px',
       small: '370px',
       sm: '640px',
       md: '768px',
@@ -508,6 +508,7 @@ module.exports = {
       '70vh': '70vh',
       '75vh': '75vh',
       '80vh': '80vh',
+      '85vh': '85vh',
       '90vh': '90vh',
       height110: '110vh',
       twice: '200vh',
