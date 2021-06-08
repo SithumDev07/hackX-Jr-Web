@@ -2,8 +2,8 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: {
-    // enabled: true,
-    // content: ['./index.html', './locomotive.html', 'iPhone.html'],
+    enabled: true,
+    content: ['./index.html', './locomotive.html', './iPhone.html', './Test.html'],
   },
   presets: [],
   darkMode: false, // or 'media' or 'class'
@@ -19,6 +19,9 @@ module.exports = {
       })
     },
     screens: {
+      '5s': '325px',
+      'iPhones': '380px',
+      'pixel': '420px',
       small: '370px',
       sm: '640px',
       md: '768px',
@@ -26,6 +29,7 @@ module.exports = {
       tab: '1030px',
       xl: '1280px',
       '2xl': '1536px',
+      '3xl': '1920px',
     },
     colors: {
       TimelineBoxed: '#124E53',
@@ -500,6 +504,11 @@ module.exports = {
       '5/6': '83.333333%',
       full: '100%',
       screen: '100vh',
+      '60vh': '60vh',
+      '70vh': '70vh',
+      '75vh': '75vh',
+      '80vh': '80vh',
+      '90vh': '90vh',
       height110: '110vh',
       twice: '200vh',
     }),

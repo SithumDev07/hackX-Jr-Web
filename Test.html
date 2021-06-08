@@ -154,7 +154,7 @@ body{
 
       <div class="relative w-screen h-screen">
 
-      <section class="w-full h-screen nav-bg fixed z-10 -left-full" id="SideBR">
+      <section class="w-full h-screen nav-bg fixed z-10 -left-full" id="SideBR" data-scroll="1">
             <div class="w-full flex items-end flex-col relative">
                 <div class="absolute w-full top-4/5 transform -translate-y-4/5">
                     <img src="./public/images/Mascotty-New/jr-5s.png" alt="">
@@ -167,13 +167,13 @@ body{
                   </div>
                   <div class="w-full flex justify-end">
                     <ul class="text-2xl font-Noto text-gray-100 flex flex-col items-end h-96 justify-around w-full mt-8 z-50">
-                        <li class="cursor-pointer"><a href="./locomotive.html">Home</a></li>
+                        <li class="cursor-pointer" id="NavHome"><a href="#Home">Home</a></li>
                         <li class="cursor-pointer">Info</li>
-                        <li class="cursor-pointer"><a href="iPhone.html#Timeline">Schedule</a></li>
+                        <li class="cursor-pointer" id="NavTimeline"><a href="#Timeline">Schedule</a></li>
                         <li class="cursor-pointer">Rules</li>
-                        <li class="cursor-pointer">About</li>
+                        <li class="cursor-pointer" id="NavAbout"><a href="#AboutUs">About</a></li>
                         <li class="cursor-pointer">Register</li>
-                        <li class="cursor-pointer">Contact Us</li>
+                        <li class="cursor-pointer" id="NavContact"><a href="#ContactUs">Contact Us</a></li>
                     </ul>
                   </div>
             </div>
@@ -186,7 +186,7 @@ body{
       >
         <!-- Hero Section -->
         <section
-          class="h-screen w-full overflow-hidden"
+          class="h-screen w-full overflow-hidden hidden xl:flex"
           data-scroll-section="1"
         >
           <div class="w-full flex justify-center h-full items-center relative">
@@ -225,6 +225,50 @@ body{
           </div>
         </section>
 
+
+        <!-- Mobile Home -->
+
+        <section
+        class="h-screen w-full overflow-hidden"
+        data-scroll-section="1"
+        id="Home"
+      >
+        <div class="w-full flex justify-center h-full items-center relative">
+          <div
+            class="w-full h-1/2 relative flex items-center justify-center"
+            
+          >
+            <div class="w-72 h-72 absolute rotator"></div>
+            <div class="w-72 h-72 absolute rotator"></div>
+            <div class="w-72 h-72 absolute rotator"></div>
+            <div class="w-full flex justify-center z-10">
+              <img
+                src="./public/images/Characters/5s.png"
+                alt="mascotty-5s"
+              />
+            </div>
+          </div>
+
+          <div class="w-full absolute top-9/10 flex justify-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-10 w-10 text-gray-50 motion-safe:animate-bounce hamburger"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
+              />
+            </svg>
+          </div>
+        </div>
+      </section>
+        <!-- End of Mobile Home -->
+
         <section class="h-auto flex" data-scroll-section="1">
           <div
             class="w-full flex justify-center mt-16 flex-col items-center mb-20"
@@ -262,7 +306,9 @@ body{
             bg-gradient-to-tr
             from-whatIsStartingGradient
             to-whatIsEndingGradient
-            flex flex-col
+            xl:flex flex-col
+            hidden
+
           "
           data-scroll-section="1"
           id="WhatIs"
@@ -304,6 +350,52 @@ body{
         </section>
         <!-- End of What is hackX -->
 
+        <!-- What is mobile -->
+
+        <section
+        class="
+          h-auto
+          bg-gradient-to-tr
+          from-whatIsStartingGradient
+          to-whatIsEndingGradient
+          flex flex-col
+        "
+        data-scroll-section="1"
+        id="WhatIs"
+      >
+        <div class="w-full flex justify-center mt-16">
+          <img
+            src="./public/images/Mascotty-New/jr-5s.png"
+            alt="Mascotte-New"
+          />
+        </div>
+        <div
+          class="w-full flex flex-col items-center text-gray-50 mb-16 h-full"
+        >
+          <h1 class="text-4xl font-Noto">What is hackX Jr?</h1>
+          <div class="px-4 font-Noto text-lg mt-14 flex flex-col text-center">
+            <p>
+              HackX Jr is an inter-school hackathon which provides a platform
+              for school students to transform their ideas into reality. It
+              promotes school students to build technology-based solutions to
+              problems they see in the society.
+            </p>
+            <p class="mt-8">
+              Participants are enabled the opportunity to develop their soft
+              skills and find inspiration to their creativity as well as
+              problem-solving capabilities through this competition. It paves
+              the path for school children to be introduced to the IT pathway,
+              create interest and eventually assess the possibilities as well
+              as benefits of IT – based entrepreneurship. It also provides a
+              platform for industries to address the school children, evaluate
+              their potential and benefit from their unbiased and open-minded
+              solutions.
+            </p>
+          </div>
+        </div>
+      </section>
+        <!-- End of What is Mobile -->
+
         <!-- Awards Section -->
         <section
           class="
@@ -311,7 +403,8 @@ body{
             bg-gradient-to-tr
             from-awardsStartingColor
             to-awardsEndColor
-            flex
+            xl:flex
+            hidden
           "
           data-scroll-section="1"
           id="Awards"
@@ -355,6 +448,54 @@ body{
           </div>
         </section>
         <!-- End of Awards Section -->
+
+        <!-- Awards Mobile -->
+        <section
+          class="
+            h-auto
+            bg-gradient-to-tr
+            from-awardsStartingColor
+            to-awardsEndColor
+            flex
+          "
+          data-scroll-section="1"
+          id="Awards"
+        >
+          <div
+            class="
+              w-full
+              flex
+              justify-center
+              items-center
+              flex-col
+              relative
+              mb-24
+            "
+          >
+            <div class="w-4/5 flex justify-center mt-12">
+              <img src="./public/images/awards/Awards-5s.png" alt="awards-5s" />
+            </div>
+            <div class="w-full flex justify-end">
+              <img
+                src="./public/images/cups/cup-5s.png"
+                alt="Cup-5s"
+              />
+            </div>
+            <div class="w-full absolute top-2/3 px-4">
+              <div class="w-full flex justify-start">
+                <img src="./public/images/quotes/quote-left-5s.png" alt="" />
+              </div>
+              <p class="text-2xl text-gray-50 font-PlayFair px-4 my-4">
+                Winning takes precedence over all. There’s no gray area. No
+                almosts.
+              </p>
+              <div class="w-full flex justify-end">
+                <img src="./public/images/quotes/quote-right-5s.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End of Awards Mobile -->
 
         <!-- Competition Details -->
         <section
@@ -1040,7 +1181,8 @@ body{
             bg-gradient-to-tr
             from-scoringStartingColor
             to-scoringEndColor
-            flex
+            xl:flex
+            hidden
           "
           data-scroll-section="1"
           id="scoring"
@@ -1100,6 +1242,65 @@ body{
         </section>
         <!-- End of Scoring -->
 
+        <!-- Scoring Mobile -->
+        <section
+          class="
+            h-auto
+            bg-gradient-to-tr
+            from-scoringStartingColor
+            to-scoringEndColor
+            flex
+          "
+          data-scroll-section="1"
+          id="scoring"
+        >
+          <div class="w-full mt-12 mb-16 relative">
+            <div class="w-full flex items-center flex-col text-gray-50">
+              <h1
+                class="font-BebasNeue text-7xl uppercase z-20"
+              >
+                Scoring
+              </h1>
+              <h2 class="font-Marcellus text-5xl mt-8 z-20">Concept</h2>
+              <h3 class="font-Noto text-xl mt-5 z-20">
+                Marks will be allocated for,
+              </h3>
+              <div class="font-Noto text-base w-4/5 px-2 mt-4 z-20">
+                <p>Novelty / Distinctively competency</p>
+                <p>Societal impact</p>
+                <p>Feasibility of the idea</p>
+              </div>
+
+              <h2 class="font-Marcellus text-5xl mt-8 z-20">Presentation</h2>
+              <h3 class="font-Noto text-xl mt-5 z-20">
+                Marks will be allocated for,
+              </h3>
+              <div class="font-Noto text-base w-4/5 px-2 mt-4 z-20">
+                <p>Clarity and completeness</p>
+                <p>Sustainability</p>
+                <p>Business/marketing plan</p>
+                <p>Adhering to the time constraints</p>
+              </div>
+            </div>
+            <div
+              class="
+                absolute
+                w-72
+                h-72
+                rounded-full
+                shadow-2xl
+                bg-scoringCircleColor
+                left-0
+                transform
+                -translate-x-1/2
+                top-0
+                z-0
+              "
+            ></div>
+          </div>
+        </section>
+        <!-- End of Scoring Mobile -->
+
         <!-- Team Organization -->
         <section
           class="
@@ -1107,7 +1308,8 @@ body{
             bg-gradient-to-tr
             from-scoringEndColor
             to-scoringStartingColor
-            flex
+            xl:flex
+            hidden
           "
           data-scroll-section="1"
           id="TeamOrg"
@@ -1167,6 +1369,66 @@ body{
         </section>
         <!-- End of Team Organization -->
 
+        <!-- Team Org mobile -->
+
+        <section
+          class="
+            h-auto
+            bg-gradient-to-tr
+            from-scoringEndColor
+            to-scoringStartingColor
+            flex
+          "
+          data-scroll-section="1"
+          id="TeamOrg"
+        >
+          <div class="w-full mt-12 mb-16 relative">
+            <div class="w-full flex items-center flex-col text-gray-50">
+              <h1
+                class="font-BebasNeue text-7xl uppercase z-20 text-center"
+              >
+                Team Organization
+              </h1>
+              <div class="font-Noto text-base w-full px-4 mt-12 z-20">
+                <p>A team should consist of a maximum of five members.</p>
+                <p>
+                  Every group must appoint a mentor for the team, preferably the
+                  teacher-in-charge of A/L ICT subject stream, or a teacher of a
+                  similar capacity.
+                </p>
+                <p>
+                  No participant is allowed to represent two groups. Inclusion
+                  of the same member in two different teams will lead to
+                  automatic disqualification of both groups.
+                </p>
+                <p>
+                  Participants are encouraged to design their own promotional
+                  material for their team.
+                </p>
+                <p>
+                  Participants can choose an appropriate title for their team.
+                </p>
+              </div>
+            </div>
+            <div
+              class="
+                absolute
+                w-72
+                h-72
+                rounded-full
+                shadow-2xl
+                bg-teamOrgCircleColor
+                right-0
+                transform
+                translate-x-1/2
+                top-0
+                z-0
+              "
+            ></div>
+          </div>
+        </section>
+        <!-- End of team Org Mobile -->
+
         <!-- Application Process -->
         <section
           class="
@@ -1174,7 +1436,8 @@ body{
             bg-gradient-to-tr
             from-whatIsStartingGradient
             to-whatIsEndingGradient
-            flex
+            xl:flex
+            hidden
           "
           data-scroll-section="1"
           id="Application"
@@ -1233,6 +1496,65 @@ body{
           </div>
         </section>
         <!-- End of Application Process -->
+
+        <!-- Application Process Mobile -->
+        <section
+        class="
+          h-auto
+          bg-gradient-to-tr
+          from-whatIsStartingGradient
+          to-whatIsEndingGradient
+          flex
+        "
+        data-scroll-section="1"
+        id="Application"
+      >
+        <div class="w-full mt-12 mb-16 relative">
+          <div class="w-full flex items-center flex-col text-gray-50">
+            <h1
+              class="font-BebasNeue text-7xl uppercase z-20 text-center"
+            >
+              Application Process
+            </h1>
+            <div class="font-Noto text-base w-full px-4 mt-12 z-20">
+              <p>A team should consist of a maximum of five members.</p>
+              <p>
+                Every group must appoint a mentor for the team, preferably the
+                teacher-in-charge of A/L ICT subject stream, or a teacher of a
+                similar capacity.
+              </p>
+              <p>
+                No participant is allowed to represent two groups. Inclusion
+                of the same member in two different teams will lead to
+                automatic disqualification of both groups.
+              </p>
+              <p>
+                Participants are encouraged to design their own promotional
+                material for their team.
+              </p>
+              <p>
+                Participants can choose an appropriate title for their team.
+              </p>
+            </div>
+          </div>
+          <div
+            class="
+              absolute
+              w-72
+              h-72
+              rounded-full
+              shadow-2xl
+              bg-applicationCircleColor
+              left-0
+              transform
+              -translate-x-1/2
+              top-0
+              z-0
+            "
+          ></div>
+        </div>
+      </section>
+        <!-- End of Application Process mobile -->
 
         <!-- Awareness Session -->
         <section
@@ -1368,7 +1690,7 @@ body{
         <!-- End of Finale -->
 
         <!-- About Us -->
-        <section class="h-auto flex flex-col items-center" data-scroll-section="1" id="fixTarget">
+        <section class="h-auto flex flex-col items-center" data-scroll-section="1" id="AboutUs">
           <div class="w-full flex flex-col items-center text-gray-50 mt-16 mb-10">
             <h1 class="uppercase text-7xl font-BebasNeue text-center">
               About Us
@@ -1423,7 +1745,7 @@ body{
         <!-- End of Online Event Partner -->
 
         <!-- Coordinators -->
-        <section class="h-auto" data-scroll-section="1">
+        <section class="h-auto" data-scroll-section="1" id="ContactUs">
           <div class="w-full flex flex-col items-center">
 
             <div class="w-full flex justify-center mt-14">
@@ -1578,6 +1900,9 @@ body{
        Logo.classList.remove('transit');
        Burger.classList.remove('opacity-0')
    })
+
+
+
 </script>
   <script src="./locomotive-scroll.min.js"></script>
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
@@ -1593,18 +1918,32 @@ body{
         },
       });
 
-      // scroll.on('call', func => {
-      //   console.log('Triggered First')
-      //   // $(document).trigger(HamburgerColor)
-      // })
+      const TimelineNav = document.querySelector('#NavTimeline')
+        TimelineNav.addEventListener('click', () => {
+            console.log('navigating T Timeline')
+            scroll.scrollTo('#Timeline', {
+                
+            })
+        })
+
+        const Home = document.querySelector('#NavHome')
+        Home.addEventListener('click', () => {
+            console.log('navigating T Home')
+            scroll.scrollTo('#Home', {})
+        })
+
+        const About = document.querySelector('#NavAbout')
+        About.addEventListener('click', () => {
+            console.log('navigating T About')
+            scroll.scrollTo('#AboutUs', {})
+        })
+
+        const Contact = document.querySelector('#NavContact')
+        Contact.addEventListener('click', () => {
+            console.log('navigating T Contact')
+            scroll.scrollTo('#ContactUs', {})
+        })
     })();
 
-
-    // const triggerHamburger = () => {
-    //   const hamburger = document.querySelector('.hamburger')
-    //     hamburger.classList.remove('text-gray-50');
-    //     hamburger.classList.add('text-gray-800');
-    //     console.log('Triggered')
-    // }
   </script>
 </html>
