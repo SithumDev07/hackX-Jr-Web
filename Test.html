@@ -2341,26 +2341,26 @@ body{
         <!-- About Us -->
         <section class="h-auto flex flex-col items-center" data-scroll-section="1" id="AboutUs">
           <div class="w-full flex flex-col items-center text-gray-50 mt-16 mb-10">
-            <h1 class="uppercase text-7xl font-BebasNeue text-center">
+            <h1 class="uppercase text-7xl md:text-8xl font-BebasNeue text-center">
               About Us
             </h1>
           </div>
-          <div class="h-96 w-72 overflow-hidden relative">
+          <div class="h-96 w-72 md:w-3/5 overflow-hidden relative">
             <div class="absolute w-full h-full bg-vision-bg-5s bg-cover">
                <div class="w-full h-full relative">
-                <h1 class="font-Marcellus text-gray-50 text-6xl absolute z-10 top-12 left-1/2 transform -translate-x-1/2">Vision</h1>
-                <p class="w-full px-3 text-gray-50 font-Noto text-base text-center absolute top-1/2  transform -translate-y-1/4 z-10">Our vision is to be recognized as the pioneering platform for providing the school children of the country
+                <h1 class="font-Marcellus text-gray-50 text-6xl md:text-7xl absolute z-10 top-12 left-1/2 transform -translate-x-1/2">Vision</h1>
+                <p class="w-full px-3 md:px-5 text-gray-50 font-Noto text-base md:text-xl text-center absolute top-1/2  transform -translate-y-1/4 z-10">Our vision is to be recognized as the pioneering platform for providing the school children of the country
                     with an opportunity to bring forth their ideas and accelerate creation and development of new radical solutions.</p>
                 <div class="w-ful h-full bg-gray-800 opacity-70"></div>
                </div>
             </div>
         </div>
 
-        <div class="h-96 w-72 overflow-hidden relative mt-14">
+        <div class="h-96 w-72 md:w-3/5 overflow-hidden relative mt-14">
           <div class="absolute w-full h-full bg-mission-bg-5s bg-cover">
              <div class="w-full h-full relative">
-              <h1 class="font-Marcellus text-gray-50 text-6xl absolute z-10 top-12 left-1/2 transform -translate-x-1/2">Mission</h1>
-              <p class="w-full px-3 text-gray-50 font-Noto text-base text-center absolute top-1/2  transform -translate-y-1/4 z-10">Our mission is to spark innovative ideas and develop a creative and entrepreneurial culture among the school community, who will in turn contribute to global knowledge and economy, by exposing them to the corporate sector.</p>
+              <h1 class="font-Marcellus text-gray-50 text-6xl md:text-7xl absolute z-10 top-12 left-1/2 transform -translate-x-1/2">Mission</h1>
+              <p class="w-full px-3 md:px-5 text-gray-50 font-Noto text-base md:text-xl text-center absolute top-1/2  transform -translate-y-1/4 z-10">Our mission is to spark innovative ideas and develop a creative and entrepreneurial culture among the school community, who will in turn contribute to global knowledge and economy, by exposing them to the corporate sector.</p>
               <div class="w-ful h-full bg-gray-800 opacity-70"></div>
              </div>
           </div>
@@ -2370,9 +2370,9 @@ body{
         <div class="w-72">
           <img src="./public/images/Logos/uok-images.png" alt="">
         </div>
-        <div class="w-full px-4 text-gray-50 flex flex-col items-center mt-10">
-          <h1 class="font-Marcellus text-6xl text-center">About Us</h1>
-          <p class="font-Noto text-base text-center mt-8">
+        <div class="w-full px-4 md:px-24 text-gray-50 flex flex-col items-center mt-10">
+          <h1 class="font-Marcellus text-6xl md:text-7xl text-center">About Us</h1>
+          <p class="font-Noto text-base md:text-xl text-center mt-8">
             HackX Jr is organized by the Industrial Management Science Students' Association (IMSSA), which is the student body of the Department of Industrial Management of the University of Kelaniya.
           </p>
         </div>
@@ -2383,11 +2383,12 @@ body{
         <!-- Online Event Partner -->
         <section class="h-auto bg-gradient-to-tr from-eventPartnerStartingColor to-eventPartnersEndColor" data-scroll-section="1">
           <div class="w-full flex justify-center">
-            <div class="w-72 h-56 rounded-2xl bg-gray-50 flex items-center justify-center mt-14 mb-16 relative overflow-hidden px-1">
+            <div class="w-72 md:w-3/5 h-56 md:h-85 rounded-2xl bg-gray-50 flex items-center justify-center mt-14 mb-16 relative overflow-hidden px-1">
               <div class="w-full flex justify-center">
-                <img src="./public/images/Logos/event-partner-logo-5s.png" alt="Event Partner Logo">
+                <img src="./public/images/Logos/event-partner-logo-5s.png" class="md:hidden" alt="Event Partner Logo">
+                <img src="./public/images/Logos/event-partner-logo-md.png" class="hidden md:block" alt="Event Partner Logo md">
               </div>
-                <div class="partner-text-wrapper absolute bottom-2 font-Noto px-3">Online Event Partner &mdash; Online Event Partner &mdash; Online Event Partner &mdash; Online Event Partner &mdash; Online Event Partner &mdash; Online Event Partner &mdash; Online Event Partner &mdash; Online Event Partner &mdash; Online Event Partner &mdash; Online Event Partner &mdash; </div>
+                <div class="partner-text-wrapper absolute bottom-2 font-Noto px-3 text-lg md:text-3xl">Online Event Partner &mdash; Online Event Partner &mdash; Online Event Partner &mdash; Online Event Partner &mdash; Online Event Partner &mdash; Online Event Partner &mdash; Online Event Partner &mdash; Online Event Partner &mdash; Online Event Partner &mdash; Online Event Partner &mdash; </div>
             </div>
           </div>
         </section>
@@ -2398,11 +2399,12 @@ body{
           <div class="w-full flex flex-col items-center">
 
             <div class="w-full flex justify-center mt-14">
-              <h1 class="font-BebasNeue text-gray-50 text-5xl text-center">Coordinators</h1>
+              <h1 class="font-BebasNeue text-gray-50 text-5xl md:text-7xl text-center">Coordinators</h1>
             </div>
 
-            <!-- Card -->
-            <div class="w-60 h-80 rounded-3xl bg-gray-50 mt-8 overflow-hidden">
+            <div class="w-full flex flex-col items-center md:flex-row md:justify-center md:mt-7">
+              <!-- Card -->
+            <div class="w-60 h-80 rounded-3xl bg-gray-50 mt-8 overflow-hidden md:mr-10">
               <div class="w-full h-48 bg-coordinator-5s bg-cover"></div>
               <div class="w-full mt-2 flex flex-col items-center text-gray-800 font-Noto">
                 <h1 class="text-2xl font-Marcellus text-center">Thamindu Dilhara</h1>
@@ -2422,9 +2424,11 @@ body{
               </div>
             </div>
             <!-- End of Card -->
+            </div>
 
-            <!-- Card -->
-            <div class="w-60 h-80 rounded-3xl bg-gray-50 mt-10 overflow-hidden">
+           <div class="w-full flex flex-col items-center md:flex-row md:justify-center">
+              <!-- Card -->
+            <div class="w-60 h-80 rounded-3xl bg-gray-50 mt-10 overflow-hidden md:mr-10">
               <div class="w-full h-48 bg-coordinator-5s bg-cover"></div>
               <div class="w-full mt-2 flex flex-col items-center text-gray-800 font-Noto">
                 <h1 class="text-2xl font-Marcellus text-center">Thamindu Dilhara</h1>
@@ -2444,6 +2448,7 @@ body{
               </div>
             </div>
             <!-- End of Card -->
+           </div>
 
             <!-- Card -->
             <div class="w-60 h-80 rounded-3xl bg-gray-50 mt-10 mb-16 overflow-hidden">
@@ -2464,8 +2469,8 @@ body{
         <section class="h-auto bg-gradient-to-tr from-finaleStartingColor to-finaleEndColor" data-scroll-section="1">
           <div class="w-full h-full flex">
             <div class="w-full flex items-center flex-col mt-14 mb-16">
-                <h1 class="text-center text-gray-50 font-Marcellus text-5xl">Folow Us</h1>
-                <div class="w-full flex justify-around items-center text-4xl text-gray-50 mt-8">
+                <h1 class="text-center text-gray-50 font-Marcellus text-5xl md:text-7xl">Folow Us</h1>
+                <div class="w-full md:w-3/5 flex justify-around items-center text-4xl md:text-5xl text-gray-50 mt-8 md:mt-16">
                   <i class="fab fa-facebook"></i>
                   <i class="fab fa-instagram"></i>
                   <i class="fab fa-youtube"></i>
@@ -2479,8 +2484,8 @@ body{
         <section class="h-auto bg-gray-50" data-scroll-section="1">
           <div class="w-full h-full flex flex-col">
             <div class="w-full flex flex-col mt-14 items-center text-gray-800 font-Noto">
-              <h1 class="text-4xl text-center">General Links</h1>
-              <p class="text-center px-5 text-base mt-4">Department of Industrial Management
+              <h1 class="text-4xl md:text-6xl text-center">General Links</h1>
+              <p class="text-center px-5 text-base md:text-xl mt-4">Department of Industrial Management
                 University of Kelaniya
                 </p>
                 <div class="w-full flex justify-center mt-8">
@@ -2489,29 +2494,29 @@ body{
             </div>
 
             <div class="w-full flex flex-col mt-14 items-center text-gray-800 font-Noto">
-              <h1 class="text-4xl text-center">General information</h1>
-              <p class="text-center px-5 text-base mt-4">Industrial Management Science Students' Association.
+              <h1 class="text-4xl md:text-6xl text-center">General information</h1>
+              <p class="text-center px-5 text-base md:text-xl mt-4">Industrial Management Science Students' Association.
               </p>
-              <p class="text-center px-5 text-base mt-4">Department of Industrial Management,
+              <p class="text-center px-5 text-base md:text-xl mt-4">Department of Industrial Management,
                 University of Kelaniya,
                 Dalugama
               </p>
             </div>
 
             <div class="w-full flex flex-col mt-14 items-center text-gray-800 font-Noto mb-28">
-              <p class="text-center px-5 text-base mt-4"><a href="#">
+              <p class="text-center px-5 text-base md:text-2xl mt-4"><a href="#">
                 Phone: +94 11 290 3282-5
               </a>
               </p>
-              <p class="text-center px-5 text-base mt-4">
+              <p class="text-center px-5 text-base md:text-2xl mt-4">
                 <a href="#">
                   hackjr.mit@gmail.com
                 </a>
               </p>
               <div class="w-full justify-center flex text-gray-800 mt-8">
                 <a href="#" class="w-full flex items-center justify-center">
-                  <i class="fab fa-facebook mr-5 text-2xl"></i>
-                  <p class="text-xl">HackXJunior</p>
+                  <i class="fab fa-facebook mr-5 text-2xl md:text-4xl"></i>
+                  <p class="text-xl md:text-3xl">HackXJunior</p>
                 </a>
               </div>
             </div>
