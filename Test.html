@@ -1192,7 +1192,9 @@ body{
            bg-gradient-to-tr
            from-timelineStartingColor
            to-timelineEndColor
-           flex justify-center
+          hidden
+           md:flex
+            justify-center
          "
          data-scroll-section="1"
          id="Timeline"
@@ -1746,10 +1748,8 @@ body{
        <div class="w-full h-full relative" data-scroll="1">
         <div
         class="
-          w-120
-          md:w-auto
-          h-24
-          md:h-32
+          w-twice
+          h-32
           bg-gray-50
           absolute
           flex
@@ -1765,17 +1765,15 @@ body{
         data-scroll-direction="horizontal"
         data-scroll-target="#swagTab"
       >
-        <h1 class="font-BebasNeue text-gray-800 text-8xl md:text-9xl md:px-2">
-          Make ideas happen
+        <h1 class="font-BebasNeue text-gray-800 w-full text-9xl text-center">
+          Make ideas happen  Make ideas happen
         </h1>
       </div>
 
       <div
         class="
-          w-150
-          md:w-auto
-          h-24
-          md:h-32
+          w-twiceSwag
+          h-32
           bg-gray-50
           absolute
           flex
@@ -1789,10 +1787,9 @@ body{
         data-scroll="1"
         data-scroll-speed="10"
         data-scroll-direction="horizontal"
-        data-scroll-delay="0.08"
         data-scroll-target="#swagTab"
       >
-        <h1 class="font-BebasNeue text-gray-800 text-8xl">
+        <h1 class="font-BebasNeue text-gray-800 text-9xl">
           Things to keep in mind
         </h1>
       </div>
@@ -1873,6 +1870,7 @@ body{
         <section
           class="
             h-auto
+            md:h-80vh
             bg-gradient-to-tr
             from-scoringStartingColor
             to-scoringEndColor
@@ -1881,28 +1879,28 @@ body{
           data-scroll-section="1"
           id="scoring"
         >
-          <div class="w-full mt-12 mb-16 relative">
+          <div class="w-full mt-12 md:mt-20 mb-16 relative">
             <div class="w-full flex items-center flex-col text-gray-50">
               <h1
-                class="font-BebasNeue text-7xl uppercase z-20"
+                class="font-BebasNeue text-7xl md:text-8xl uppercase z-20"
               >
                 Scoring
               </h1>
-              <h2 class="font-Marcellus text-5xl mt-8 z-20">Concept</h2>
-              <h3 class="font-Noto text-xl mt-5 z-20">
+              <h2 class="font-Marcellus text-5xl md:text-6xl mt-8 z-20">Concept</h2>
+              <h3 class="font-Noto text-xl md:text-2xl mt-5 z-20">
                 Marks will be allocated for,
               </h3>
-              <div class="font-Noto text-base w-4/5 px-2 mt-4 z-20">
+              <div class="font-Noto text-base md:text-xl w-4/5 px-2 mt-4 z-20">
                 <p>Novelty / Distinctively competency</p>
                 <p>Societal impact</p>
                 <p>Feasibility of the idea</p>
               </div>
 
-              <h2 class="font-Marcellus text-5xl mt-8 z-20">Presentation</h2>
-              <h3 class="font-Noto text-xl mt-5 z-20">
+              <h2 class="font-Marcellus text-5xl md:text-6xl mt-8 z-20">Presentation</h2>
+              <h3 class="font-Noto text-xl md:text-2xl mt-5 z-20">
                 Marks will be allocated for,
               </h3>
-              <div class="font-Noto text-base w-4/5 px-2 mt-4 z-20">
+              <div class="font-Noto text-base md:text-xl w-4/5 px-2 mt-4 z-20">
                 <p>Clarity and completeness</p>
                 <p>Sustainability</p>
                 <p>Business/marketing plan</p>
@@ -1913,7 +1911,9 @@ body{
               class="
                 absolute
                 w-72
+                md:w-120
                 h-72
+                md:h-120
                 rounded-full
                 shadow-2xl
                 bg-scoringCircleColor
@@ -2001,6 +2001,7 @@ body{
         <section
           class="
             h-auto
+            md:h-70vh
             bg-gradient-to-tr
             from-scoringEndColor
             to-scoringStartingColor
@@ -2009,14 +2010,14 @@ body{
           data-scroll-section="1"
           id="TeamOrg"
         >
-          <div class="w-full mt-12 mb-16 relative">
-            <div class="w-full flex items-center flex-col text-gray-50">
+          <div class="w-full mt-12 md:mt-20 mb-16 relative">
+            <div class="w-full flex items-center flex-col text-gray-50 md:px-20 md:mt-12">
               <h1
-                class="font-BebasNeue text-7xl uppercase z-20 text-center"
+                class="font-BebasNeue text-7xl md:text-8xl uppercase z-20 text-center"
               >
                 Team Organization
               </h1>
-              <div class="font-Noto text-base w-full px-4 mt-12 z-20">
+              <div class="font-Noto text-base md:text-xl w-full px-4 mt-12 z-20">
                 <p>A team should consist of a maximum of five members.</p>
                 <p>
                   Every group must appoint a mentor for the team, preferably the
@@ -2041,7 +2042,9 @@ body{
               class="
                 absolute
                 w-72
+                md:w-120
                 h-72
+                md:h-120
                 rounded-full
                 shadow-2xl
                 bg-teamOrgCircleColor
@@ -2128,6 +2131,7 @@ body{
         <section
         class="
           h-auto
+          md:h-60vh
           bg-gradient-to-tr
           from-whatIsStartingGradient
           to-whatIsEndingGradient
@@ -2136,14 +2140,14 @@ body{
         data-scroll-section="1"
         id="Application"
       >
-        <div class="w-full mt-12 mb-16 relative">
+        <div class="w-full mt-12 md:mt-16 mb-16 relative">
           <div class="w-full flex items-center flex-col text-gray-50">
             <h1
-              class="font-BebasNeue text-7xl uppercase z-20 text-center"
+              class="font-BebasNeue text-7xl md:text-8xl uppercase z-20 text-center"
             >
               Application Process
             </h1>
-            <div class="font-Noto text-base w-full px-4 mt-12 z-20">
+            <div class="font-Noto text-base md:text-xl w-full px-4 md:px-20 mt-12 md:mt-16 z-20">
               <p>A team should consist of a maximum of five members.</p>
               <p>
                 Every group must appoint a mentor for the team, preferably the
@@ -2168,7 +2172,9 @@ body{
             class="
               absolute
               w-72
+              md:w-120
               h-72
+              md:h-120
               rounded-full
               shadow-2xl
               bg-applicationCircleColor
@@ -2202,18 +2208,23 @@ body{
             <div
               class="
                 w-72
+                md:w-3/5
                 h-auto
                 bg-awarenessSessionBox1Color
                 text-gray-50
                 font-Noto
                 text-base
+                md:text-xl
                 rounded-2xl
                 flex
                 justify-center
                 items-center
                 py-4
+                md:py-8
                 px-3
+                md:px-6
                 mt-10
+                md:mt-14
               "
             >
               <p>
@@ -2227,18 +2238,23 @@ body{
             <div
               class="
                 w-72
+                md:w-3/5
                 h-auto
                 bg-awarenessSessionBox1Color
                 text-gray-50
                 font-Noto
                 text-base
+                md:text-xl
                 rounded-2xl
                 flex
                 justify-center
                 items-center
                 mt-6
+                md:mt-8
                 py-4
+                md:py-8
                 px-3
+                md:px-6
               "
             >
               <p>
@@ -2252,18 +2268,23 @@ body{
             <div
               class="
                 w-72
+                md:w-3/5
                 h-auto
                 bg-awarenessSessionBox1Color
                 text-gray-50
                 font-Noto
                 text-base
+                md:text-xl
                 rounded-2xl
                 flex
                 justify-center
                 items-center
                 mt-6
+                md:mt-8
                 py-4
+                md:py-8
                 px-3
+                md:px-6
               "
             >
               <p>
@@ -2282,6 +2303,7 @@ body{
         <section
           class="
             h-auto
+            md:h-50vh
             bg-gradient-to-tr
             from-finaleStartingColor
             to-finaleEndColor
@@ -2301,7 +2323,7 @@ body{
             "
           >
             <h1 class="font-BebasNeue text-8xl text-center">Finale</h1>
-            <div class="w-full flex flex-col px-4 font-Noto text-base mt-6">
+            <div class="w-full flex flex-col px-4 md:px-24 font-Noto text-base md:text-xl mt-6 md:mt-12">
               <p>
                 Final round selected teams will compete on the hackathon, which
                 is scheduled to be held on 17th December 2020 via Zoom Platform.

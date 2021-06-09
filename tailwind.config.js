@@ -889,6 +889,8 @@ module.exports = {
       '11/12': '91.666667%',
       full: '100%',
       screen: '100vw',
+      twice: '220vw',
+      twiceSwag: '160vw',
       min: 'min-content',
       max: 'max-content',
     }),
