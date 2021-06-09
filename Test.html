@@ -133,19 +133,26 @@ body{
             opacity: 0;
         }
 
+        #MascotSection, #HeroSectionUnderneath{
+          transition: all 0.6s ease-out;
+        }
+
     </style>
   </head>
   <body>
       <div class="w-full fixed z-50">
-        <nav class="w-full flex justify-between mt-4 px-3">
+        <nav class="w-full flex justify-between mt-4 px-3 md:px-6">
           <div>
-            <img src="./public/images/Logos/hackxjrLogo-5s.png"  id="logo-img" alt="logo-5s" />
+            <img src="./public/images/Logos/hackxjrLogo-5s.png"  class="md:hidden logo-img" alt="logo-5s" />
+            <img src="./public/images/Logos/hackxjrLogo-iPad.png" class="hidden md:block logo-img" alt="Logo-iPad">
           </div>
           <div class="" id="Burger">
             <img
               src="./public/images/BurgerIcons/Burger-5s.png"
               alt="burger-5s"
+              class="md:hidden"
             />
+            <img src="./public/images/BurgerIcons/Burger-iPad.png" class="hidden md:block" alt="Burger-iPad">
           </div>
         </nav>
       </div>
@@ -233,23 +240,54 @@ body{
         data-scroll-section="1"
         id="Home"
       >
-        <div class="w-full flex justify-center h-full items-center relative">
+        <div class="w-full flex justify-center h-full items-center md:items-start relative md:flex-col">
           <div
-            class="w-full h-1/2 relative flex items-center justify-center"
-            
+            class="w-full h-1/2 relative flex items-center justify-center md:mt-20"
+            id="MascotSection"
           >
-            <div class="w-72 h-72 absolute rotator"></div>
-            <div class="w-72 h-72 absolute rotator"></div>
-            <div class="w-72 h-72 absolute rotator"></div>
+            <div class="w-72 h-72 md:h-96 md:w-96 absolute rotator"></div>
+            <div class="w-72 h-72 md:h-96 md:w-96 absolute rotator"></div>
+            <div class="w-72 h-72 md:h-96 md:w-96 absolute rotator"></div>
             <div class="w-full flex justify-center z-10">
               <img
                 src="./public/images/Characters/5s.png"
                 alt="mascotty-5s"
+                class="md:hidden"
               />
+              <img src="./public/images/Characters/mascotty-tab.png" class="hidden md:block" alt="Mascotty-Tab">
             </div>
           </div>
 
-          <div class="w-full absolute top-9/10 flex justify-center">
+          <div
+          class="w-full hidden md:flex justify-center mt-16 flex-col items-center mb-20"
+          id="HeroSectionUnderneath"
+        >
+          <h1 class="text-4xl md:text-7xl text-gray-50 font-Noto">hackX Jr 2021</h1>
+          <p class="text-center text-xl md:text-2xl text-gray-100 font-Noto mt-10 px-16">
+            HackX Jr is an inter-school hackathon which provides a platform
+            for school students to transform their ideas into reality. It
+            promotes school students to build technology-based solutions to
+            problems they see in the society.
+          </p>
+          <div
+            class="
+              bg-getStartedButtonColor
+              w-1/4
+
+              flex
+              justify-center
+              rounded-full
+              mt-10
+              shadow-3xl
+            "
+          >
+            <h2 class="text-gray-100 font-Noto text-xl py-3 pixel:py-4 px-2">
+              Get Started
+            </h2>
+          </div>
+        </div>
+
+          <div class="w-full absolute top-9/10 flex md:hidden justify-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="h-10 w-10 text-gray-50 motion-safe:animate-bounce hamburger"
@@ -269,7 +307,7 @@ body{
       </section>
         <!-- End of Mobile Home -->
 
-        <section class="h-auto flex" data-scroll-section="1">
+        <section class="h-auto flex md:hidden" data-scroll-section="1">
           <div
             class="w-full flex justify-center mt-16 flex-col items-center mb-20"
           >
@@ -283,7 +321,7 @@ body{
             <div
               class="
                 bg-getStartedButtonColor
-                w-4/5
+                w-3/5
                 flex
                 justify-center
                 rounded-full
@@ -291,7 +329,7 @@ body{
                 shadow-3xl
               "
             >
-              <h2 class="text-gray-100 font-Noto text-2xl py-4 px-2">
+              <h2 class="text-gray-100 font-Noto text-xl py-3 pixel:py-4 px-2">
                 Get Started
               </h2>
             </div>
@@ -1887,7 +1925,7 @@ body{
     const Burger = document.querySelector('#Burger');
    const SideBar = document.querySelector('#SideBR')
    const Parent = document.querySelector('#ParentContainer')
-   const Logo = document.querySelector('#logo-img')
+   const Logo = document.querySelector('.logo-img')
 
    const Close = document.querySelector('#CloseButton')
 
