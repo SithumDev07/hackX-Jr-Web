@@ -137,15 +137,18 @@ body{
   </head>
   <body>
       <div class="w-full fixed z-50">
-        <nav class="w-full flex justify-between mt-4 px-3">
+        <nav class="w-full flex justify-between mt-4 px-3 md:px-6">
           <div>
-            <img src="./public/images/Logos/hackxjrLogo-5s.png"  id="logo-img" alt="logo-5s" />
+            <img src="./public/images/Logos/hackxjrLogo-5s.png"  class="md:hidden logo-img" alt="logo-5s" />
+            <img src="./public/images/Logos/hackxjrLogo-iPad.png" class="hidden md:block logo-img" alt="Logo-iPad">
           </div>
           <div class="" id="Burger">
             <img
               src="./public/images/BurgerIcons/Burger-5s.png"
               alt="burger-5s"
+              class="md:hidden"
             />
+            <img src="./public/images/BurgerIcons/Burger-iPad.png" class="hidden md:block" alt="Burger-iPad">
           </div>
         </nav>
       </div>
@@ -233,14 +236,13 @@ body{
         data-scroll-section="1"
         id="Home"
       >
-        <div class="w-full flex justify-center h-full items-center relative">
+        <div class="w-full flex justify-center md:justify-start h-full items-center relative border-2">
           <div
-            class="w-full h-1/2 relative flex items-center justify-center"
-            
+            class="w-full h-1/2 relative flex items-center justify-center border-2"
           >
-            <div class="w-72 h-72 absolute rotator"></div>
-            <div class="w-72 h-72 absolute rotator"></div>
-            <div class="w-72 h-72 absolute rotator"></div>
+            <div class="w-72 h-72 md:h-96 md:w-96 absolute rotator"></div>
+            <div class="w-72 h-72 md:h-96 md:w-96 absolute rotator"></div>
+            <div class="w-72 h-72 md:h-96 md:w-96 absolute rotator"></div>
             <div class="w-full flex justify-center z-10">
               <img
                 src="./public/images/Characters/5s.png"
@@ -283,7 +285,7 @@ body{
             <div
               class="
                 bg-getStartedButtonColor
-                w-4/5
+                w-3/5
                 flex
                 justify-center
                 rounded-full
@@ -291,7 +293,7 @@ body{
                 shadow-3xl
               "
             >
-              <h2 class="text-gray-100 font-Noto text-2xl py-4 px-2">
+              <h2 class="text-gray-100 font-Noto text-xl py-3 pixel:py-4 px-2">
                 Get Started
               </h2>
             </div>
@@ -1887,7 +1889,7 @@ body{
     const Burger = document.querySelector('#Burger');
    const SideBar = document.querySelector('#SideBR')
    const Parent = document.querySelector('#ParentContainer')
-   const Logo = document.querySelector('#logo-img')
+   const Logo = document.querySelector('.logo-img')
 
    const Close = document.querySelector('#CloseButton')
 
