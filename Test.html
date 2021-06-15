@@ -154,7 +154,13 @@ body{
           width: 48px;
           height: 53px;
           border-radius: 100%;
-          background-color: red;
+        }
+
+        .inner-eye-ball{
+          width: 4px;
+          height: 6px;
+          background-color: #fff;
+          border-radius: 100%;
         }
     </style>
   </head>
@@ -286,7 +292,7 @@ body{
               <div class="w-72 xl:w-100 h-72 xl:h-100 absolute rotator"></div>
               <div class="w-72 xl:w-100 h-72 xl:h-100 absolute rotator"></div>
               <div class="w-72 xl:w-100 h-72 xl:h-100 absolute rotator"></div>
-              <div class="w-full flex justify-center z-10 border-2 relative">
+              <div class="w-full flex justify-center z-10 relative">
                 <img
                   src="./public/images/Characters/5s.png"
                   alt="mascotty-5s"
@@ -299,11 +305,19 @@ body{
                 />
                 <div class="outer-eyes-container absolute flex justify-around items-center">
                   
-                  <div class="single-eye-container mr-5 relative">
-                    <div class="absolute eye ball"></div>
+                  <div class="single-eye-container mr-5 relative p-1">
+                    <div class="absolute eye ball">
+                      <div class="w-full h-full flex items-end justify-center">
+                        <div class="inner-eye-ball z-10 mb-1"></div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="single-eye-container relative">
-                    <div class="absolute eye ball"></div>
+                  <div class="single-eye-container relative p-1">
+                    <div class="absolute eye ball">
+                      <div class="w-full h-full flex items-end justify-center">
+                        <div class="inner-eye-ball z-10 mb-1"></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
