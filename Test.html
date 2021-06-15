@@ -140,7 +140,25 @@ body{
     </style>
   </head>
   <body>
-      <div class="w-full fixed z-50">
+
+      <div class="fixed w-full h-20 border-2 top-0 hidden xl:flex z-50">
+        <nav aria-label="" class="w-full h-full flex p-2">
+          <div class="flex items-center justify-center w-48 h-full">
+            <img src="./public/images/Logos/hackxjrLogo-1366x.png" alt="hackX Logo 1366x">
+          </div>
+          <ul class="flex text-gray-50 font-Noto text-xl flex-1 justify-around items-center ml-10">
+            <li class="cursor-pointer">Home</li>
+            <li class="cursor-pointer">Info</li>
+            <li class="cursor-pointer">Schedule</li>
+            <li class="cursor-pointer">Rules</li>
+            <li class="cursor-pointer">About</li>
+            <li class="cursor-pointer">Register</li>
+            <li class="cursor-pointer">Contact Us</li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="w-full fixed z-50 xl:hidden">
         <nav class="w-full flex justify-between mt-4 px-3 md:px-6">
           <div>
             <img src="./public/images/Logos/hackxjrLogo-5s.png"  class="md:hidden logo-img" alt="logo-5s" />
@@ -159,17 +177,18 @@ body{
         </nav>
       </div>
       
-      <div class="w-20 h-72 fixed left-3 top-left16 z-10 hidden md:flex">
-        <div class="w-full h-full flex flex-col justify-around text-gray-50 text-5xl lg:text-6xl items-center"  id="SocialMediaIcons">
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-youtube"></i></a>
+      <!-- Social Icons -->
+      <div class="w-20 xl:w-auto h-72 xl:h-20 fixed left-3 top-left16 xl:top-4/5 xl:transform xl:translate-y-10 z-10 hidden md:flex">
+        <div class="w-full h-full flex flex-col xl:flex-row justify-around text-gray-50 text-5xl lg:text-6xl xl:text-5xl items-center"  id="SocialMediaIcons">
+          <a href="#" class="xl:ml-8"><i class="fab fa-facebook"></i></a>
+          <a href="#" class="xl:ml-8"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="xl:ml-8"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
 
       <div class="relative w-screen h-screen">
 
-      <section class="w-full h-screen nav-bg fixed z-10 -left-full" id="SideBR" data-scroll="1">
+      <section class="w-full h-screen nav-bg fixed z-10 -left-full xl:hidden" id="SideBR" data-scroll="1">
             <div class="w-full flex items-end flex-col relative md:h-70vh md:justify-around">
                 <div class="absolute w-full top-4/5 transform -translate-y-4/5 pixel:translate-x-1/4">
                     <img src="./public/images/Mascotty-New/jr-5s.png" class="md:hidden" alt="New Mascott Jr">
@@ -229,7 +248,7 @@ body{
               </div>
             </div>
 
-            <div class="w-full absolute top-9/10 flex justify-center">
+            <div class="w-full absolute top-9/10 flex justify-center xl:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 class="h-10 w-10 text-gray-50 motion-safe:animate-bounce hamburger"
@@ -252,7 +271,7 @@ body{
         <!-- Mobile Home -->
 
         <section
-        class="h-screen w-full overflow-hidden"
+        class="h-screen w-full overflow-hidden xl:hidden"
         data-scroll-section="1"
         id="Home"
       >
@@ -1222,7 +1241,8 @@ body{
             justify-center
          "
          data-scroll-section="1"
-         id="Timeline"
+         id="TimelineTab"
+
        >
         <div class="w-4/5 lg:w-full flex flex-col items-center">
           <div
@@ -1235,8 +1255,9 @@ body{
             class="
               w-64
               pixel:w-85
-              lg:w-96
+              lg:w-120
               h-32
+              lg:h-40
               bg-TimelineBoxed
               rounded-2xl
               flex
@@ -1244,11 +1265,11 @@ body{
               justify-start
             "
           >
-            <p class="text-gray-50 font-Noto pl-1 pixel:pl-8 pr-8 pixel:pr-8 text-center text-xl">
+            <p class="text-gray-50 font-Noto pl-1 pixel:pl-8 pr-8 pixel:pr-8 text-center text-xl lg:text-2xl">
               Registrations Open for HackX Jr!
             </p>
           </div>
-          <div class="w-32 h-32 absolute transform translate-x-1/4 pixel:translate-x-3/4 right-0">
+          <div class="w-32 lg:w-40 h-32 lg:h-40 absolute transform translate-x-1/4 pixel:translate-x-3/4 right-0">
             <div class="w-full h-full relative">
               <div
                 class="
@@ -1262,16 +1283,16 @@ body{
                   text-gray-50
                 "
               >
-                <h1 class="text-center text-3xl">09</h1>
-                <h2>NOV</h2>
+                <h1 class="text-center text-3xl lg:text-5xl">09</h1>
+                <h2 class="lg:text-3xl">NOV</h2>
               </div>
-              <div class="w-32 h-32 rounded-full bg-gray-50 opacity-40"></div>
+              <div class="w-32 lg:w-40 h-32 lg:h-40 rounded-full bg-gray-50 opacity-40"></div>
             </div>
           </div>
-          <div class="absolute bottom-0 left-6 transform translate-y-4">
+          <div class="absolute bottom-0 left-6 transform translate-y-4 lg:translate-y-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8 text-gray-50"
+              class="h-8 lg:h-16 w-8 lg:w-16 text-gray-50"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -1307,7 +1328,7 @@ body{
               justify-end
             "
           >
-            <p class="text-gray-50 font-Noto pl-8 text-center pr-2 text-xl">
+            <p class="text-gray-50 font-Noto pl-8 text-center pr-2 text-xl lg:text-2xl">
               Registrations Closed for Awareness Session
             </p>
           </div>
@@ -1331,10 +1352,10 @@ body{
               <div class="w-32 lg:w-40 h-32 lg:h-40 rounded-full bg-gray-50 opacity-40"></div>
             </div>
           </div>
-          <div class="absolute bottom-0 right-4 transform translate-y-4">
+          <div class="absolute bottom-0 right-4 transform translate-y-4 lg:translate-y-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8 text-gray-50"
+              class="h-8 lg:h-16 w-8 lg:w-16 text-gray-50"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -1402,12 +1423,13 @@ body{
               left-4
               transform
               translate-y-5
+              lg:translate-y-10
               -rotate-12
             "
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8 text-gray-50"
+              class="h-8 lg:h-16 w-8 lg:w-16 text-gray-50"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -1433,20 +1455,22 @@ body{
             class="
               w-64
               pixel:w-85
-              lg:w-96
+              lg:w-120
               h-32
+              lg:h-40
               bg-TimelineBoxed
               rounded-2xl
               flex
               items-center
               justify-end
+              lg:justify-center
             "
           >
-            <p class="text-gray-50 font-Noto pl-16 text-center pr-3 text-lg">
+            <p class="text-gray-50 font-Noto pl-16 lg:pl-5 text-center pr-3 lg:pr-5 text-lg lg:text-2xl">
               Registrations Closed for HackX Jr
             </p>
           </div>
-          <div class="w-32 h-32 absolute transform -translate-x-2 pixel:-translate-x-3/4 left-0">
+          <div class="w-32 lg:w-40 h-32 lg:h-40 absolute transform -translate-x-2 pixel:-translate-x-3/4 left-0">
             <div class="w-full h-full relative">
               <div
                 class="
@@ -1460,16 +1484,16 @@ body{
                   text-gray-50
                 "
               >
-                <h1 class="text-center text-3xl">03</h1>
-                <h2>DEC</h2>
+                <h1 class="text-center text-3xl lg:text-5xl">03</h1>
+                <h2 class="lg:text-3xl">DEC</h2>
               </div>
-              <div class="w-32 h-32 rounded-full bg-gray-50 opacity-40"></div>
+              <div class="w-32 lg:w-40 h-32 lg:h-40 rounded-full bg-gray-50 opacity-40"></div>
             </div>
           </div>
-          <div class="absolute bottom-0 right-4 transform translate-y-4">
+          <div class="absolute bottom-0 right-4 transform translate-y-4 lg:translate-y-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8 text-gray-50"
+              class="h-8 lg:h-16 w-8 lg:w-16 text-gray-50"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -1495,20 +1519,22 @@ body{
             class="
               w-64
               pixel:w-85
-              lg:w-96
+              lg:w-120
               h-32
+              lg:h-40
               bg-TimelineBoxed
               rounded-2xl
               flex
               items-center
               justify-start
+              lg:justify-center
             "
           >
-            <p class="text-gray-50 font-Noto pl-2 pr-8 pixel:pr-2 text-center text-lg">
+            <p class="text-gray-50 font-Noto pl-2 pr-8 pixel:pr-2 text-center text-lg lg:text-2xl">
               Shortlisted Teams are Announced!
             </p>
           </div>
-          <div class="w-32 h-32 absolute transform translate-x-1/4 pixel:translate-x-3/4 right-0">
+          <div class="w-32 lg:w-40 h-32 lg:h-40 absolute transform translate-x-1/4 pixel:translate-x-3/4 right-0">
             <div class="w-full h-full relative">
               <div
                 class="
@@ -1522,16 +1548,16 @@ body{
                   text-gray-50
                 "
               >
-                <h1 class="text-center text-3xl">06</h1>
-                <h2>DEC</h2>
+                <h1 class="text-center text-3xl lg:text-5xl">06</h1>
+                <h2 class="lg:text-3xl">DEC</h2>
               </div>
-              <div class="w-32 h-32 rounded-full bg-gray-50 opacity-40"></div>
+              <div class="w-32 lg:w-40 h-32 lg:h-40 rounded-full bg-gray-50 opacity-40"></div>
             </div>
           </div>
-          <div class="absolute bottom-0 left-5 transform translate-y-4">
+          <div class="absolute bottom-0 left-5 transform translate-y-4 lg:translate-y-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8 text-gray-50"
+              class="h-8 lg:h-16 w-8 lg:w-16 text-gray-50"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -1557,8 +1583,9 @@ body{
             class="
               w-64
               pixel:w-85
-              lg:w-96
+              lg:w-120
               h-32
+              lg:h-40
               bg-TimelineBoxed
               rounded-2xl
               flex
@@ -1567,7 +1594,7 @@ body{
               flex-col
             "
           >
-            <p class="text-gray-50 font-Noto text-center text-lg pl-12">
+            <p class="text-gray-50 font-Noto text-center text-lg pl-12 lg:text-2xl">
               'Good To Go!'
             </p>
             <p
@@ -1577,6 +1604,7 @@ body{
                 text-center
                 px-4
                 text-xs
+                lg:text-2xl
                 pl-12
                 mt-2
               "
@@ -1584,7 +1612,7 @@ body{
               A Session for the Finalist Teams via Zoom Platform
             </p>
           </div>
-          <div class="w-32 h-32 absolute transform -translate-x-2 pixel:-translate-x-3/4 left-0">
+          <div class="w-32 lg:w-40 h-32 lg:h-40 absolute transform -translate-x-2 pixel:-translate-x-3/4 left-0">
             <div class="w-full h-full relative">
               <div
                 class="
@@ -1598,16 +1626,16 @@ body{
                   text-gray-50
                 "
               >
-                <h1 class="text-center text-3xl">03</h1>
-                <h2>DEC</h2>
+                <h1 class="text-center text-3xl lg:text-5xl">03</h1>
+                <h2 class="lg:text-3xl">DEC</h2>
               </div>
-              <div class="w-32 h-32 rounded-full bg-gray-50 opacity-40"></div>
+              <div class="w-32 lg:w-40 h-32 lg:h-40 rounded-full bg-gray-50 opacity-40"></div>
             </div>
           </div>
-          <div class="absolute bottom-0 right-4 transform translate-y-4">
+          <div class="absolute bottom-0 right-4 transform translate-y-4 lg:translate-y-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8 text-gray-50"
+              class="h-8 lg:h-16 w-8 lg:w-16 text-gray-50"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -1633,8 +1661,9 @@ body{
             class="
               w-64
               pixel:w-85
-              lg:w-96
+              lg:w-120
               h-32
+              lg:h-40
               bg-TimelineBoxed
               rounded-2xl
               flex
@@ -1643,14 +1672,14 @@ body{
               flex-col
             "
           >
-            <p class="text-gray-50 font-Noto pl-2 pr-8 text-center text-lg">
+            <p class="text-gray-50 font-Noto pl-2 pr-8 text-center text-lg lg:text-2xl">
               HackX Jr : Final Event
             </p>
-            <p class="text-gray-50 font-Noto text-center text-sm mt-2">
+            <p class="text-gray-50 font-Noto text-center text-sm lg:text-2xl mt-2">
               via Zoom Platform
             </p>
           </div>
-          <div class="w-32 h-32 absolute transform translate-x-1/4 pixel:translate-x-3/4 right-0">
+          <div class="w-32 lg:w-40 h-32 lg:h-40 absolute transform translate-x-1/4 pixel:translate-x-3/4 right-0">
             <div class="w-full h-full relative">
               <div
                 class="
@@ -1664,16 +1693,16 @@ body{
                   text-gray-50
                 "
               >
-                <h1 class="text-center text-3xl">06</h1>
-                <h2>DEC</h2>
+                <h1 class="text-center text-3xl lg:text-5xl">06</h1>
+                <h2 class="lg:text-3xl">DEC</h2>
               </div>
-              <div class="w-32 h-32 rounded-full bg-gray-50 opacity-40"></div>
+              <div class="w-32 lg:w-40 h-32 lg:h-40 rounded-full bg-gray-50 opacity-40"></div>
             </div>
           </div>
-          <div class="absolute bottom-0 left-5 transform translate-y-4">
+          <div class="absolute bottom-0 left-5 transform translate-y-4 lg:translate-y-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              class="h-8 w-8 text-gray-50"
+              class="h-8 lg:h-16 w-8 lg:w-16 text-gray-50"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -1905,6 +1934,7 @@ body{
           class="
             h-auto
             md:h-80vh
+            lg:h-60vh
             bg-gradient-to-tr
             from-scoringStartingColor
             to-scoringEndColor
@@ -1921,20 +1951,20 @@ body{
                 Scoring
               </h1>
               <h2 class="font-Marcellus text-5xl md:text-6xl mt-8 z-20">Concept</h2>
-              <h3 class="font-Noto text-xl md:text-2xl mt-5 z-20">
+              <h3 class="font-Noto text-xl md:text-2xl lg:text-3xl mt-5 z-20">
                 Marks will be allocated for,
               </h3>
-              <div class="font-Noto text-base md:text-xl w-4/5 px-2 mt-4 z-20">
+              <div class="font-Noto text-base md:text-xl lg:text-2xl w-4/5 px-2 mt-4 z-20">
                 <p>Novelty / Distinctively competency</p>
                 <p>Societal impact</p>
                 <p>Feasibility of the idea</p>
               </div>
 
               <h2 class="font-Marcellus text-5xl md:text-6xl mt-8 z-20">Presentation</h2>
-              <h3 class="font-Noto text-xl md:text-2xl mt-5 z-20">
+              <h3 class="font-Noto text-xl md:text-2xl lg:text-3xl mt-5 z-20">
                 Marks will be allocated for,
               </h3>
-              <div class="font-Noto text-base md:text-xl w-4/5 px-2 mt-4 z-20">
+              <div class="font-Noto text-base md:text-xl lg:text-2xl w-4/5 px-2 mt-4 z-20">
                 <p>Clarity and completeness</p>
                 <p>Sustainability</p>
                 <p>Business/marketing plan</p>
@@ -2036,6 +2066,7 @@ body{
           class="
             h-auto
             md:h-70vh
+            lg:h-60vh
             bg-gradient-to-tr
             from-scoringEndColor
             to-scoringStartingColor
@@ -2051,7 +2082,7 @@ body{
               >
                 Team Organization
               </h1>
-              <div class="font-Noto text-base md:text-xl w-full px-4 mt-12 z-20">
+              <div class="font-Noto text-base md:text-xl lg:text-2xl w-full px-4 lg:px-6 mt-12 z-20">
                 <p>A team should consist of a maximum of five members.</p>
                 <p>
                   Every group must appoint a mentor for the team, preferably the
@@ -2166,6 +2197,7 @@ body{
         class="
           h-auto
           md:h-60vh
+          lg:h-50vh
           bg-gradient-to-tr
           from-whatIsStartingGradient
           to-whatIsEndingGradient
@@ -2181,7 +2213,7 @@ body{
             >
               Application Process
             </h1>
-            <div class="font-Noto text-base md:text-xl w-full px-4 md:px-20 mt-12 md:mt-16 z-20">
+            <div class="font-Noto text-base md:text-xl lg:text-2xl w-full px-4 md:px-20 lg:px-24 mt-12 md:mt-16 z-20">
               <p>A team should consist of a maximum of five members.</p>
               <p>
                 Every group must appoint a mentor for the team, preferably the
@@ -2235,7 +2267,7 @@ body{
           data-scroll-section="1"
         >
           <div class="w-full h-full flex flex-col items-center mb-24">
-            <h2 class="font-BebasNeue text-7xl text-center text-gray-50 mt-12">
+            <h2 class="font-BebasNeue text-7xl lg:text-8xl text-center text-gray-50 mt-12">
               Awareness Session
             </h2>
 
@@ -2249,6 +2281,7 @@ body{
                 font-Noto
                 text-base
                 md:text-xl
+                lg:text-2xl
                 rounded-2xl
                 flex
                 justify-center
@@ -2279,6 +2312,7 @@ body{
                 font-Noto
                 text-base
                 md:text-xl
+                lg:text-2xl
                 rounded-2xl
                 flex
                 justify-center
@@ -2309,6 +2343,7 @@ body{
                 font-Noto
                 text-base
                 md:text-xl
+                lg:text-2xl
                 rounded-2xl
                 flex
                 justify-center
@@ -2338,6 +2373,7 @@ body{
           class="
             h-auto
             md:h-50vh
+            lg:h-40vh
             bg-gradient-to-tr
             from-finaleStartingColor
             to-finaleEndColor
@@ -2357,7 +2393,7 @@ body{
             "
           >
             <h1 class="font-BebasNeue text-8xl text-center">Finale</h1>
-            <div class="w-full flex flex-col px-4 md:px-24 font-Noto text-base md:text-xl mt-6 md:mt-12">
+            <div class="w-full flex flex-col px-4 md:px-24 font-Noto text-base md:text-xl lg:text-2xl mt-6 md:mt-12">
               <p>
                 Final round selected teams will compete on the hackathon, which
                 is scheduled to be held on 17th December 2020 via Zoom Platform.
@@ -2383,7 +2419,7 @@ body{
             <div class="absolute w-full h-full bg-vision-bg-5s bg-cover">
                <div class="w-full h-full relative">
                 <h1 class="font-Marcellus text-gray-50 text-6xl md:text-7xl absolute z-10 top-12 left-1/2 transform -translate-x-1/2">Vision</h1>
-                <p class="w-full px-3 md:px-5 text-gray-50 font-Noto text-base md:text-xl text-center absolute top-1/2  transform -translate-y-1/4 z-10">Our vision is to be recognized as the pioneering platform for providing the school children of the country
+                <p class="w-full px-3 md:px-5 text-gray-50 font-Noto text-base md:text-xl lg:text-2xl text-center absolute top-1/2  transform -translate-y-1/4 z-10">Our vision is to be recognized as the pioneering platform for providing the school children of the country
                     with an opportunity to bring forth their ideas and accelerate creation and development of new radical solutions.</p>
                 <div class="w-ful h-full bg-gray-800 opacity-70"></div>
                </div>
@@ -2394,7 +2430,7 @@ body{
           <div class="absolute w-full h-full bg-mission-bg-5s bg-cover">
              <div class="w-full h-full relative">
               <h1 class="font-Marcellus text-gray-50 text-6xl md:text-7xl absolute z-10 top-12 left-1/2 transform -translate-x-1/2">Mission</h1>
-              <p class="w-full px-3 md:px-5 text-gray-50 font-Noto text-base md:text-xl text-center absolute top-1/2  transform -translate-y-1/4 z-10">Our mission is to spark innovative ideas and develop a creative and entrepreneurial culture among the school community, who will in turn contribute to global knowledge and economy, by exposing them to the corporate sector.</p>
+              <p class="w-full px-3 md:px-5 text-gray-50 font-Noto text-base md:text-xl lg:text-2xl text-center absolute top-1/2  transform -translate-y-1/4 z-10">Our mission is to spark innovative ideas and develop a creative and entrepreneurial culture among the school community, who will in turn contribute to global knowledge and economy, by exposing them to the corporate sector.</p>
               <div class="w-ful h-full bg-gray-800 opacity-70"></div>
              </div>
           </div>
@@ -2406,7 +2442,7 @@ body{
         </div>
         <div class="w-full px-4 md:px-24 text-gray-50 flex flex-col items-center mt-10">
           <h1 class="font-Marcellus text-6xl md:text-7xl text-center">About Us</h1>
-          <p class="font-Noto text-base md:text-xl text-center mt-8">
+          <p class="font-Noto text-base md:text-xl lg:text-2xl text-center mt-8">
             HackX Jr is organized by the Industrial Management Science Students' Association (IMSSA), which is the student body of the Department of Industrial Management of the University of Kelaniya.
           </p>
         </div>
@@ -2442,7 +2478,7 @@ body{
               <div class="w-full h-48 bg-coordinator-5s bg-cover"></div>
               <div class="w-full mt-2 flex flex-col items-center text-gray-800 font-Noto">
                 <h1 class="text-2xl font-Marcellus text-center">Thamindu Dilhara</h1>
-                <p class="text-base mt-1">Main Coordinator</p>
+                <p class="text-base lg:text-lg mt-1">Main Coordinator</p>
                 <a href="" class="text-xl mt-2">+94 076 125 1245</a>
               </div>
             </div>
@@ -2453,7 +2489,7 @@ body{
               <div class="w-full h-48 bg-coordinator-5s bg-cover"></div>
               <div class="w-full mt-2 flex flex-col items-center text-gray-800 font-Noto">
                 <h1 class="text-2xl font-Marcellus text-center">Thamindu Dilhara</h1>
-                <p class="text-base mt-1">Main Coordinator</p>
+                <p class="text-base  lg:text-lg mt-1">Main Coordinator</p>
                 <a href="" class="text-xl mt-2">+94 076 125 1245</a>
               </div>
             </div>
@@ -2466,7 +2502,7 @@ body{
               <div class="w-full h-48 bg-coordinator-5s bg-cover"></div>
               <div class="w-full mt-2 flex flex-col items-center text-gray-800 font-Noto">
                 <h1 class="text-2xl font-Marcellus text-center">Thamindu Dilhara</h1>
-                <p class="text-base mt-1">Main Coordinator</p>
+                <p class="text-base lg:text-lg mt-1">Main Coordinator</p>
                 <a href="" class="text-xl mt-2">+94 076 125 1245</a>
               </div>
             </div>
@@ -2477,7 +2513,7 @@ body{
               <div class="w-full h-48 bg-coordinator-5s bg-cover"></div>
               <div class="w-full mt-2 flex flex-col items-center text-gray-800 font-Noto">
                 <h1 class="text-2xl font-Marcellus text-center">Thamindu Dilhara</h1>
-                <p class="text-base mt-1">Main Coordinator</p>
+                <p class="text-base lg:text-lg mt-1">Main Coordinator</p>
                 <a href="" class="text-xl mt-2">+94 076 125 1245</a>
               </div>
             </div>
@@ -2489,7 +2525,7 @@ body{
               <div class="w-full h-48 bg-coordinator-5s bg-cover"></div>
               <div class="w-full mt-2 flex flex-col items-center text-gray-800 font-Noto">
                 <h1 class="text-2xl font-Marcellus text-center">Thamindu Dilhara</h1>
-                <p class="text-base mt-1">Main Coordinator</p>
+                <p class="text-base lg:text-lg mt-1">Main Coordinator</p>
                 <a href="" class="text-xl mt-2">+94 076 125 1245</a>
               </div>
             </div>
@@ -2504,7 +2540,7 @@ body{
           <div class="w-full h-full flex">
             <div class="w-full flex items-center flex-col mt-14 mb-16">
                 <h1 class="text-center text-gray-50 font-Marcellus text-5xl md:text-7xl">Folow Us</h1>
-                <div class="w-full md:w-3/5 flex justify-around items-center text-4xl md:text-5xl text-gray-50 mt-8 md:mt-16">
+                <div class="w-full md:w-3/5 lg:w-1/2 flex justify-around items-center text-4xl md:text-5xl text-gray-50 mt-8 md:mt-16">
                   <i class="fab fa-facebook"></i>
                   <i class="fab fa-instagram"></i>
                   <i class="fab fa-youtube"></i>
@@ -2519,7 +2555,7 @@ body{
           <div class="w-full h-full flex flex-col">
             <div class="w-full flex flex-col mt-14 items-center text-gray-800 font-Noto">
               <h1 class="text-4xl md:text-6xl text-center">General Links</h1>
-              <p class="text-center px-5 text-base md:text-xl mt-4">Department of Industrial Management
+              <p class="text-center px-5 text-base md:text-xl lg:text-2xl mt-4">Department of Industrial Management
                 University of Kelaniya
                 </p>
                 <div class="w-full flex justify-center mt-8">
@@ -2529,20 +2565,20 @@ body{
 
             <div class="w-full flex flex-col mt-14 items-center text-gray-800 font-Noto">
               <h1 class="text-4xl md:text-6xl text-center">General information</h1>
-              <p class="text-center px-5 text-base md:text-xl mt-4">Industrial Management Science Students' Association.
+              <p class="text-center px-5 text-base md:text-xl lg:text-2xl mt-4">Industrial Management Science Students' Association.
               </p>
-              <p class="text-center px-5 text-base md:text-xl mt-4">Department of Industrial Management,
+              <p class="text-center px-5 text-base md:text-xl lg:text-2xl mt-4">Department of Industrial Management,
                 University of Kelaniya,
                 Dalugama
               </p>
             </div>
 
             <div class="w-full flex flex-col mt-14 items-center text-gray-800 font-Noto mb-28">
-              <p class="text-center px-5 text-base md:text-2xl mt-4"><a href="#">
+              <p class="text-center px-5 text-base md:text-2xl lg:text-3xl mt-4"><a href="#">
                 Phone: +94 11 290 3282-5
               </a>
               </p>
-              <p class="text-center px-5 text-base md:text-2xl mt-4">
+              <p class="text-center px-5 text-base md:text-2xl lg:text-3xl mt-4">
                 <a href="#">
                   hackjr.mit@gmail.com
                 </a>
@@ -2606,13 +2642,28 @@ body{
         },
       });
 
-      const TimelineNav = document.querySelector('#NavTimeline')
+      var Width = document.documentElement.clientWidth;
+      var isMobile = false;
+      if(Width < 768 ? isMobile = true : isMobile = false );
+
+      if(isMobile){
+        const TimelineNav = document.querySelector('#NavTimeline')
         TimelineNav.addEventListener('click', () => {
-            console.log('navigating T Timeline')
+            console.log('navigating M Timeline')
             scroll.scrollTo('#Timeline', {
                 
             })
         })
+      }
+      else{
+        const TimelineNav = document.querySelector('#NavTimeline')
+        TimelineNav.addEventListener('click', () => {
+            console.log('navigating T Timeline')
+            scroll.scrollTo('#TimelineTab', {
+                
+            })
+        })
+      }
 
         const Home = document.querySelector('#NavHome')
         Home.addEventListener('click', () => {
