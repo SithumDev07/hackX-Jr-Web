@@ -137,11 +137,29 @@ body{
           transition: all 0.6s ease-out;
         }
 
+        .outer-eyes-container{
+          width: 148px;
+          height: 73px;
+          top: 105px;
+        }
+
+        .eye {
+            width: 15px;
+            height: 23px;
+            background-color: #191919;
+            border-radius: 100%;
+        }
+
+        .single-eye-container{
+          width: 48px;
+          height: 53px;
+          border-radius: 100%;
+        }
     </style>
   </head>
   <body>
 
-      <div class="fixed w-full h-20 border-2 top-0 hidden xl:flex z-50">
+      <div class="fixed w-full h-20 top-0 hidden xl:flex z-50">
         <nav aria-label="" class="w-full h-full flex p-2">
           <div class="flex items-center justify-center w-48 h-full">
             <img src="./public/images/Logos/hackxjrLogo-1366x.png" alt="hackX Logo 1366x">
@@ -232,19 +250,61 @@ body{
           data-scroll-section="1"
         >
           <div class="w-full flex justify-center h-full items-center relative">
+            <div class="hidden xl:flex w-1/2 h-full">
+              <div class="w-full h-full flex flex-col justify-center px-8">
+                <h1 class="text-7xl text-gray-50 font-Noto">hackX Jr 2021</h1>
+                <p class="text-left text-lg text-gray-100 font-Noto mt-10">
+                  HackX Jr is an inter-school hackathon which provides a platform
+                  for school students to transform their ideas into reality. It
+                  promotes school students to build technology-based solutions to
+                  problems they see in the society.
+                </p>
+                <div
+                  class="
+                    bg-getStartedButtonColor
+                    w-52
+                    flex
+                    justify-center
+                    rounded-full
+                    mt-10
+                    shadow-3xl
+                    xl:cursor-pointer
+                  "
+                >
+                  <h2 class="text-gray-100 font-Noto text-lg px-6 py-4">
+                    Get Started
+                  </h2>
+                </div>
+              </div>
+            </div>
             <div
-              class="w-full h-1/2 relative flex items-center justify-center"
+              class="w-full xl:w-1/2 h-1/2 xl:h-full border-2 border-endColorGradient relative flex items-center justify-center"
               data-scroll="1"
               data-scroll-speed="-3"
             >
-              <div class="w-72 h-72 absolute rotator"></div>
-              <div class="w-72 h-72 absolute rotator"></div>
-              <div class="w-72 h-72 absolute rotator"></div>
-              <div class="w-full flex justify-center z-10">
+              <div class="w-72 xl:w-100 h-72 xl:h-100 absolute rotator"></div>
+              <div class="w-72 xl:w-100 h-72 xl:h-100 absolute rotator"></div>
+              <div class="w-72 xl:w-100 h-72 xl:h-100 absolute rotator"></div>
+              <div class="w-full flex justify-center z-10 border-2 relative">
                 <img
                   src="./public/images/Characters/5s.png"
                   alt="mascotty-5s"
+                  class="xl:hidden"
                 />
+                <img
+                  src="./public/images/Mascotty-eyes-removed/Mascotty-Eyes-Removed-1336x.png"
+                  alt="mascotty-eyes-removed-1366x"
+                  class="hidden xl:block"
+                />
+                <div class="outer-eyes-container absolute flex justify-around items-center">
+                  
+                  <div class="single-eye-container mr-5 relative">
+                    <div class="absolute eye"></div>
+                  </div>
+                  <div class="single-eye-container relative">
+                    <div class="absolute eye"></div>
+                  </div>
+                </div>
               </div>
             </div>
 
