@@ -154,6 +154,7 @@ body{
           width: 48px;
           height: 53px;
           border-radius: 100%;
+          background-color: red;
         }
     </style>
   </head>
@@ -299,10 +300,10 @@ body{
                 <div class="outer-eyes-container absolute flex justify-around items-center">
                   
                   <div class="single-eye-container mr-5 relative">
-                    <div class="absolute eye"></div>
+                    <div class="absolute eye ball"></div>
                   </div>
                   <div class="single-eye-container relative">
-                    <div class="absolute eye"></div>
+                    <div class="absolute eye ball"></div>
                   </div>
                 </div>
               </div>
@@ -2659,7 +2660,20 @@ body{
     </div>
   </body>
   <script>
-    const Burger = document.querySelector('#Burger');
+
+var ball = document.getElementsByClassName("ball");
+        document.onmousemove = function(){
+            var x = event.clientX*100/window.innerWidth + "%";
+            var y = event.clientY*100 / window.innerHeight + "%";
+
+            for(var i=0; i<2; i++){
+                ball[i].style.left = x/2;
+                ball[i].style.top = y/2;
+                ball[i].style.transform = "translate(" + x + "," + y + ")";
+            }
+        }
+
+   const Burger = document.querySelector('#Burger');
    const SideBar = document.querySelector('#SideBR')
    const Parent = document.querySelector('#ParentContainer')
    const Logo = document.querySelector('.logo-img')
