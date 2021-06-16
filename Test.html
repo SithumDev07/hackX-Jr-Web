@@ -1933,6 +1933,7 @@ body{
             to-swaggersEndColor
             h-screen
             md:h-60vh
+            xl:h-screen
             relative
             overflow-hidden
             md:hidden
@@ -1962,7 +1963,7 @@ body{
             data-scroll-delay="0.04"
             data-scroll-target="#swag"
           >
-            <h1 class="font-BebasNeue text-gray-800 text-8xl md:text-9xl md:px-2">
+            <h1 class="font-BebasNeue text-gray-800 text-8xl md:text-9xl md:px-2 xl:px-12">
               Make ideas happen
             </h1>
           </div>
@@ -2009,6 +2010,7 @@ body{
            overflow-hidden
            md:flex
            hidden
+           xl:hidden
          "
          data-scroll-section="1"
          id="swagTab"
@@ -2066,21 +2068,95 @@ body{
 
        <!-- End of Swaggers Tab-->
 
+       <!-- Swaggers Desktop -->
+       <section
+       class="
+         bg-gradient-to-bl
+         from-swaggerStartingColor
+         to-swaggersEndColor
+         h-screen
+         md:h-60vh
+         xl:h-screen
+         relative
+         overflow-hidden
+         hidden
+         xl:flex
+       "
+       data-scroll-section="1"
+       id="swagDesktop"
+     >
+       <div
+         class="
+           w-120
+           md:w-auto
+           h-24
+           md:h-32
+           3xl:h-44
+           bg-gray-50
+           absolute
+           flex
+           items-center
+           justify-center
+           top-1/4
+           transform
+           -rotate-12
+           -left-10
+         "
+         data-scroll="1"
+         data-scroll-speed="-20"
+         data-scroll-direction="horizontal"
+         data-scroll-target="#swagDesktop"
+       >
+         <h1 class="font-BebasNeue text-gray-800 text-8xl md:text-9xl md:px-2 xl:px-48">
+           Make ideas happen
+         </h1>
+       </div>
+
+       <div
+         class="
+           w-150
+           md:w-auto
+           h-24
+           md:h-32
+           3xl:h-44
+           bg-gray-50
+           absolute
+           flex
+           items-center
+           justify-center
+           top-2/3
+           transform
+           rotate-12
+           -left-10
+         "
+         data-scroll="1"
+         data-scroll-speed="20"
+         data-scroll-direction="horizontal"
+         data-scroll-target="#swagDesktop"
+       >
+         <h1 class="font-BebasNeue text-gray-800 text-8xl md:text-9xl xl:px-28">
+           Things to keep in mind
+         </h1>
+       </div>
+     </section>
+
+     <!-- End of Swaggers -->
+
         <!-- Scoring -->
         <section
           class="
             h-auto
+            xl:h-screen
             bg-gradient-to-tr
             from-scoringStartingColor
             to-scoringEndColor
-            xl:flex
             hidden
           "
           data-scroll-section="1"
           id="scoring"
         >
           <div class="w-full mt-12 mb-16 relative">
-            <div class="w-full flex items-center flex-col text-gray-50">
+            <div class="w-full flex items-center flex-col xl:flex-row text-gray-50">
               <h1
                 class="font-BebasNeue text-7xl uppercase z-20"
                 data-scroll="1"
@@ -2144,6 +2220,7 @@ body{
             from-scoringStartingColor
             to-scoringEndColor
             flex
+            xl:hidden
           "
           data-scroll-section="1"
           id="scoring"
@@ -2196,6 +2273,81 @@ body{
           </div>
         </section>
         <!-- End of Scoring Mobile -->
+
+         <!-- Scoring Desktop -->
+         <section
+         class="
+           h-auto
+           xl:h-screen
+           bg-gradient-to-tr
+           from-scoringStartingColor
+           to-scoringEndColor
+           xl:flex
+           hidden
+         "
+         data-scroll-section="1"
+         id="scoringDesktop"
+       >
+         <div class="w-full mt-12 mb-16 relative flex justify-end">
+          <h1
+          class="font-BebasNeue text-8xl 2xl:text-9xl uppercase z-20 absolute left-10 top-1/4 text-gray-50 transform -translate-y-1/2"
+          data-scroll="1"
+          data-scroll-speed="2"
+          data-scroll-target="#scoringDesktop"
+        >
+          Scoring
+        </h1>
+           <div class="w-1/2 flex items-center flex-col text-gray-50 3xl:justify-center">
+             
+             <h2 class="font-Marcellus text-5xl 2xl:text-8xl mt-8 z-20">Concept</h2>
+             <h3 class="font-Noto text-xl 2xl:text-3xl 3xl:text-4xl mt-5 z-20">
+               Marks will be allocated for,
+             </h3>
+             <div class="font-Noto text-base 2xl:text-2xl 3xl:text-3xl w-4/5 px-2 mt-4 z-20">
+               <p>Novelty / Distinctively competency</p>
+               <p>Societal impact</p>
+               <p>Feasibility of the idea</p>
+             </div>
+
+             <h2 class="font-Marcellus text-5xl 2xl:text-8xl mt-8 z-20">Presentation</h2>
+             <h3 class="font-Noto text-xl 2xl:text-3xl 3xl:text-4xl mt-5 z-20">
+               Marks will be allocated for,
+             </h3>
+             <div class="font-Noto text-base 2xl:text-2xl 3xl:text-3xl w-4/5 px-2 mt-4 z-20">
+               <p>Clarity and completeness</p>
+               <p>Sustainability</p>
+               <p>Business/marketing plan</p>
+               <p>Adhering to the time constraints</p>
+             </div>
+           </div>
+           <div
+             class="
+               absolute
+               w-100
+               2xl:w-110
+               3xl:w-120
+               h-100
+               3xl:h-120
+               2xl:h-110
+               rounded-full
+               shadow-2xl
+               bg-scoringCircleColor
+               left-0
+               transform
+               -translate-x-1/2
+               top-0
+               2xl:top-left16
+               z-0
+             "
+             data-scroll="1"
+             data-scroll-speed="-1"
+             data-scroll-delay="0.03"
+             data-scroll-direction="horizontal"
+             data-scroll-target="#scoringDesktop"
+           ></div>
+         </div>
+       </section>
+       <!-- End of Scoring Desktop -->
 
         <!-- Team Organization -->
         <section
@@ -2276,6 +2428,7 @@ body{
             from-scoringEndColor
             to-scoringStartingColor
             flex
+            xl:hidden
           "
           data-scroll-section="1"
           id="TeamOrg"
