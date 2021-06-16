@@ -183,20 +183,20 @@ body{
           <div class="flex items-center justify-center w-48 h-full">
             <img src="./public/images/Logos/hackxjrLogo-1366x.png" alt="hackX Logo 1366x">
           </div>
-          <ul class="flex text-gray-50 font-Noto text-xl flex-1 justify-around items-center ml-10">
-            <li class="cursor-pointer">Home</li>
-            <li class="cursor-pointer">Info</li>
-            <li class="cursor-pointer">Schedule</li>
-            <li class="cursor-pointer">Rules</li>
-            <li class="cursor-pointer"><a href="#AboutUs">About</a></li>
-            <li class="cursor-pointer">Register</li>
-            <li class="cursor-pointer">Contact Us</li>
+          <ul class="flex text-gray-50 font-Noto text-xl 2xl:text-2xl flex-1 justify-around items-center ml-10">
+            <li class="cursor-pointer" id="navHomeD">Home</li>
+            <li class="cursor-pointer" id="navHomeI">Info</li>
+            <li class="cursor-pointer" id="navHomeS">Schedule</li>
+            <li class="cursor-pointer" id="navHomeR">Rules</li>
+            <li class="cursor-pointer" id="navHomeA">About</li>
+            <li class="cursor-pointer" id="navHomeReg">Register</li>
+            <li class="cursor-pointer" id="navHomeC">Contact Us</li>
           </ul>
         </nav>
       </div>
 
       <div class="w-full fixed z-50 xl:hidden">
-        <nav class="w-full flex justify-between mt-4 px-3 md:px-6">
+        <nav class="w-full flex justify-between mt-4 px-3 md:px-6" aria-label="">
           <div>
             <img src="./public/images/Logos/hackxjrLogo-5s.png"  class="md:hidden logo-img" alt="logo-5s" />
             <img src="./public/images/Logos/hackxjrLogo-iPad.png" class="hidden md:block lg:hidden logo-img" alt="Logo-iPad">
@@ -3032,9 +3032,15 @@ body{
             <div class="w-full flex items-center flex-col mt-14 mb-16">
                 <h1 class="text-center text-gray-50 font-Marcellus text-5xl md:text-7xl">Folow Us</h1>
                 <div class="w-full md:w-3/5 lg:w-1/2 flex justify-around items-center text-4xl md:text-5xl text-gray-50 mt-8 md:mt-16">
-                  <i class="fab fa-facebook"></i>
-                  <i class="fab fa-instagram"></i>
-                  <i class="fab fa-youtube"></i>
+                  <a href="">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                  <a href="">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="">
+                    <i class="fab fa-youtube"></i>
+                  </a>
                 </div>
             </div>
           </div>
@@ -3042,10 +3048,10 @@ body{
         <!-- End of Follow Us -->
 
         <!-- Footer -->
-        <section class="h-auto bg-gray-50" data-scroll-section="1">
-          <div class="w-full h-full flex flex-col">
+        <section class="h-auto bg-gray-50 xl:flex" data-scroll-section="1">
+          <div class="w-full h-full flex flex-col xl:flex-row xl:mb-20">
             <div class="w-full flex flex-col mt-14 items-center text-gray-800 font-Noto">
-              <h1 class="text-4xl md:text-6xl text-center">General Links</h1>
+              <h1 class="text-4xl md:text-6xl xl:text-4xl text-center">General Links</h1>
               <p class="text-center px-5 text-base md:text-xl lg:text-2xl mt-4">Department of Industrial Management
                 University of Kelaniya
                 </p>
@@ -3055,7 +3061,7 @@ body{
             </div>
 
             <div class="w-full flex flex-col mt-14 items-center text-gray-800 font-Noto">
-              <h1 class="text-4xl md:text-6xl text-center">General information</h1>
+              <h1 class="text-4xl md:text-6xl xl:text-4xl text-center">General information</h1>
               <p class="text-center px-5 text-base md:text-xl lg:text-2xl mt-4">Industrial Management Science Students' Association.
               </p>
               <p class="text-center px-5 text-base md:text-xl lg:text-2xl mt-4">Department of Industrial Management,
@@ -3185,6 +3191,41 @@ var ball = document.getElementsByClassName("ball");
         Contact.addEventListener('click', () => {
             console.log('navigating T Contact')
             scroll.scrollTo('#ContactUs', {})
+        })
+
+        const navHomeD = document.querySelector('#navHomeD')
+        navHomeD.addEventListener('click', () => {
+          scroll.scrollTo('#Home', {})
+        })
+
+        const navHomeI = document.querySelector('#navHomeI')
+        navHomeI.addEventListener('click', () => {
+         // scroll.scrollTo('#Home', {})
+        })
+
+        const navHomeS = document.querySelector('#navHomeS')
+        navHomeS.addEventListener('click', () => {
+          scroll.scrollTo('#TimelineTab', {})
+        })
+
+        const navHomeR = document.querySelector('#navHomeR')
+        navHomeR.addEventListener('click', () => {
+          //scroll.scrollTo('#Home', {})
+        })
+
+        const navHomeA = document.querySelector('#navHomeA')
+        navHomeA.addEventListener('click', () => {
+          scroll.scrollTo('#AboutUs', {})
+        })
+
+        const navHomeReg = document.querySelector('#navHomeReg')
+        navHomeReg.addEventListener('click', () => {
+          //scroll.scrollTo('#Home', {})
+        })
+
+        const navHomeC = document.querySelector('#navHomeC')
+        navHomeC.addEventListener('click', () => {
+          scroll.scrollTo('#ContactUs', {})
         })
     })();
 
