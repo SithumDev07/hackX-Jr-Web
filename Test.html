@@ -2375,21 +2375,21 @@ body{
               
               <div class="font-Noto text-2xl 2xl:text-3xl w-full px-4 2xl:px-12 mt-12 z-20">
                 <p>A team should consist of a maximum of five members.</p>
-                <p>
+                <p class="mt-5">
                   Every group must appoint a mentor for the team, preferably the
                   teacher-in-charge of A/L ICT subject stream, or a teacher of a
                   similar capacity.
                 </p>
-                <p>
+                <p class="mt-5">
                   No participant is allowed to represent two groups. Inclusion
                   of the same member in two different teams will lead to
                   automatic disqualification of both groups.
                 </p>
-                <p>
+                <p class="mt-5">
                   Participants are encouraged to design their own promotional
                   material for their team.
                 </p>
-                <p>
+                <p class="mt-5">
                   Participants can choose an appropriate title for their team.
                 </p>
               </div>
@@ -2491,7 +2491,7 @@ body{
         <!-- Application Process -->
         <section
           class="
-            h-auto
+            h-screen
             bg-gradient-to-tr
             from-whatIsStartingGradient
             to-whatIsEndingGradient
@@ -2501,33 +2501,34 @@ body{
           data-scroll-section="1"
           id="Application"
         >
-          <div class="w-full mt-12 mb-16 relative">
-            <div class="w-full flex items-center flex-col text-gray-50">
-              <h1
-                class="font-BebasNeue text-7xl uppercase z-20 text-center"
+          <div class="w-full mt-12 mb-16 relative flex justify-end">
+            <h1
+                class="font-BebasNeue text-8xl 2xl:text-9xl uppercase z-20 text-center text-gray-50 absolute top-1/4 left-14 2xl:left-16 2xl:w-1/4"
                 data-scroll="1"
                 data-scroll-speed="1"
                 data-scroll-target="#Application"
               >
                 Application Process
               </h1>
-              <div class="font-Noto text-base w-full px-4 mt-12 z-20">
+            <div class="w-1/2 flex items-center flex-col text-gray-50 3xl:justify-center">
+              
+              <div class="font-Noto text-2xl 2xl:text-3xl w-full px-8 2xl:px-12 mt-12 z-20">
                 <p>A team should consist of a maximum of five members.</p>
-                <p>
+                <p class="mt-5">
                   Every group must appoint a mentor for the team, preferably the
                   teacher-in-charge of A/L ICT subject stream, or a teacher of a
                   similar capacity.
                 </p>
-                <p>
+                <p class="mt-5">
                   No participant is allowed to represent two groups. Inclusion
                   of the same member in two different teams will lead to
                   automatic disqualification of both groups.
                 </p>
-                <p>
+                <p class="mt-5">
                   Participants are encouraged to design their own promotional
                   material for their team.
                 </p>
-                <p>
+                <p class="mt-5">
                   Participants can choose an appropriate title for their team.
                 </p>
               </div>
@@ -2535,8 +2536,12 @@ body{
             <div
               class="
                 absolute
-                w-72
-                h-72
+                w-100
+                2xl:w-110
+                3xl:w-120
+                h-100
+                2xl:h-110
+                3xl:h-120
                 rounded-full
                 shadow-2xl
                 bg-applicationCircleColor
@@ -2544,6 +2549,7 @@ body{
                 transform
                 -translate-x-1/2
                 top-0
+                3xl:top-left16
                 z-0
               "
               data-scroll="1"
@@ -2566,6 +2572,7 @@ body{
           from-whatIsStartingGradient
           to-whatIsEndingGradient
           flex
+          xl:hidden
         "
         data-scroll-section="1"
         id="Application"
