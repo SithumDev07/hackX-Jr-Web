@@ -188,7 +188,7 @@ body{
             <li class="cursor-pointer">Info</li>
             <li class="cursor-pointer">Schedule</li>
             <li class="cursor-pointer">Rules</li>
-            <li class="cursor-pointer">About</li>
+            <li class="cursor-pointer"><a href="#AboutUs">About</a></li>
             <li class="cursor-pointer">Register</li>
             <li class="cursor-pointer">Contact Us</li>
           </ul>
@@ -2808,14 +2808,14 @@ body{
         <!-- About Us -->
         <section class="h-auto flex flex-col items-center" data-scroll-section="1" id="AboutUs">
           <div class="w-full flex flex-col items-center text-gray-50 mt-16 mb-10">
-            <h1 class="uppercase text-7xl md:text-8xl font-BebasNeue text-center">
+            <h1 class="uppercase text-7xl xl:text-8xl 3xl:text-9xl md:text-8xl font-BebasNeue text-center">
               About Us
             </h1>
           </div>
-          <div class="h-96 w-72 md:w-3/5 overflow-hidden relative">
+          <div class="h-96 w-72 md:w-3/5 overflow-hidden relative xl:hidden">
             <div class="absolute w-full h-full bg-vision-bg-5s bg-cover">
                <div class="w-full h-full relative">
-                <h1 class="font-Marcellus text-gray-50 text-6xl md:text-7xl absolute z-10 top-12 left-1/2 transform -translate-x-1/2">Vision</h1>
+                <h1 class="font-Marcellus text-gray-50 text-6xl md:text-7xl absolute z-10 top-12 left-1/2 transform -translate-x-1/2">Our Vision</h1>
                 <p class="w-full px-3 md:px-5 text-gray-50 font-Noto text-base md:text-xl lg:text-2xl text-center absolute top-1/2  transform -translate-y-1/4 z-10">Our vision is to be recognized as the pioneering platform for providing the school children of the country
                     with an opportunity to bring forth their ideas and accelerate creation and development of new radical solutions.</p>
                 <div class="w-ful h-full bg-gray-800 opacity-70"></div>
@@ -2823,19 +2823,43 @@ body{
             </div>
         </div>
 
-        <div class="h-96 w-72 md:w-3/5 overflow-hidden relative mt-14">
+        <div class="w-full hidden xl:flex mt-28">
+          <div class="w-1/2 h-50vh flex items-center justify-center">
+            <img src="./public/images/vision-bg/vision-image-xl.png" class="2xl:hidden" alt="Vision Image Xl">
+            <img src="./public/images/vision-bg/vision-image-2xl.png" class="hidden 2xl:block" alt="Vision Image Xl">
+          </div>
+          <div class="w-1/2 flex flex-col items-center justify-center">
+            <h1 class="font-Marcellus text-gray-50 text-7xl 3xl:text-8xl">Our Vision</h1>
+            <p class="text-gray-50 font-Noto text-xl 3xl:text-2xl mt-14 px-10">Our vision is to be recognized as the pioneering platform for providing the school children of the country
+              with an opportunity to bring forth their ideas and accelerate creation and development of new radical solutions.</p>
+          </div>
+        </div>
+
+        <div class="h-96 w-72 md:w-3/5 overflow-hidden relative mt-14 xl:hidden">
           <div class="absolute w-full h-full bg-mission-bg-5s bg-cover">
              <div class="w-full h-full relative">
-              <h1 class="font-Marcellus text-gray-50 text-6xl md:text-7xl absolute z-10 top-12 left-1/2 transform -translate-x-1/2">Mission</h1>
+              <h1 class="font-Marcellus text-gray-50 text-6xl md:text-7xl absolute z-10 top-12 left-1/2 transform -translate-x-1/2">Our Mission</h1>
               <p class="w-full px-3 md:px-5 text-gray-50 font-Noto text-base md:text-xl lg:text-2xl text-center absolute top-1/2  transform -translate-y-1/4 z-10">Our mission is to spark innovative ideas and develop a creative and entrepreneurial culture among the school community, who will in turn contribute to global knowledge and economy, by exposing them to the corporate sector.</p>
               <div class="w-ful h-full bg-gray-800 opacity-70"></div>
              </div>
           </div>
       </div>
 
+      <div class="w-full hidden xl:flex mt-48 2xl:mt-56 mb-36">
+        <div class="w-1/2 flex flex-col items-center justify-center">
+          <h1 class="font-Marcellus text-gray-50 text-7xl 3xl:text-8xl">Our Mission</h1>
+          <p class="text-gray-50 font-Noto text-xl 3xl:text-2xl mt-14 px-10">Our mission is to spark innovative ideas and develop a creative and entrepreneurial culture among the school community, who will in turn contribute to global knowledge and economy, by exposing them to the corporate sector.</p>
+        </div>
+        <div class="w-1/2 h-50vh flex items-center justify-center">
+          <img src="./public/images/mission-bg/mission-image-xl.png" class="2xl:hidden" alt="Mission Image Xl">
+          <img src="./public/images/mission-bg/mission-image-2xl.png" class="hidden 2xl:block" alt="Mission Image Xl">
+        </div>
+      </div>
+
       <div class="w-full flex flex-col items-center mt-10 mb-16">
         <div class="w-72">
-          <img src="./public/images/Logos/uok-images.png" alt="">
+          <img src="./public/images/Logos/uok-images.png" class="xl:hidden" alt="UOK images">
+          <img src="./public/images/Logos/uok-images-2xl.png" class="hidden xl:block" alt="UOK images XL">
         </div>
         <div class="w-full px-4 md:px-24 text-gray-50 flex flex-col items-center mt-10">
           <h1 class="font-Marcellus text-6xl md:text-7xl text-center">About Us</h1>
