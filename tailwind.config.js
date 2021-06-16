@@ -16,6 +16,7 @@ module.exports = {
         'vision-bg-5s': "url('../public/images/vision-bg/bg-vison-large-5s.png')",
         'mission-bg-5s': "url('../public/images/mission-bg/bg-mission-large-5s.png')",
         'coordinator-5s': "url('../public/images/coordinators/cordinator-5s.png')",
+        'lets-talk' : "url('../public/images/coordinators/letstalk.png')",
       })
     },
     screens: {
@@ -356,6 +357,7 @@ module.exports = {
       '7xl': ['4.5rem', { lineHeight: '1' }],
       '8xl': ['6rem', { lineHeight: '1' }],
       '9xl': ['8rem', { lineHeight: '1' }],
+      '10xl': ['10rem', { lineHeight: '1' }],
     },
     fontWeight: {
       thin: '100',
