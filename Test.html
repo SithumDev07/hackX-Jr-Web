@@ -155,6 +155,13 @@ body{
           height: 53px;
           border-radius: 100%;
         }
+
+        .inner-eye-ball{
+          width: 4px;
+          height: 6px;
+          background-color: #fff;
+          border-radius: 100%;
+        }
     </style>
   </head>
   <body>
@@ -196,7 +203,7 @@ body{
       </div>
       
       <!-- Social Icons -->
-      <div class="w-20 xl:w-auto h-72 xl:h-20 fixed left-3 top-left16 xl:top-4/5 xl:transform xl:translate-y-10 z-10 hidden md:flex">
+      <div class="w-20 xl:w-auto h-72 xl:h-20 fixed left-3 top-left16 xl:top-4/5 3xl:top-9/10 xl:transform xl:translate-y-10 3xl:translate-y-3 z-10 hidden md:flex">
         <div class="w-full h-full flex flex-col xl:flex-row justify-around text-gray-50 text-5xl lg:text-6xl xl:text-5xl items-center"  id="SocialMediaIcons">
           <a href="#" class="xl:ml-8"><i class="fab fa-facebook"></i></a>
           <a href="#" class="xl:ml-8"><i class="fab fa-instagram"></i></a>
@@ -251,9 +258,9 @@ body{
         >
           <div class="w-full flex justify-center h-full items-center relative">
             <div class="hidden xl:flex w-1/2 h-full">
-              <div class="w-full h-full flex flex-col justify-center px-8">
-                <h1 class="text-7xl text-gray-50 font-Noto">hackX Jr 2021</h1>
-                <p class="text-left text-lg text-gray-100 font-Noto mt-10">
+              <div class="w-full h-full flex flex-col justify-center px-8 3xl:px-12">
+                <h1 class="text-7xl 3xl:text-8xl text-gray-50 font-Noto">hackX Jr 2021</h1>
+                <p class="text-left text-lg 3xl:text-xl text-gray-100 font-Noto mt-10">
                   HackX Jr is an inter-school hackathon which provides a platform
                   for school students to transform their ideas into reality. It
                   promotes school students to build technology-based solutions to
@@ -278,31 +285,41 @@ body{
               </div>
             </div>
             <div
-              class="w-full xl:w-1/2 h-1/2 xl:h-full border-2 border-endColorGradient relative flex items-center justify-center"
+              class="w-full xl:w-1/2 h-1/2 xl:h-full relative flex items-center justify-center"
               data-scroll="1"
               data-scroll-speed="-3"
             >
-              <div class="w-72 xl:w-100 h-72 xl:h-100 absolute rotator"></div>
-              <div class="w-72 xl:w-100 h-72 xl:h-100 absolute rotator"></div>
-              <div class="w-72 xl:w-100 h-72 xl:h-100 absolute rotator"></div>
-              <div class="w-full flex justify-center z-10 border-2 relative">
+              <div class="flex items-center justify-center w-full h-full absolute rotater-container">
+                <div class="w-72 xl:w-100 h-72 xl:h-100 absolute rotator z-10"></div>
+                <div class="w-72 xl:w-100 h-72 xl:h-100 absolute rotator z-10"></div>
+                <div class="w-72 xl:w-100 h-72 xl:h-100 absolute rotator z-10"></div>
+              </div>
+              <div class="w-full flex justify-center relative mascot-container">
                 <img
                   src="./public/images/Characters/5s.png"
                   alt="mascotty-5s"
-                  class="xl:hidden"
+                  class="xl:hidden z-20"
                 />
                 <img
                   src="./public/images/Mascotty-eyes-removed/Mascotty-Eyes-Removed-1336x.png"
                   alt="mascotty-eyes-removed-1366x"
-                  class="hidden xl:block"
+                  class="hidden xl:block z-20 mascot"
                 />
-                <div class="outer-eyes-container absolute flex justify-around items-center">
+                <div class="outer-eyes-container absolute flex justify-around items-center z-20">
                   
-                  <div class="single-eye-container mr-5 relative">
-                    <div class="absolute eye"></div>
+                  <div class="single-eye-container mr-5 relative p-1">
+                    <div class="absolute eye ball">
+                      <div class="w-full h-full flex items-end justify-center">
+                        <div class="inner-eye-ball z-10 mb-1"></div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="single-eye-container relative">
-                    <div class="absolute eye"></div>
+                  <div class="single-eye-container relative p-1">
+                    <div class="absolute eye ball">
+                      <div class="w-full h-full flex items-end justify-center">
+                        <div class="inner-eye-ball z-10 mb-1"></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -437,17 +454,17 @@ body{
         <section
           class="
             h-auto
+            xl:h-screen
             bg-gradient-to-tr
             from-whatIsStartingGradient
             to-whatIsEndingGradient
-            xl:flex flex-col
+            xl:flex
             hidden
-
           "
           data-scroll-section="1"
           id="WhatIs"
         >
-          <div class="w-full flex justify-center mt-16">
+          <div class="w-full 3xl:w-4/5 3xl:h-4/5 flex justify-center mt-16 3xl:p-16">
             <img
               src="./public/images/Mascotty-New/jr-5s.png"
               data-scroll="1"
@@ -455,13 +472,24 @@ body{
               data-scroll-target="#WhatIs"
               data-scroll-delay="0.03"
               alt="Mascotte-New"
+              class="xl:hidden"
+            />
+
+            <img
+              src="./public/images/Mascotty-New/mascotty-jr-new-1366x.png"
+              data-scroll="1"
+              data-scroll-speed="1"
+              data-scroll-target="#WhatIs"
+              data-scroll-delay="0.03"
+              alt="Mascotte-New"
+              class="hidden xl:block"
             />
           </div>
           <div
-            class="w-full flex flex-col items-center text-gray-50 mb-16 h-full"
+            class="w-full flex flex-col items-center text-gray-50 mb-16 h-full xl:justify-center 3xl:justify-start 3xl:mt-20"
           >
-            <h1 class="text-4xl font-Noto">What is hackX Jr?</h1>
-            <div class="px-4 font-Noto text-lg mt-14 flex flex-col text-center">
+            <h1 class="text-4xl xl:text-7xl 3xl:text-8xl font-Noto">What is hackX Jr?</h1>
+            <div class="px-4 xl:px-6 3xl:px-12 font-Noto text-lg 3xl:text-2xl mt-14 flex flex-col text-center xl:text-left">
               <p>
                 HackX Jr is an inter-school hackathon which provides a platform
                 for school students to transform their ideas into reality. It
@@ -492,7 +520,7 @@ body{
           bg-gradient-to-tr
           from-whatIsStartingGradient
           to-whatIsEndingGradient
-          flex flex-col
+          flex flex-col xl:hidden
         "
         data-scroll-section="1"
         id="WhatIs"
@@ -540,6 +568,7 @@ body{
         <section
           class="
             h-auto
+            xl:h-screen
             bg-gradient-to-tr
             from-awardsStartingColor
             to-awardsEndColor
@@ -554,16 +583,23 @@ body{
               w-full
               flex
               justify-center
+              xl:justify-start
               items-center
+              xl:items-start
               flex-col
               relative
               mb-24
+              
             "
           >
-            <div class="w-4/5 flex justify-center mt-12">
-              <img src="./public/images/awards/Awards-5s.png" alt="awards-5s" />
+            <div class="w-4/5 flex justify-center xl:justify-start mt-12 xl:mt-10 xl:ml-8 2xl:ml-16">
+              <img src="./public/images/awards/Awards-5s.png" alt="awards-5s" class="xl:hidden" />
+
+              <img src="./public/images/awards/Awards-xl.png" alt="awards-Xl" class="hidden xl:block 2xl:hidden" />
+
+              <img src="./public/images/awards/Awards-2xl.png" alt="awards-2Xl" class="hidden 2xl:block" />
             </div>
-            <div class="w-full flex justify-end">
+            <div class="w-full flex justify-end xl:absolute xl:top-left16">
               <img
                 src="./public/images/cups/cup-5s.png"
                 data-scroll="1"
@@ -571,13 +607,34 @@ body{
                 data-scroll-speed="-1"
                 data-scroll-target="#Awards"
                 alt="Cup-5s"
+                class="xl:hidden"
+              />
+
+              <img
+                src="./public/images/cups/cup-xl.png"
+                data-scroll="1"
+                data-scroll-delay="0.03"
+                data-scroll-speed="-1"
+                data-scroll-target="#Awards"
+                alt="Cup-Xl"
+                class="hidden xl:block 2xl:hidden"
+              />
+
+              <img
+                src="./public/images/cups/cup-2xl.png"
+                data-scroll="1"
+                data-scroll-delay="0.03"
+                data-scroll-speed="-1"
+                data-scroll-target="#Awards"
+                alt="Cup-2Xl"
+                class="hidden 2xl:block"
               />
             </div>
-            <div class="w-full absolute top-2/3 px-4">
+            <div class="w-full xl:w-1/2 absolute top-2/3 2xl:top-1/2 px-4 xl:ml-8 2xl:transform 2xl:translate-y-10">
               <div class="w-full flex justify-start">
                 <img src="./public/images/quotes/quote-left-5s.png" alt="" />
               </div>
-              <p class="text-2xl text-gray-50 font-PlayFair px-4 my-4">
+              <p class="text-2xl 2xl:text-4xl 3xl:text-5xl text-gray-50 font-PlayFair px-4 my-4 3xl:text-center">
                 Winning takes precedence over all. There’s no gray area. No
                 almosts.
               </p>
@@ -597,6 +654,7 @@ body{
             from-awardsStartingColor
             to-awardsEndColor
             flex
+            xl:hidden
           "
           data-scroll-section="1"
           id="Awards"
@@ -657,15 +715,17 @@ body{
         <section
           class="
             h-auto
+            xl:h-screen
             bg-gradient-to-bl
             from-competitionStartingColor
             to-competitionEndColor
+            xl:relative
           "
           data-scroll-section="1"
         >
           <div class="w-full h-full flex flex-col">
             <h1
-              class="text-gray-50 font-NorthHead text-7xl md:text-8xl lg:text-9xl text-center px-3 mt-8"
+              class="text-gray-50 font-NorthHead text-7xl md:text-8xl lg:text-9xl text-center xl:text-right px-3 mt-8 xl:mt-4 3xl:mt-16 xl:mr-8 z-10"
             >
               Competition Details
             </h1>
@@ -685,7 +745,7 @@ body{
                 alt="Places-3-5s"
               />
             </div>
-            <div class="w-full hidden md:flex flex-col items-center mt-10">
+            <div class="w-full hidden md:flex flex-col items-center mt-10 xl:hidden">
               <div class="w-full justify-center flex">
                 <img src="./public/images/places/Place-1-5s.png" alt="Place1-md">
               </div>
@@ -694,8 +754,45 @@ body{
                 <img src="./public/images/places/Place-3-5s.png" alt="Places3-md">
               </div>
             </div>
+            <div class="w-1/2 h-full absolute left-0 top-0 hidden xl:flex xl:flex-col pl-12 2xl:justify-center">
+              <div class="w-full flex items-center justify-start mt-12">
+                <img src="./public/images/places/Place-1-5s.png" class="3xl:hidden" alt="Place1-xl">
+                <img src="./public/images/places/1 place-3xl.png" class="hidden 3xl:block" alt="Place1-3xl">
+              </div>
+              <div class="w-full flex items-center justify-center">
+                <img src="./public/images/places/Place-2-5s.png" class="3xl:hidden"  alt="Places2-xl">
+                <img src="./public/images/places/2 place-3xl.png" class="hidden 3xl:block" alt="Places2-3xl">
+              </div>
+              <div class="w-full flex items-center justify-end">
+                <img src="./public/images/places/Place-3-5s.png" class="3xl:hidden" alt="Places3-xl">
+                <img src="./public/images/places/3 place-3xl.png" class="hidden 3xl:block" alt="Places3-3xl">
+              </div>
+            </div>
+
+            <div class="w-1/2 h-full absolute right-0 top-0 hidden xl:flex">
+             <div class="w-full h-full relative flex flex-col text-xl 2xl:text-3xl text-gray-50 font-Noto pt-40 2xl:pt-52">
+                <p class="absolute -left-28 3xl:top-64">
+                  Students from any age group can participate in groups of 5
+                  members and 1 mentor. (A/L students studying ICT from Physical
+                  Science stream or Technology stream are highly encouraged to
+                  take part)
+                </p>
+                <p class="mt-6 absolute -left-8 top-60 2xl:top-98">
+                  More than one team can participate from one school.
+                </p>
+                <p class="mt-6 absolute -left-2 top-80 2xl:top-100 3xl:top-110">Idea must be novel and feasible.</p>
+                <p class="mt-6 absolute left-6 2xl:left-10 top-96 2xl:top-2/3">
+                  A fully functional prototype for the final demonstration is not
+                  compulsory, but encouraged.
+                </p>
+                <p class="mt-6 absolute left-10 2xl:left-16 xl:top-100 2xl:top-4/5">
+                  Proposal and the final pitching can be done in either Sinhala or
+                  English medium.
+                </p>
+             </div>
+            </div>
             <div
-              class="w-full px-4 md:px-0 md:pl-24 md:pr-7 text-base md:text-xl lg:text-3xl text-gray-50 font-Noto mt-12 mb-16"
+              class="w-full px-4 md:px-0 md:pl-24 md:pr-7 text-base md:text-xl lg:text-3xl text-gray-50 font-Noto mt-12 mb-16 xl:hidden"
             >
               <p>
                 Students from any age group can participate in groups of 5
@@ -2659,7 +2756,20 @@ body{
     </div>
   </body>
   <script>
-    const Burger = document.querySelector('#Burger');
+
+var ball = document.getElementsByClassName("ball");
+        document.onmousemove = function(){
+            var x = event.clientX*100/window.innerWidth + "%";
+            var y = event.clientY*100 / window.innerHeight + "%";
+
+            for(var i=0; i<2; i++){
+                ball[i].style.left = x/2;
+                ball[i].style.top = y/2;
+                ball[i].style.transform = "translate(" + x + "," + y + ")";
+            }
+        }
+
+   const Burger = document.querySelector('#Burger');
    const SideBar = document.querySelector('#SideBR')
    const Parent = document.querySelector('#ParentContainer')
    const Logo = document.querySelector('.logo-img')
