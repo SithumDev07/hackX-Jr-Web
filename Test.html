@@ -454,12 +454,13 @@ body{
         <section
           class="
             h-auto
+            xl:h-screen
             bg-gradient-to-tr
             from-whatIsStartingGradient
             to-whatIsEndingGradient
-            xl:flex flex-col
+            xl:flex
             hidden
-
+            border-2
           "
           data-scroll-section="1"
           id="WhatIs"
@@ -472,6 +473,17 @@ body{
               data-scroll-target="#WhatIs"
               data-scroll-delay="0.03"
               alt="Mascotte-New"
+              class="xl:hidden"
+            />
+
+            <img
+              src="./public/images/Mascotty-New/mascotty-jr-new-1366x.png"
+              data-scroll="1"
+              data-scroll-speed="1"
+              data-scroll-target="#WhatIs"
+              data-scroll-delay="0.03"
+              alt="Mascotte-New"
+              class="hidden xl:block"
             />
           </div>
           <div
@@ -509,7 +521,7 @@ body{
           bg-gradient-to-tr
           from-whatIsStartingGradient
           to-whatIsEndingGradient
-          flex flex-col
+          flex flex-col xl:hidden
         "
         data-scroll-section="1"
         id="WhatIs"
