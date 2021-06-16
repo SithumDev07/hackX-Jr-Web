@@ -568,6 +568,7 @@ body{
         <section
           class="
             h-auto
+            xl:h-screen
             bg-gradient-to-tr
             from-awardsStartingColor
             to-awardsEndColor
@@ -582,16 +583,23 @@ body{
               w-full
               flex
               justify-center
+              xl:justify-start
               items-center
+              xl:items-start
               flex-col
               relative
               mb-24
+              
             "
           >
-            <div class="w-4/5 flex justify-center mt-12">
-              <img src="./public/images/awards/Awards-5s.png" alt="awards-5s" />
+            <div class="w-4/5 flex justify-center xl:justify-start mt-12 xl:mt-10 xl:ml-8 2xl:ml-16">
+              <img src="./public/images/awards/Awards-5s.png" alt="awards-5s" class="xl:hidden" />
+
+              <img src="./public/images/awards/Awards-xl.png" alt="awards-Xl" class="hidden xl:block 2xl:hidden" />
+
+              <img src="./public/images/awards/Awards-2xl.png" alt="awards-2Xl" class="hidden 2xl:block" />
             </div>
-            <div class="w-full flex justify-end">
+            <div class="w-full flex justify-end xl:absolute xl:top-left16">
               <img
                 src="./public/images/cups/cup-5s.png"
                 data-scroll="1"
@@ -599,13 +607,34 @@ body{
                 data-scroll-speed="-1"
                 data-scroll-target="#Awards"
                 alt="Cup-5s"
+                class="xl:hidden"
+              />
+
+              <img
+                src="./public/images/cups/cup-xl.png"
+                data-scroll="1"
+                data-scroll-delay="0.03"
+                data-scroll-speed="-1"
+                data-scroll-target="#Awards"
+                alt="Cup-Xl"
+                class="hidden xl:block 2xl:hidden"
+              />
+
+              <img
+                src="./public/images/cups/cup-2xl.png"
+                data-scroll="1"
+                data-scroll-delay="0.03"
+                data-scroll-speed="-1"
+                data-scroll-target="#Awards"
+                alt="Cup-2Xl"
+                class="hidden 2xl:block"
               />
             </div>
-            <div class="w-full absolute top-2/3 px-4">
+            <div class="w-full xl:w-1/2 absolute top-2/3 2xl:top-1/2 px-4 xl:ml-8 2xl:transform 2xl:translate-y-10">
               <div class="w-full flex justify-start">
                 <img src="./public/images/quotes/quote-left-5s.png" alt="" />
               </div>
-              <p class="text-2xl text-gray-50 font-PlayFair px-4 my-4">
+              <p class="text-2xl 2xl:text-4xl 3xl:text-5xl text-gray-50 font-PlayFair px-4 my-4 3xl:text-center">
                 Winning takes precedence over all. There’s no gray area. No
                 almosts.
               </p>
@@ -625,6 +654,7 @@ body{
             from-awardsStartingColor
             to-awardsEndColor
             flex
+            xl:hidden
           "
           data-scroll-section="1"
           id="Awards"
