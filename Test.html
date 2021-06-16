@@ -2352,27 +2352,28 @@ body{
         <!-- Team Organization -->
         <section
           class="
-            h-auto
+            h-screen
             bg-gradient-to-tr
             from-scoringEndColor
             to-scoringStartingColor
-            xl:flex
             hidden
+            xl:flex
           "
           data-scroll-section="1"
           id="TeamOrg"
         >
-          <div class="w-full mt-12 mb-16 relative">
-            <div class="w-full flex items-center flex-col text-gray-50">
-              <h1
-                class="font-BebasNeue text-7xl uppercase z-20 text-center"
+          <div class="w-full mt-12 mb-16 relative flex justify-start">
+            <h1
+                class="font-BebasNeue text-8xl 2xl:text-9xl uppercase z-20 text-center absolute top-1/4 right-14 2xl:right-56 text-gray-50 2xl:w-1/4"
                 data-scroll="1"
                 data-scroll-speed="1"
                 data-scroll-target="#TeamOrg"
               >
                 Team Organization
               </h1>
-              <div class="font-Noto text-base w-full px-4 mt-12 z-20">
+            <div class="w-1/2 flex items-center flex-col text-gray-50 justify-center">
+              
+              <div class="font-Noto text-2xl 2xl:text-3xl w-full px-4 2xl:px-12 mt-12 z-20">
                 <p>A team should consist of a maximum of five members.</p>
                 <p>
                   Every group must appoint a mentor for the team, preferably the
@@ -2396,8 +2397,12 @@ body{
             <div
               class="
                 absolute
-                w-72
-                h-72
+                w-100
+                2xl:w-110
+                3xl:w-120
+                h-100
+                2xl:h-110
+                3xl:h-120
                 rounded-full
                 shadow-2xl
                 bg-teamOrgCircleColor
@@ -2405,6 +2410,7 @@ body{
                 transform
                 translate-x-1/2
                 top-0
+                3xl:top-left16
                 z-0
               "
               data-scroll="1"
