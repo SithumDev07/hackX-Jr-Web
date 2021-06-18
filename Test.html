@@ -174,11 +174,42 @@ body{
         .background-card-glass:hover .glass-card{
           top: 0;
         }
+
+        .unpinned{
+          transform: translateY(-100%);
+        }
+
+        .navigation-desktop-hider{
+          transition: all 0.5s ease-out;
+        }
+
+        .navbar-color-changed{
+          background-color: #0BA360;
+        }
+
+        .navigation-desktop-hider nav ul li{
+          position: relative;
+        }
+
+        .navigation-desktop-hider nav ul li::after{
+          content: "";
+          position: absolute;
+          background-color: #fff;
+          height: 3px;
+          width: 0%;
+          left: 0;
+          bottom: -1rem;
+          transition: 0.3s;
+        }
+
+        .navigation-desktop-hider nav ul li:hover::after{
+          width: 100%;
+        }
     </style>
   </head>
   <body>
 
-      <div class="fixed w-full h-20 top-0 hidden xl:flex z-50 bg-stratingColorGradient">
+      <div class="fixed w-full h-20 top-0 hidden xl:flex z-50 navigation-desktop-hider">
         <nav aria-label="" class="w-full h-full flex p-2">
           <div class="flex items-center justify-center w-48 h-full">
             <img src="./public/images/Logos/hackxjrLogo-1366x.png" alt="hackX Logo 1366x">
@@ -3109,6 +3140,18 @@ var ball = document.getElementsByClassName("ball");
             }
         }
 
+  var scroll1 = window.pageYOffset;
+  window.onscroll = function(){
+    var scroll2 = window.pageYOffset;
+    if(scroll1 > scroll2){
+      document.querySelector('.navigation-desktop-hider').style.top = "0";
+      console.log('its working')
+    }
+    else{
+      document.querySelector('.navigation-desktop-hider').style.top = "-100px";
+    }
+  }
+
    const Burger = document.querySelector('#Burger');
    const SideBar = document.querySelector('#SideBR')
    const Parent = document.querySelector('#ParentContainer')
@@ -3147,9 +3190,53 @@ var ball = document.getElementsByClassName("ball");
         smooth: true,
         lerp: 0.1,
         multiplier: 1,
+        reloadOnContextChange: true,
+        getDirection: true,
         smartphone: {
           smooth: true,
         },
+      });
+
+      const header = document.querySelector('.navigation-desktop-hider');
+      let hidden = false,static = true;
+
+      scroll.on('scroll', (instance) => {
+        //console.log('working')
+        let headerHeight = header.getBoundingClientRect().height;
+       console.log(document.documentElement.clientHeight)
+      //   if(instance.direction === 'up' && !static){
+      //     if(instance.scroll.y <= headerHeight){
+      //       header.classList.remove('pinned');
+      //       static = true;
+      //     }
+      // }
+
+        if(instance.direction =='down'){
+          if(instance.scroll.y > document.documentElement.clientHeight){
+            header.classList.add('navbar-color-changed')
+          }
+        }
+
+        if(instance.direction =='up'){
+          if(instance.scroll.y < document.documentElement.clientHeight){
+            header.classList.remove('navbar-color-changed')
+          }
+        }
+
+        if(instance.direction === 'down' && !hidden){
+         if(instance.scroll.y>(headerHeight)){
+            //console.log('hidden');
+            //header.classList.remove('pinned');
+            header.classList.add('unpinned');
+            hidden = true;
+          }
+        }
+        if(instance.direction === 'up' && hidden){
+          //console.log('show');
+          header.classList.remove('unpinned');
+          //header.classList.add('pinned');
+          hidden = false;
+        }
       });
 
       var Width = document.documentElement.clientWidth;
