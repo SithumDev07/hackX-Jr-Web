@@ -325,7 +325,7 @@ body{
         >
           <div class="w-full flex justify-center h-full items-center relative">
             <div class="hidden xl:flex w-1/2 h-full">
-              <div class="w-full h-full flex flex-col justify-center px-8 3xl:px-12">
+              <div class="w-full h-full flex flex-col justify-center px-8 3xl:px-12 xl:hidden">
                 <h1 class="text-7xl 3xl:text-8xl text-gray-50 font-Noto">hackX Jr 2021</h1>
                 <p class="text-left text-lg 3xl:text-xl text-gray-100 font-Noto mt-10">
                   HackX Jr is an inter-school hackathon which provides a platform
@@ -349,6 +349,11 @@ body{
                     Get Started
                   </h2>
                 </div>
+              </div>
+              <div class="h-full w-full border-2 border-red-600 flex items-center justify-start">
+                <img src="./public/images/Other/main-typo.png" alt="main-typo">
+                <h1 class="text-gray-100 font-Noto text-9xl">4.0
+                </h1>
               </div>
             </div>
             <div
@@ -824,15 +829,18 @@ body{
             <div class="w-1/2 h-full absolute left-0 top-0 hidden xl:flex xl:flex-col pl-12 2xl:justify-center">
               <div class="w-full flex items-center justify-start mt-12">
                 <img src="./public/images/places/Place-1-5s.png" class="3xl:hidden" alt="Place1-xl">
-                <img src="./public/images/places/1 place-3xl.png" class="hidden 3xl:block" alt="Place1-3xl">
+                <!-- <img src="./public/images/places/1 place-3xl.png" class="hidden 3xl:block" alt="Place1-3xl"> -->
+                <img src="./public/images/places/med1.png" class="hidden 3xl:block" alt="Place1-3xl">
               </div>
               <div class="w-full flex items-center justify-center">
                 <img src="./public/images/places/Place-2-5s.png" class="3xl:hidden"  alt="Places2-xl">
-                <img src="./public/images/places/2 place-3xl.png" class="hidden 3xl:block" alt="Places2-3xl">
+                <!-- <img src="./public/images/places/2 place-3xl.png" class="hidden 3xl:block" alt="Places2-3xl"> -->
+                <img src="./public/images/places/med2.png" class="hidden 3xl:block" alt="Places2-3xl">
               </div>
               <div class="w-full flex items-center justify-end">
                 <img src="./public/images/places/Place-3-5s.png" class="3xl:hidden" alt="Places3-xl">
-                <img src="./public/images/places/3 place-3xl.png" class="hidden 3xl:block" alt="Places3-3xl">
+                <!-- <img src="./public/images/places/3 place-3xl.png" class="hidden 3xl:block" alt="Places3-3xl"> -->
+                <img src="./public/images/places/med3.png" class="hidden 3xl:block" alt="Places3-3xl">
               </div>
             </div>
 
@@ -2409,8 +2417,8 @@ body{
           class="
             h-screen
             bg-gradient-to-tr
-            from-scoringEndColor
-            to-scoringStartingColor
+            from-whatIsStartingGradient
+            to-whatIsEndingGradient
             hidden
             xl:flex
           "
@@ -2460,7 +2468,7 @@ body{
                 3xl:h-120
                 rounded-full
                 shadow-2xl
-                bg-teamOrgCircleColor
+                bg-applicationCircleColor
                 right-0
                 transform
                 translate-x-1/2
@@ -2548,8 +2556,8 @@ body{
           class="
             h-screen
             bg-gradient-to-tr
-            from-whatIsStartingGradient
-            to-whatIsEndingGradient
+            from-scoringEndColor
+            to-scoringStartingColor
             xl:flex
             hidden
           "
@@ -2599,7 +2607,7 @@ body{
                 3xl:h-120
                 rounded-full
                 shadow-2xl
-                bg-applicationCircleColor
+                bg-teamOrgCircleColor
                 left-0
                 transform
                 -translate-x-1/2
