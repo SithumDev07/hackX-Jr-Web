@@ -237,6 +237,33 @@ body{
         .register-button-landing:hover{
           transform: scale(1.2);
         }
+
+        .clip-path-swaggers {
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(233deg, #e99d23, #c06b2a, #ffc826);
+    background-size: 600% 600%;
+
+    -webkit-animation: SwaggerBg 5s ease infinite;
+    -moz-animation: SwaggerBg 5s ease infinite;
+    animation: SwaggerBg 5s ease infinite;
+}
+
+@-webkit-keyframes SwaggerBg {
+    0%{background-position:92% 0%}
+    50%{background-position:9% 100%}
+    100%{background-position:92% 0%}
+}
+@-moz-keyframes SwaggerBg {
+    0%{background-position:92% 0%}
+    50%{background-position:9% 100%}
+    100%{background-position:92% 0%}
+}
+@keyframes SwaggerBg {
+    0%{background-position:92% 0%}
+    50%{background-position:9% 100%}
+    100%{background-position:92% 0%}
+}
     </style>
   </head>
   <body>
@@ -2193,40 +2220,56 @@ body{
            -left-10
          "
          data-scroll="1"
-         data-scroll-speed="-5"
+         data-scroll-speed="-4"
          data-scroll-direction="horizontal"
          data-scroll-target="#swagDesktop"
        >
-         <h1 class="font-BebasNeue text-gray-800 text-8xl md:text-9xl md:px-2 xl:px-48">
-           Make ideas happen
+         <h1 class="font-BebasNeue text-8xl md:text-9xl md:px-2 xl:px-48  clip-path-swaggers">
+           Give Shaped To Ideas
          </h1>
        </div>
 
        <div
          class="
            w-150
-           md:w-auto
+           md:w-full
            h-24
            md:h-32
            3xl:h-44
-           bg-gray-50
            absolute
            flex
+           flex-col
            items-center
            justify-center
            top-2/3
+           left-0
            transform
-           rotate-12
-           -left-10
+           -translate-x-1/2
          "
          data-scroll="1"
-         data-scroll-speed="5"
-         data-scroll-direction="horizontal"
+         data-scroll-speed="3"
          data-scroll-target="#swagDesktop"
        >
-         <h1 class="font-BebasNeue text-gray-800 text-8xl md:text-9xl xl:px-28">
+         <h1 class="font-BebasNeue text-7xl mb-8 text-gray-50">
            Things to keep in mind
          </h1>
+         
+         <div class="motion-safe:animate-bounce">
+          <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-16 w-16 text-gray-50"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 13l-7 7-7-7m14-8l-7 7-7-7"
+          />
+        </svg>
+         </div>
        </div>
      </section>
 
@@ -3212,8 +3255,6 @@ typeSpeed: 60,
 backSpeed: 60,
 loop: true
 });
-
-typing-pixel
 
 
 var ball = document.getElementsByClassName("ball");
