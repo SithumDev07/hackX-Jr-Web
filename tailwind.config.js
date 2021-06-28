@@ -33,6 +33,7 @@ module.exports = {
       '3xl': '1920px',
     },
     colors: {
+      TypingFontColor: '#E99D23',
       TimelineBoxed: '#124E53',
       stratingColorGradient: '#084448',
       endColorGradient: '#2bbfcc',
@@ -315,6 +316,7 @@ module.exports = {
       Noto: ['Noto Sans'],
       Marcellus: ['Marcellus'],
       BebasNeue: ['Bebas Neue'],
+      RussoOne: ['Russo One', 'sans-serif'],
       sans: [
         'ui-sans-serif',
         'system-ui',
