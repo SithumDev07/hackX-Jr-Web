@@ -229,6 +229,14 @@ body{
           top: 80%;
           left: 15%;
         }
+
+        .register-button-landing{
+          transition: all .4s ease-out;
+        }
+
+        .register-button-landing:hover{
+          transform: scale(1.2);
+        }
     </style>
   </head>
   <body>
@@ -324,7 +332,7 @@ body{
           data-scroll-section="1"
         >
           <div class="w-full flex justify-center h-full items-center relative">
-            <div class="hidden xl:flex w-1/2 h-full">
+            <div class="hidden xl:flex flex-col w-1/2 h-full">
               <div class="w-full h-full flex flex-col justify-center px-8 3xl:px-12 xl:hidden">
                 <h1 class="text-7xl 3xl:text-8xl text-gray-50 font-Noto">hackX Jr 2021</h1>
                 <p class="text-left text-lg 3xl:text-xl text-gray-100 font-Noto mt-10">
@@ -340,7 +348,6 @@ body{
                     flex
                     justify-center
                     rounded-full
-                    mt-10
                     shadow-3xl
                     xl:cursor-pointer
                   "
@@ -353,9 +360,29 @@ body{
               <div class="h-full w-full flex items-center justify-start">
                 <img src="./public/images/Other/main-typo.png" class="max-w-full hidden 3xl:block" alt="main-typo">
                 <img src="./public/images/Other/main-typo-xl.png" class="max-w-full 3xl:hidden" alt="main-typo-xl">
-                <h1 class="text-TypingFontColor font-RussoOne text-7xl 3xl:text-8xl"><span class="typing"></span></h1>
+                <h1 class="text-TypingFontColor font-RussoOne text-7xl 3xl:text-8xl -mt-2"><span class="typing"></span></h1>
                 </h1>
               </div>
+              <div
+                  class="
+                    bg-getStartedButtonColor
+                    w-52
+                    flex
+                    justify-center
+                    rounded-full
+                    -mt-48
+                    2xl:-mt-72
+                    3xl:-mt-80
+                    ml-36
+                    shadow-3xl
+                    xl:cursor-pointer
+                    register-button-landing
+                  "
+                >
+                  <h2 class="text-gray-100 font-Noto text-lg px-6 py-4">
+                    Register
+                  </h2>
+                </div>
             </div>
             <div
               class="w-full xl:w-1/2 h-1/2 xl:h-full relative flex items-center justify-center"
@@ -445,17 +472,14 @@ body{
           </div>
 
           <div
-          class="w-full hidden md:flex justify-center mt-16 flex-col items-center mb-20"
+          class="w-full hidden md:flex ml-10 mt-16 items-center mb-20 relative"
           id="HeroSectionUnderneath"
         >
-          <h1 class="text-4xl md:text-7xl lg:text-8xl text-gray-50 font-Noto">hackX Jr 2021</h1>
-          <p class="text-center text-xl md:text-2xl lg:text-3xl text-gray-100 font-Noto mt-10 px-16 lg:px-20">
-            HackX Jr is an inter-school hackathon which provides a platform
-            for school students to transform their ideas into reality. It
-            promotes school students to build technology-based solutions to
-            problems they see in the society.
-          </p>
-          <div
+                <img src="./public/images/Other/main-typo-xl.png" class="max-w-full hidden lg:block xl:hidden" alt="main-typo-xl">
+                <img src="./public/images/Other/main-typo-md.png" class="max-w-full lg:hidden" alt="main-typo-xl">
+                <h1 class="text-TypingFontColor font-RussoOne text-6xl lg:text-8xl -mt-1 lg:-mt-4"><span class="typing-mobile"></span></h1>
+
+                <div
             class="
               bg-getStartedButtonColor
               w-1/4
@@ -463,15 +487,22 @@ body{
               flex
               justify-center
               rounded-full
-              mt-10
               shadow-3xl
+              absolute
+              -ml-8
+              -bottom-8
+              lg:-bottom-16 left-1/2
+              transform
+              -translate-x-1/2
             "
           >
             <h2 class="text-gray-100 font-Noto text-xl lg:text-3xl py-3 pixel:py-4 lg:py-6 px-2">
-              Get Started
+              Register
             </h2>
           </div>
         </div>
+
+        
 
           <div class="w-full absolute top-9/10 flex md:hidden justify-center">
             <svg
@@ -497,13 +528,8 @@ body{
           <div
             class="w-full flex justify-center mt-16 flex-col items-center mb-20"
           >
-            <h1 class="text-4xl text-gray-50 font-Noto">hackX Jr 2021</h1>
-            <p class="text-center text-xl text-gray-100 font-Noto mt-10 px-4">
-              HackX Jr is an inter-school hackathon which provides a platform
-              for school students to transform their ideas into reality. It
-              promotes school students to build technology-based solutions to
-              problems they see in the society.
-            </p>
+            <img src="./public/images/Other/main-typo-pixel.png" alt="">
+            <h1 class="text-TypingFontColor font-RussoOne text-6xl lg:text-8xl -mt-1 lg:-mt-4"><span class="typing-pixel"></span></h1>
             <div
               class="
                 bg-getStartedButtonColor
@@ -516,7 +542,7 @@ body{
               "
             >
               <h2 class="text-gray-100 font-Noto text-xl py-3 pixel:py-4 px-2">
-                Get Started
+                Register
               </h2>
             </div>
           </div>
@@ -2595,6 +2621,10 @@ body{
                 <p class="mt-5">
                   Participants can choose an appropriate title for their team.
                 </p>
+                <div class="mt-5">
+                  <a href="#" class="text-base underline cursor-pointer font-bold">Download the application</a>
+                  <i class="fas fa-file-download"></i>
+                </div>
               </div>
             </div>
             <div
@@ -3168,6 +3198,23 @@ typeSpeed: 60,
 backSpeed: 60,
 loop: true
 });
+
+var typedMobile = new Typed('.typing-mobile', {
+strings: ['2021', '4.0','Innovative','Creative'],
+typeSpeed: 60,
+backSpeed: 60,
+loop: true
+});
+
+var typedPixel = new Typed('.typing-pixel', {
+strings: ['2021', '4.0','Innovative','Creative'],
+typeSpeed: 60,
+backSpeed: 60,
+loop: true
+});
+
+typing-pixel
+
 
 var ball = document.getElementsByClassName("ball");
         document.onmousemove = function(){
