@@ -271,7 +271,7 @@ body{
       
       <!-- Social Icons -->
       <div class="w-20 xl:w-auto h-72 xl:h-20 fixed left-3 top-left16 xl:top-4/5 3xl:top-9/10 xl:transform xl:translate-y-10 3xl:translate-y-3 z-10 hidden md:flex">
-        <div class="w-full h-full flex flex-col xl:flex-row justify-around text-gray-50 text-5xl lg:text-6xl xl:text-5xl items-center"  id="SocialMediaIcons">
+        <div class="w-full h-full flex flex-col xl:flex-row justify-around text-gray-50 text-5xl lg:text-6xl xl:text-4xl items-center"  id="SocialMediaIcons">
           <a href="#" class="xl:ml-8"><i class="fab fa-facebook"></i></a>
           <a href="#" class="xl:ml-8"><i class="fab fa-instagram"></i></a>
           <a href="#" class="xl:ml-8"><i class="fab fa-youtube"></i></a>
@@ -350,9 +350,10 @@ body{
                   </h2>
                 </div>
               </div>
-              <div class="h-full w-full border-2 border-red-600 flex items-center justify-start">
-                <img src="./public/images/Other/main-typo.png" alt="main-typo">
-                <h1 class="text-gray-100 font-Noto text-9xl">4.0
+              <div class="h-full w-full flex items-center justify-start">
+                <img src="./public/images/Other/main-typo.png" class="max-w-full hidden 3xl:block" alt="main-typo">
+                <img src="./public/images/Other/main-typo-xl.png" class="max-w-full 3xl:hidden" alt="main-typo-xl">
+                <h1 class="text-TypingFontColor font-RussoOne text-7xl 3xl:text-8xl"><span class="typing"></span></h1>
                 </h1>
               </div>
             </div>
@@ -3158,7 +3159,15 @@ body{
 
     </div>
   </body>
+  <script src="./public/typed.js" charset="utf-8"></script>
   <script>
+
+var typed = new Typed('.typing', {
+strings: ['2021', 'Innovative','Creative'],
+typeSpeed: 60,
+backSpeed: 60,
+loop: true
+});
 
 var ball = document.getElementsByClassName("ball");
         document.onmousemove = function(){

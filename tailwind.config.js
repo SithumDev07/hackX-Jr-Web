@@ -2,8 +2,8 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   purge: {
-    // enabled: true,
-    // content: ['./index.html', './locomotive.html', './iPhone.html', './Test.html'],
+    enabled: true,
+    content: ['./index.html', './locomotive.html', './iPhone.html', './Test.html'],
   },
   presets: [],
   darkMode: false, // or 'media' or 'class'
@@ -33,6 +33,7 @@ module.exports = {
       '3xl': '1920px',
     },
     colors: {
+      TypingFontColor: '#E99D23',
       TimelineBoxed: '#124E53',
       stratingColorGradient: '#084448',
       endColorGradient: '#2bbfcc',
@@ -315,6 +316,7 @@ module.exports = {
       Noto: ['Noto Sans'],
       Marcellus: ['Marcellus'],
       BebasNeue: ['Bebas Neue'],
+      RussoOne: ['Russo One', 'sans-serif'],
       sans: [
         'ui-sans-serif',
         'system-ui',
