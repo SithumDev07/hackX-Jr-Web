@@ -842,6 +842,7 @@ body{
           class="
             h-auto
             xl:h-screen
+            2xl:h-60vh
             bg-gradient-to-bl
             from-competitionStartingColor
             to-competitionEndColor
@@ -851,7 +852,7 @@ body{
         >
           <div class="w-full h-full flex flex-col">
             <h1
-              class="text-gray-50 font-NorthHead text-7xl md:text-8xl lg:text-9xl text-center xl:text-right px-3 mt-8 xl:mt-4 3xl:mt-16 xl:mr-8 z-10"
+              class="text-gray-50 font-NorthHead text-7xl md:text-8xl lg:text-9xl text-center px-3 mt-8 xl:mt-4 3xl:mt-16 xl:mr-8 z-10"
             >
               Competition Details
             </h1>
@@ -880,21 +881,18 @@ body{
                 <img src="./public/images/places/med3.png" alt="Places3-md">
               </div>
             </div>
-            <div class="w-1/2 h-full absolute left-0 top-0 hidden xl:flex xl:flex-col pl-12 2xl:justify-center">
-              <div class="w-full flex items-center justify-start mt-12">
-                <img src="./public/images/places/Place-1-5s.png" class="3xl:hidden" alt="Place1-xl">
-                <!-- <img src="./public/images/places/1 place-3xl.png" class="hidden 3xl:block" alt="Place1-3xl"> -->
-                <img src="./public/images/places/med1.png" class="hidden 3xl:block" alt="Place1-3xl">
+            <div class="w-full h-full hidden xl:flex px-56">
+              <div class="w-full flex items-center justify-start">
+                
+                <img src="./public/images/places/med1.png" class="max-w-full" alt="Place1-3xl">
               </div>
               <div class="w-full flex items-center justify-center">
-                <img src="./public/images/places/Place-2-5s.png" class="3xl:hidden"  alt="Places2-xl">
-                <!-- <img src="./public/images/places/2 place-3xl.png" class="hidden 3xl:block" alt="Places2-3xl"> -->
-                <img src="./public/images/places/med2.png" class="hidden 3xl:block" alt="Places2-3xl">
+                
+                <img src="./public/images/places/med2.png" class="max-w-full" alt="Places2-3xl">
               </div>
               <div class="w-full flex items-center justify-end">
-                <img src="./public/images/places/Place-3-5s.png" class="3xl:hidden" alt="Places3-xl">
-                <!-- <img src="./public/images/places/3 place-3xl.png" class="hidden 3xl:block" alt="Places3-3xl"> -->
-                <img src="./public/images/places/med3.png" class="hidden 3xl:block" alt="Places3-3xl">
+                
+                <img src="./public/images/places/med3.png" class="max-w-full" alt="Places3-3xl">
               </div>
             </div>
 
@@ -946,25 +944,29 @@ body{
         </section>
         <!-- End of Mobile and desktop images -->
 
-        <section data-scroll-section="1" class="h-auto  text-xl 2xl:text-3xl text-gray-50 font-Noto px-12">
-          <p class="mt-14">
-            Students from any age group can participate in groups of 5
-            members and 1 mentor. (A/L students studying ICT from Physical
-            Science stream or Technology stream are highly encouraged to
-            take part)
-          </p>
-          <p class="mt-6">
-            More than one team can participate from one school.
-          </p>
-          <p class="mt-6">Idea must be novel and feasible.</p>
-          <p class="mt-6">
-            A fully functional prototype for the final demonstration is not
-            compulsory, but encouraged.
-          </p>
-          <p class="mt-6 mb-14">
-            Proposal and the final pitching can be done in either Sinhala or
-            English medium.
-          </p>
+        <section data-scroll-section="1" class="h-auto  text-xl 2xl:text-2xl text-gray-50 font-Noto px-12 bg-gradient-to-bl
+        from-competitionStartingColor
+        to-competitionEndColor hidden xl:flex">
+          <div class="flex flex-col">
+            <p class="mt-14">
+              Students from any age group can participate in groups of 5
+              members and 1 mentor. (A/L students studying ICT from Physical
+              Science stream or Technology stream are highly encouraged to
+              take part)
+            </p>
+            <p class="mt-6">
+              More than one team can participate from one school.
+            </p>
+            <p class="mt-6">Idea must be novel and feasible.</p>
+            <p class="mt-6">
+              A fully functional prototype for the final demonstration is not
+              compulsory, but encouraged.
+            </p>
+            <p class="mt-6 mb-14">
+              Proposal and the final pitching can be done in either Sinhala or
+              English medium.
+            </p>
+          </div>
         </section>
 
         <!-- End of Competition Details -->
