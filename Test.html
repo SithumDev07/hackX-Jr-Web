@@ -171,6 +171,12 @@ body{
           top: 100%;
         }
 
+        .glass-card-desktop{
+          background: #fff;
+          background: linear-gradient(to right bottom, rgba(255,255,255,.7), rgba(255,255,255,.3));
+          backdrop-filter: blur(0.2rem);
+        }
+
         .background-card-glass:hover .glass-card{
           top: 0;
         }
@@ -952,131 +958,176 @@ body{
         <section
           class="
             h-auto
-            xl:h-screen
             bg-gradient-to-tr
             from-awarenessStartingColor
             to-awarenessEndingColor
           "
           data-scroll-section="1"
         >
-          <div class="w-full h-full flex flex-col xl:flex-row">
-            <div class="relative w-full flex justify-center mt-16 background-card-glass overflow-hidden">
-              <div class="absolute w-72 md:w-3/4 z-10 text-gray-50 font-Noto">
-                <h1 class="text-2xl md:text-5xl lg:text-7xl xl:text-4xl 2xl:text-5xl text-center mt-4 2xl:mt-10 3xl:mt-20">Awareness Session</h1>
-                <p class="text-base md:text-xl lg:text-2xl xl:text-lg 2xl:text-2xl px-5 3xl:px-10 mt-8 3xl:mt-16">
-                  The awareness session will be conducted prior to the hackathon
-                  focusing on several aspects including introduction to
-                  hackathons, areas to focus on developing the solutions,
-                  technological tools that might be helpful and potential clues
-                  on how to market their product.
-                </p>
-                <p class="text-base md:text-xl lg:text-2xl xl:text-lg 2xl:text-2xl mt-5 3xl:mt-8 px-5 3xl:px-10">
-                  Lecturers from the Department of Industrial Management,
-                  professionals and experts from the related fields will guide
-                  teams through brainstorming.
-                </p>
-                <h2 class="font-bold text-lg md:text-2xl lg:text-3xl text-center px-4 mt-5 xl:hidden">
-                  22nd November 2020 from 10.00 a.m. to 12.00 p.m.
-                </h2>
-                <div class="w-72 md:w-full flex justify-between md:justify-center px-4 items-center mt-4 xl:hidden">
-                  <div class="md:mr-8">
-                    <img src="./public/images/zoom/zoom-5s.png" alt="" />
-                  </div>
-                  <h2 class="font-bold text-lg md:text-2xl lg:text-3xl">via Zoom Platform</h2>
-                </div>
-              </div>
-              <div
-                class="
-                  bg-gradient-to-bl
-                  from-awarenessBoxStartingColor
-                  to-awarenessBoxEndColor
-                  w-72
-                  md:w-3/4
-                  h-height110
-                  5s:h-90vh
-                  pixel:h-85vh
-                  md:h-50vh
-                  lg:h-40vh
-                  xl:h-80vh
-                  opacity-60
-                  rounded-2xl
-                "
-              ></div>
-              <div class="w-3/4 h-80vh rounded-2xl absolute z-20 hidden xl:flex items-center justify-center flex-col glass-card">
-                <div class="w-full flex justify-center 3xl:mb-16">
-                  <img src="./public/images/Characters/mascotty-glass-old.png" class="3xl:hidden" alt="Glass Mascott">
-                  <img src="./public/images/Characters/mascotty-glass-old-3xl.png" class="hidden 3xl:block" alt="Glass Mascott 3XL">
-                </div>
-                <h2 class="font-bold text-lg md:text-2xl lg:text-3xl text-center px-4 mt-5 text-gray-800">
-                  22nd November 2020 from 10.00 a.m. to 12.00 p.m.
-                </h2>
-                <div class="w-72 md:w-full flex justify-between md:justify-center px-4 items-center mt-4 text-gray-800">
-                  <div class="md:mr-8">
-                    <img src="./public/images/zoom/zoom-5s.png" alt="" />
-                  </div>
-                  <h2 class="font-bold text-lg md:text-2xl lg:text-3xl">via Zoom Platform</h2>
-                </div>
-              </div>
-            </div>
+          <div class="w-full h-full flex flex-col items-center xl:items-start xl:flex-row">
+  
+            <div
+            class="
+              xl:mx-16
+              w-11/12
+              md:w-3/5
+              h-auto
+              xl:h-auto
+              glass-card-desktop
+              text-gray-50
+              font-Noto
+              text-base
+              md:text-xl
+              lg:text-2xl
+              xl:text-lg
+              2xl:text-xl
+              rounded-2xl
+              flex
+              flex-col
+              justify-center
+              items-center
+              px-8
+              md:px-6
+              mt-10
+              md:mt-14
+              xl:mb-24
+            "
+          >
+          <h2 class="font-bold text-4xl md:text-2xl lg:text-3xl xl:text-2xl text-center px-4 mt-10 mb-5">
+            Awareness session
+          </h2>
+            <p>
+              Awareness session will be conducted prior to
+the hackathon focusing on several aspects
+including introduction to the hackathon, areas
+to focus when developing an idea and
+pitching, technical tools that might be helpful
+and potential clues on how to market their
+product.
+Lecturers from the Department of Industrial
+Management, professionals and experts from 
+the related fields will guide teams through
+brainstorming.
+            </p>
 
-            <div class="relative w-full flex justify-center mt-16 mb-12 background-card-glass overflow-hidden">
-              <div class="absolute w-72 md:w-3/4 z-10 text-gray-50 font-Noto">
-                <h1 class="text-2xl md:text-5xl lg:text-7xl xl:text-4xl 2xl:text-5xl text-center mt-4 2xl:mt-10 3xl:mt-20">Finale</h1>
-                <p class="text-base md:text-xl lg:text-2xl xl:text-lg 2xl:text-2xl px-5 3xl:px-10 mt-8 3xl:mt-16">
-                  The Final event will require the finalist teams to present
-                  their idea or product infront of a judge panel.
-                </p>
-                <p class="text-base md:text-xl lg:text-2xl xl:text-lg 2xl:text-2xl mt-5 px-5 3xl:px-10 3xl:mt-8">
-                  (Finalist teams are shortlisted through proposal selection) A
-                  prototype is preferred although not compulsory. The evaluation
-                  will be done under several criteria such as feasibility,
-                  technologies used, marketability, sustainability and adherance
-                  to time constraints.
-                </p>
-                <h2 class="font-bold text-lg md:text-2xl lg:text-3xl text-center px-4 mt-5 xl:hidden">
-                  17th December 2020 from 10.00 a.m.
-                </h2>
-                <div class="w-72 md:w-full flex justify-between md:justify-center px-4 items-center mt-4 xl:hidden">
-                  <div class="md:mr-8">
-                    <img src="./public/images/zoom/zoom-5s.png" alt="" />
-                  </div>
-                  <h2 class="font-bold text-lg md:text-2xl lg:text-3xl">via Zoom Platform</h2>
-                </div>
+            <h2 class="font-bold text-lg md:text-2xl lg:text-3xl xl:text-lg text-center px-4 mt-5 text-gray-800">
+              17th July
+            </h2>
+            <div class="w-72 md:w-full flex px-4 items-center mt-4 mb-8 ">
+              <div class="mr-3">
+                <img src="./public/images/zoom/zoom-5s.png" alt="" />
               </div>
-              <div
-                class="
-                  bg-gradient-to-bl
-                  from-awarenessBoxStartingColor
-                  to-awarenessBoxEndColor
-                  w-72
-                  md:w-3/4
-                  h-height110
-                  5s:h-90vh
-                  pixel:h-80vh
-                  md:h-50vh
-                  lg:h-40vh
-                  xl:h-80vh
-                  opacity-60
-                  rounded-2xl
-                "
-              ></div>
-
-              <div class="w-3/4 h-80vh rounded-2xl absolute z-20 hidden xl:flex items-center justify-center flex-col glass-card">
-                <div class="w-full flex justify-center">
-                  <img src="./public/images/Mascotty-New/mascotty-glass-new.png" class="3xl:hidden" alt="Glass Mascott New">
-                  <img src="./public/images/Mascotty-New/mascotty-glass-new-3xl.png" class="hidden 3xl:block" alt="Glass Mascott New 3Xl">
-                </div>
-                <h2 class="font-bold text-lg md:text-2xl lg:text-3xl text-center px-4 mt-5 text-gray-800">
-                  17th December 2020 from 10.00 a.m.
-                </h2>
-                <div class="w-72 md:w-full flex justify-between md:justify-center px-4 items-center mt-4 text-gray-800">
-                  <div class="md:mr-8">
-                    <img src="./public/images/zoom/zoom-5s.png" alt="" />
-                  </div>
-                  <h2 class="font-bold text-lg md:text-2xl lg:text-3xl">via Zoom Platform</h2>
-                </div>
-              </div>
+              <h2 class="font-bold text-lg md:text-2xl lg:text-3xl xl:text-lg flex-1">via Zoom Platform</h2>
             </div>
+          </div>
+
+          <div
+          class="
+            xl:mx-16
+            w-11/12
+            md:w-3/5
+            h-auto
+            xl:h-auto
+            glass-card-desktop
+            text-gray-50
+            font-Noto
+            text-base
+            md:text-xl
+            lg:text-2xl
+            xl:text-lg
+            2xl:text-xl
+            rounded-2xl
+            flex
+            flex-col
+            items-center
+            px-8
+            md:px-6
+            mt-10
+            md:mt-14
+            xl:mb-24
+          "
+        >
+        <h2 class="font-bold text-4xl md:text-2xl lg:text-3xl xl:text-2xl text-center px-4 mt-10 mb-5">
+          Semi Final
+        </h2>
+          <p>
+            Selected semi final teams can present their
+idea in front of a judge panel consisting
+lecturers and industry experts.
+(Semi final teams are shortlisted through
+proposal selection)
+Semi finalists will only have to pitch their idea
+and face a Q&A session about the product or
+service they are implementing and feasibility
+of the implementation.
+          </p>
+
+          <h2 class="font-bold text-lg md:text-2xl lg:text-3xl xl:text-lg text-center px-4 mt-5 text-gray-800">
+            21st August
+          </h2>
+          <div class="w-72 md:w-full flex px-4 items-center mt-4 mb-8 ">
+            <div class="mr-3">
+              <img src="./public/images/zoom/zoom-5s.png" alt="" />
+            </div>
+            <h2 class="font-bold text-lg md:text-2xl lg:text-3xl xl:text-lg flex-1">via Zoom Platform</h2>
+          </div>
+        </div>
+
+        <div
+        class="
+          xl:mx-16
+          w-11/12
+          md:w-3/5
+          h-auto
+          xl:h-auto
+          glass-card-desktop
+          text-gray-50
+          font-Noto
+          text-base
+          md:text-xl
+          lg:text-2xl
+          xl:text-lg
+          2xl:text-xl
+          rounded-2xl
+          flex
+          flex-col
+          items-center
+          px-8
+          md:px-6
+          mt-10
+          md:mt-14
+          mb-14
+          xl:mb-24
+        "
+      >
+      <h2 class="font-bold text-4xl md:text-2xl lg:text-3xl xl:text-2xl text-center px-4 mt-10 mb-5">
+        Grand Finale
+      </h2>
+        <p>
+          The finalists are encouraged to present a final
+product or a reasonable prototype with the
+help of mentors they are assigned
+accordingly. 
+(Final teams are selected strictly with the
+decision of judges from the Semi final)
+The evaluation will be done under several
+criteria such as feasibility, sustainability,
+marketing plan and adherence to time
+constraints.
+
+        </p>
+
+        <h2 class="font-bold text-lg md:text-2xl lg:text-3xl xl:text-lg text-center px-4 mt-5 text-gray-800">
+          25th September
+        </h2>
+        <div class="w-72 md:w-full flex px-4 items-center mt-4 mb-8 ">
+          <div class="mr-3">
+            <img src="./public/images/zoom/zoom-5s.png" alt="" />
+          </div>
+          <h2 class="font-bold text-lg md:text-2xl lg:text-3xl xl:text-lg flex-1">via Zoom Platform</h2>
+        </div>
+      </div>
+        
           </div>
         </section>
         <!-- End of Awareness -->
@@ -1112,8 +1163,8 @@ body{
                 justify-start
               "
             >
-              <p class="text-gray-50 font-Noto pl-1 pixel:pl-8 pr-8 pixel:pr-8 text-center">
-                Registrations Open for HackX Jr!
+              <p class="text-gray-50 font-Noto pl-1 lg:pl-10 pixel:pl-8 pr-8 pixel:pr-8 text-center">
+                Registration opening
               </p>
             </div>
             <div class="w-28 h-28 absolute transform translate-x-1/4 pixel:translate-x-3/4 right-0">
@@ -1130,8 +1181,8 @@ body{
                     text-gray-50
                   "
                 >
-                  <h1 class="text-center text-3xl">09</h1>
-                  <h2>NOV</h2>
+                  <h1 class="text-center text-3xl">01</h1>
+                  <h2 class="text-center">JUL</h2>
                 </div>
                 <div class="w-28 h-28 rounded-full bg-gray-50 opacity-40"></div>
               </div>
@@ -1173,8 +1224,8 @@ body{
                 justify-end
               "
             >
-              <p class="text-gray-50 font-Noto pl-8 text-center pr-2 text-sm pixel:text-base">
-                Registrations Closed for Awareness Session
+              <p class="text-gray-50 font-Noto pl-2 text-center pr-6 lg:pr-10 text-sm pixel:text-base">
+                Proposal submission opening
               </p>
             </div>
             <div class="w-28 h-28 absolute transform -translate-x-2 pixel:-translate-x-3/4 left-0">
@@ -1191,8 +1242,8 @@ body{
                     text-gray-50
                   "
                 >
-                  <h1 class="text-center text-3xl">20</h1>
-                  <h2>NOV</h2>
+                  <h1 class="text-center text-3xl">15</h1>
+                  <h2 class="text-center">JUL</h2>
                 </div>
                 <div class="w-28 h-28 rounded-full bg-gray-50 opacity-40"></div>
               </div>
@@ -1234,9 +1285,8 @@ body{
                 justify-start
               "
             >
-              <p class="text-gray-50 font-Noto pl-2 pr-8 text-center text-sm">
-                Awareness Session Awareness Session took place via Zoom Platform
-                from 10.00 a.m. to 12.00 p.m.
+              <p class="text-gray-50 font-Noto pl-10 pr-4 text-center text-sm pixel:text-base">
+                Awareness session
               </p>
             </div>
             <div class="w-28 h-28 absolute transform translate-x-1/4 pixel:translate-x-3/4 right-0">
@@ -1253,8 +1303,8 @@ body{
                     text-gray-50
                   "
                 >
-                  <h1 class="text-center text-3xl">22</h1>
-                  <h2>NOV</h2>
+                  <h1 class="text-center text-3xl">17</h1>
+                  <h2 class="text-center">JUL</h2>
                 </div>
                 <div class="w-28 h-28 rounded-full bg-gray-50 opacity-40"></div>
               </div>
@@ -1305,8 +1355,8 @@ body{
                 justify-end
               "
             >
-              <p class="text-gray-50 font-Noto pl-16 text-center pr-3 text-sm">
-                Registrations Closed for HackX Jr
+              <p class="text-gray-50 font-Noto pl-16 text-center pr-3 text-sm pixel:text-base">
+                Deadline for the proposal submission
               </p>
             </div>
             <div class="w-28 h-28 absolute transform -translate-x-2 pixel:-translate-x-3/4 left-0">
@@ -1323,8 +1373,8 @@ body{
                     text-gray-50
                   "
                 >
-                  <h1 class="text-center text-3xl">03</h1>
-                  <h2>DEC</h2>
+                  <h1 class="text-center text-3xl">31</h1>
+                  <h2 class="text-center">JUL</h2>
                 </div>
                 <div class="w-28 h-28 rounded-full bg-gray-50 opacity-40"></div>
               </div>
@@ -1366,8 +1416,8 @@ body{
                 justify-start
               "
             >
-              <p class="text-gray-50 font-Noto pl-2 pr-8 pixel:pr-2 text-center text-sm pixel:text-base">
-                Shortlisted Teams are Announced!
+              <p class="text-gray-50 font-Noto pl-5 pr-4 pixel:pr-2 text-center text-sm pixel:text-base">
+                Announcing Semi final teams
               </p>
             </div>
             <div class="w-28 h-28 absolute transform translate-x-1/4 pixel:translate-x-3/4 right-0">
@@ -1385,7 +1435,7 @@ body{
                   "
                 >
                   <h1 class="text-center text-3xl">06</h1>
-                  <h2>DEC</h2>
+                  <h2>AUG</h2>
                 </div>
                 <div class="w-28 h-28 rounded-full bg-gray-50 opacity-40"></div>
               </div>
@@ -1429,7 +1479,7 @@ body{
               "
             >
               <p class="text-gray-50 font-Noto text-center text-lg pl-12">
-                'Good To Go!'
+                Online workshop series
               </p>
               <p
                 class="
@@ -1459,8 +1509,149 @@ body{
                     text-gray-50
                   "
                 >
-                  <h1 class="text-center text-3xl">03</h1>
-                  <h2>DEC</h2>
+                  <h1 class="text-center text-2xl">07 to 15</h1>
+                  <h2 class="text-center">AUG</h2>
+                </div>
+                <div class="w-28 h-28 rounded-full bg-gray-50 opacity-40"></div>
+              </div>
+            </div>
+            <div class="absolute bottom-0 right-4 transform translate-y-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 text-gray-50"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                />
+              </svg>
+            </div>
+          </div>
+
+          <div
+            class="w-72 flex relative justify-start px-3 mt-10"
+            data-scroll="1"
+            data-scroll-direction="horizontal"
+            data-scroll-speed="-3"
+            data-scroll-delay="0.028"
+          >
+            <div
+              class="
+                w-64
+                pixel:w-85
+                h-28
+                bg-TimelineBoxed
+                rounded-2xl
+                flex
+                items-center
+                justify-center
+                flex-col
+              "
+            >
+              <p class="text-gray-50 font-Noto pl-2 pr-8 text-center text-lg">
+                Semi Final
+              </p>
+              <p class="text-gray-50 font-Noto text-center text-sm mt-2">
+                via Zoom Platform
+              </p>
+            </div>
+            <div class="w-28 h-28 absolute transform translate-x-1/4 pixel:translate-x-3/4 right-0">
+              <div class="w-full h-full relative">
+                <div
+                  class="
+                    absolute
+                    z-10
+                    top-1/2
+                    left-1/2
+                    transform
+                    -translate-x-1/2 -translate-y-1/2
+                    font-Marcellus
+                    text-gray-50
+                  "
+                >
+                  <h1 class="text-center text-3xl">21</h1>
+                  <h2>AUG</h2>
+                </div>
+                <div class="w-28 h-28 rounded-full bg-gray-50 opacity-40"></div>
+              </div>
+            </div>
+            <div class="absolute bottom-0 left-5 transform translate-y-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-8 w-8 text-gray-50"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                />
+              </svg>
+            </div>
+          </div>
+
+
+          <div
+            class="w-72 flex relative justify-end ml-4 pixel:ml-16 mt-10"
+            data-scroll="1"
+            data-scroll-direction="horizontal"
+            data-scroll-speed="3"
+            data-scroll-delay="0.03"
+          >
+            <div
+              class="
+                w-64
+                pixel:w-85
+                h-28
+                bg-TimelineBoxed
+                rounded-2xl
+                flex
+                items-center
+                justify-center
+                flex-col
+              "
+            >
+              <p class="text-gray-50 font-Noto text-center text-lg pl-12">
+                Online workshop series for finalists
+              </p>
+              <p
+                class="
+                  text-gray-50
+                  font-Noto
+                  text-center
+                  px-4
+                  text-xs
+                  pl-12
+                  mt-2
+                "
+              >
+                A Session for the Finalist Teams via Zoom Platform
+              </p>
+            </div>
+            <div class="w-28 h-28 absolute transform -translate-x-2 pixel:-translate-x-3/4 left-0">
+              <div class="w-full h-full relative">
+                <div
+                  class="
+                    absolute
+                    z-10
+                    top-1/2
+                    left-1/2
+                    transform
+                    -translate-x-1/2 -translate-y-1/2
+                    font-Marcellus
+                    text-gray-50
+                  "
+                >
+                  <h1 class="text-center text-2xl">11 to 19</h1>
+                  <h2 class="text-center lg:text-3xl">SEP</h2>
                 </div>
                 <div class="w-28 h-28 rounded-full bg-gray-50 opacity-40"></div>
               </div>
@@ -1504,7 +1695,7 @@ body{
               "
             >
               <p class="text-gray-50 font-Noto pl-2 pr-8 text-center text-lg">
-                HackX Jr : Final Event
+                Grand Finale
               </p>
               <p class="text-gray-50 font-Noto text-center text-sm mt-2">
                 via Zoom Platform
@@ -1524,8 +1715,8 @@ body{
                     text-gray-50
                   "
                 >
-                  <h1 class="text-center text-3xl">06</h1>
-                  <h2>DEC</h2>
+                  <h1 class="text-center text-3xl">25</h1>
+                  <h2 class="lg:text-3xl text-center">SEP</h2>
                 </div>
                 <div class="w-28 h-28 rounded-full bg-gray-50 opacity-40"></div>
               </div>
@@ -1588,8 +1779,8 @@ body{
               2xl:justify-center
             "
           >
-            <p class="text-gray-50 font-Noto pl-1 pixel:pl-8 pr-8 pixel:pr-8 text-center text-xl lg:text-2xl">
-              Registrations Open for HackX Jr!
+            <p class="text-gray-50 font-Noto pl-1 lg:pl-10 pixel:pl-8 pr-8 pixel:pr-8 text-center text-xl lg:text-2xl xl:text-3xl">
+              Registration opening
             </p>
           </div>
           <div class="w-32 lg:w-40 h-32 lg:h-40 absolute transform translate-x-1/4 pixel:translate-x-3/4 xl:translate-x-14 right-0">
@@ -1606,8 +1797,8 @@ body{
                   text-gray-50
                 "
               >
-                <h1 class="text-center text-3xl lg:text-5xl">09</h1>
-                <h2 class="lg:text-3xl">NOV</h2>
+                <h1 class="text-center text-3xl lg:text-5xl">01</h1>
+                <h2 class="lg:text-3xl">JUL</h2>
               </div>
               <div class="w-32 lg:w-40 h-32 lg:h-40 rounded-full bg-gray-50 opacity-40"></div>
             </div>
@@ -1652,8 +1843,8 @@ body{
               2xl:justify-center
             "
           >
-            <p class="text-gray-50 font-Noto pl-8 text-center pr-2 text-xl lg:text-2xl">
-              Registrations Closed for Awareness Session
+            <p class="text-gray-50 font-Noto pl-8 text-center pr-2 lg:pr-10 text-xl lg:text-2xl xl:text-3xl">
+              Proposal submission opening
             </p>
           </div>
           <div class="w-32 lg:w-40 h-32 lg:h-40 absolute transform -translate-x-2 pixel:-translate-x-3/4 xl:-translate-x-14 2xl:translate-x-5 left-0">
@@ -1670,8 +1861,8 @@ body{
                   text-gray-50
                 "
               >
-                <h1 class="text-center text-3xl lg:text-5xl">20</h1>
-                <h2 class="lg:text-3xl">NOV</h2>
+                <h1 class="text-center text-3xl lg:text-5xl">15</h1>
+                <h2 class="lg:text-3xl">JUL</h2>
               </div>
               <div class="w-32 lg:w-40 h-32 lg:h-40 rounded-full bg-gray-50 opacity-40"></div>
             </div>
@@ -1715,9 +1906,8 @@ body{
               justify-start
             "
           >
-            <p class="text-gray-50 font-Noto pl-2 lg:pl-4 pr-2 lg:pr-4 text-center text-lg lg:text-2xl">
-              Awareness Session Awareness Session took place via Zoom Platform
-              from 10.00 a.m. to 12.00 p.m.
+            <p class="text-gray-50 font-Noto pl-8 lg:pl-12 pr-2 lg:pr-4 text-center text-lg lg:text-2xl xl:text-3xl">
+              Awareness session
             </p>
           </div>
           <div class="w-32 lg:w-40 h-32 lg:h-40 absolute transform translate-x-1/4 pixel:translate-x-3/4 xl:translate-x-28 2xl:translate-x-5 right-0">
@@ -1734,8 +1924,8 @@ body{
                   text-gray-50
                 "
               >
-                <h1 class="text-center text-3xl lg:text-5xl">22</h1>
-                <h2 class="lg:text-3xl">NOV</h2>
+                <h1 class="text-center text-3xl lg:text-5xl">17</h1>
+                <h2 class="lg:text-3xl">JUL</h2>
               </div>
               <div class="w-32 lg:w-40 h-32 lg:h-40 rounded-full bg-gray-50 opacity-40"></div>
             </div>
@@ -1790,8 +1980,8 @@ body{
               lg:justify-center
             "
           >
-            <p class="text-gray-50 font-Noto pl-16 lg:pl-5 text-center pr-3 lg:pr-5 text-lg lg:text-2xl">
-              Registrations Closed for HackX Jr
+            <p class="text-gray-50 font-Noto pl-16 lg:pl-5 xl:pl-14 text-center pr-5 lg:pr-5 text-lg lg:text-2xl xl:text-3xl">
+              Deadline for the proposal submission
             </p>
           </div>
           <div class="w-32 lg:w-40 h-32 lg:h-40 absolute transform -translate-x-2 pixel:-translate-x-3/4 xl:-translate-x-14 2xl:-translate-x-0 left-0">
@@ -1808,8 +1998,8 @@ body{
                   text-gray-50
                 "
               >
-                <h1 class="text-center text-3xl lg:text-5xl">03</h1>
-                <h2 class="lg:text-3xl">DEC</h2>
+                <h1 class="text-center text-3xl lg:text-5xl">31</h1>
+                <h2 class="lg:text-3xl">JUL</h2>
               </div>
               <div class="w-32 lg:w-40 h-32 lg:h-40 rounded-full bg-gray-50 opacity-40"></div>
             </div>
@@ -1854,8 +2044,8 @@ body{
               lg:justify-center
             "
           >
-            <p class="text-gray-50 font-Noto pl-2 pr-8 pixel:pr-2 text-center text-lg lg:text-2xl">
-              Shortlisted Teams are Announced!
+            <p class="text-gray-50 font-Noto pl-6 pr-8 pixel:pr-2 text-center text-lg lg:text-2xl xl:text-3xl">
+              Announcing Semi final teams
             </p>
           </div>
           <div class="w-32 lg:w-40 h-32 lg:h-40 absolute transform translate-x-1/4 pixel:translate-x-3/4 xl:translate-x-14 2xl:translate-x-5 right-0">
@@ -1873,7 +2063,7 @@ body{
                 "
               >
                 <h1 class="text-center text-3xl lg:text-5xl">06</h1>
-                <h2 class="lg:text-3xl">DEC</h2>
+                <h2 class="lg:text-3xl">AUG</h2>
               </div>
               <div class="w-32 lg:w-40 h-32 lg:h-40 rounded-full bg-gray-50 opacity-40"></div>
             </div>
@@ -1918,8 +2108,8 @@ body{
               flex-col
             "
           >
-            <p class="text-gray-50 font-Noto text-center text-lg pl-12 lg:text-2xl">
-              'Good To Go!'
+            <p class="text-gray-50 font-Noto text-center text-lg pl-12 lg:text-2xl xl:text-3xl">
+              Online workshop series
             </p>
             <p
               class="
@@ -1933,7 +2123,7 @@ body{
                 mt-2
               "
             >
-              A Session for the Finalist Teams via Zoom Platform
+              via Zoom Platform
             </p>
           </div>
           <div class="w-32 lg:w-40 h-32 lg:h-40 absolute transform -translate-x-2 pixel:-translate-x-3/4 xl:-translate-x-24 2xl:-translate-x-4 left-0">
@@ -1950,8 +2140,153 @@ body{
                   text-gray-50
                 "
               >
-                <h1 class="text-center text-3xl lg:text-5xl">03</h1>
-                <h2 class="lg:text-3xl">DEC</h2>
+                <h1 class="text-center text-3xl lg:text-4xl">07 to 15</h1>
+                <h2 class="lg:text-3xl text-center">AUG</h2>
+              </div>
+              <div class="w-32 lg:w-40 h-32 lg:h-40 rounded-full bg-gray-50 opacity-40"></div>
+            </div>
+          </div>
+          <div class="absolute bottom-0 right-4 transform translate-y-4 lg:translate-y-10">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 lg:h-16 w-8 lg:w-16 text-gray-50"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div
+          class="w-1/2 3xl:w-2/5 flex relative justify-start px-3 mt-16"
+          data-scroll="1"
+          data-scroll-direction="horizontal"
+          data-scroll-speed="-1"
+          data-scroll-delay="0.05"
+        >
+          <div
+            class="
+              w-64
+              pixel:w-85
+              lg:w-120
+              h-32
+              lg:h-40
+              bg-TimelineBoxed
+              rounded-2xl
+              flex
+              items-center
+              justify-center
+              flex-col
+            "
+          >
+            <p class="text-gray-50 font-Noto pl-2 pr-8 text-center text-lg lg:text-2xl xl:text-3xl">
+              Semi Final
+            </p>
+            <p class="text-gray-50 font-Noto text-center text-sm lg:text-2xl mt-2">
+              via Zoom Platform
+            </p>
+          </div>
+          <div class="w-32 lg:w-40 h-32 lg:h-40 absolute transform translate-x-1/4 pixel:translate-x-3/4 xl:translate-x-14 2xl:translate-x-5 right-0">
+            <div class="w-full h-full relative">
+              <div
+                class="
+                  absolute
+                  z-10
+                  top-1/2
+                  left-1/2
+                  transform
+                  -translate-x-1/2 -translate-y-1/2
+                  font-Marcellus
+                  text-gray-50
+                "
+              >
+                <h1 class="text-center text-3xl lg:text-5xl">21</h1>
+                <h2 class="lg:text-3xl">AUG</h2>
+              </div>
+              <div class="w-32 lg:w-40 h-32 lg:h-40 rounded-full bg-gray-50 opacity-40"></div>
+            </div>
+          </div>
+          <div class="absolute bottom-0 left-5 transform translate-y-4 lg:translate-y-10">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 lg:h-16 w-8 lg:w-16 text-gray-50"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div
+          class="w-1/2 3xl:w-2/5 flex relative justify-end ml-4 pixel:ml-16 mt-16"
+          data-scroll="1"
+          data-scroll-direction="horizontal"
+          data-scroll-speed="1"
+          data-scroll-delay="0.09"
+        >
+          <div
+            class="
+              w-64
+              pixel:w-85
+              lg:w-120
+              h-32
+              lg:h-40
+              bg-TimelineBoxed
+              rounded-2xl
+              flex
+              items-center
+              justify-center
+              flex-col
+            "
+          >
+            <p class="text-gray-50 font-Noto text-center text-lg pl-12 lg:text-2xl xl:text-3xl">
+              Online workshop series for finalists
+            </p>
+            <p
+              class="
+                text-gray-50
+                font-Noto
+                text-center
+                px-4
+                text-xs
+                lg:text-2xl
+                pl-12
+                mt-2
+              "
+            >
+              via Zoom Platform
+            </p>
+          </div>
+          <div class="w-32 lg:w-40 h-32 lg:h-40 absolute transform -translate-x-2 pixel:-translate-x-3/4 xl:-translate-x-24 2xl:-translate-x-4 left-0">
+            <div class="w-full h-full relative">
+              <div
+                class="
+                  absolute
+                  z-10
+                  top-1/2
+                  left-1/2
+                  transform
+                  -translate-x-1/2 -translate-y-1/2
+                  font-Marcellus
+                  text-gray-50
+                "
+              >
+                <h1 class="text-center text-3xl lg:text-4xl">11 to 19</h1>
+                <h2 class="lg:text-3xl text-center">SEP</h2>
               </div>
               <div class="w-32 lg:w-40 h-32 lg:h-40 rounded-full bg-gray-50 opacity-40"></div>
             </div>
@@ -1996,8 +2331,8 @@ body{
               flex-col
             "
           >
-            <p class="text-gray-50 font-Noto pl-2 pr-8 text-center text-lg lg:text-2xl">
-              HackX Jr : Final Event
+            <p class="text-gray-50 font-Noto pl-2 pr-8 text-center text-lg lg:text-2xl xl:text-3xl">
+              Grand Finale
             </p>
             <p class="text-gray-50 font-Noto text-center text-sm lg:text-2xl mt-2">
               via Zoom Platform
@@ -2017,8 +2352,8 @@ body{
                   text-gray-50
                 "
               >
-                <h1 class="text-center text-3xl lg:text-5xl">06</h1>
-                <h2 class="lg:text-3xl">DEC</h2>
+                <h1 class="text-center text-3xl lg:text-5xl">25</h1>
+                <h2 class="lg:text-3xl">SEP</h2>
               </div>
               <div class="w-32 lg:w-40 h-32 lg:h-40 rounded-full bg-gray-50 opacity-40"></div>
             </div>
@@ -2167,7 +2502,7 @@ body{
         data-scroll-direction="horizontal"
         data-scroll-target="#swagTab"
       >
-        <h1 class="font-BebasNeue text-gray-800 w-full text-9xl text-center clip-path-swaggers">
+        <h1 class="font-BebasNeue text-gray-800 w-full text-8xl lg:text-9xl text-center clip-path-swaggers px-12">
           Give Shapes To Ideas
         </h1>
       </div>
@@ -2541,7 +2876,7 @@ body{
               </h1>
             <div class="w-1/2 flex items-center flex-col text-gray-50 justify-center">
               
-              <div class="font-Noto text-2xl 2xl:text-3xl w-full px-4 2xl:px-12 mt-12 z-20">
+              <div class="font-Noto text-xl 2xl:text-3xl w-full px-4 2xl:px-12 mt-12 z-20">
                 <p>A team should consist of a maximum of five members.</p>
                 <p class="mt-5">
                   Every group must appoint a mentor for the team, preferably the
@@ -2598,9 +2933,9 @@ body{
             h-auto
             md:h-70vh
             lg:h-60vh
-            bg-gradient-to-tr
-            from-scoringEndColor
-            to-scoringStartingColor
+          bg-gradient-to-tr
+          from-whatIsStartingGradient
+          to-whatIsEndingGradient
             flex
             xl:hidden
           "
@@ -2644,7 +2979,7 @@ body{
                 md:h-120
                 rounded-full
                 shadow-2xl
-                bg-teamOrgCircleColor
+                bg-applicationCircleColor
                 right-0
                 transform
                 translate-x-1/2
@@ -2671,7 +3006,7 @@ body{
         >
           <div class="w-full mt-12 mb-16 relative flex justify-end">
             <h1
-                class="font-BebasNeue text-8xl 2xl:text-9xl uppercase z-20 text-center text-gray-50 absolute top-1/4 left-14 2xl:left-16 2xl:w-1/4"
+                class="font-BebasNeue text-8xl 2xl:text-9xl uppercase z-20 text-center text-gray-50 absolute top-1/4 left-0 2xl:left-16 2xl:w-1/4 xl:px-5"
                 data-scroll="1"
                 data-scroll-speed="1"
                 data-scroll-target="#Application"
@@ -2680,27 +3015,30 @@ body{
               </h1>
             <div class="w-1/2 flex items-center flex-col text-gray-50 3xl:justify-center">
               
-              <div class="font-Noto text-2xl 2xl:text-3xl w-full px-8 2xl:px-12 mt-12 z-20">
-                <p>A team should consist of a maximum of five members.</p>
+              <div class="font-Noto text-xl 2xl:text-3xl w-full px-8 2xl:px-12 mt-12 z-20">
+                <p>Applications can be submitted from 15th July 2021 to 31st July 2021 through the Official web site
+                  of the event <a href="" class="underline text-gray-800 xl:text-blue-600 font-bold">www.hackxjr.lk</a></p>
                 <p class="mt-5">
-                  Every group must appoint a mentor for the team, preferably the
-                  teacher-in-charge of A/L ICT subject stream, or a teacher of a
-                  similar capacity.
+                  Partially completed applications will be rejected.
                 </p>
                 <p class="mt-5">
-                  No participant is allowed to represent two groups. Inclusion
-                  of the same member in two different teams will lead to
-                  automatic disqualification of both groups.
+                  The proposal should be uploaded as a PDF document
                 </p>
                 <p class="mt-5">
-                  Participants are encouraged to design their own promotional
-                  material for their team.
+                  The content of the proposal should follow the following format not exceeding the word limit 2000
+words
                 </p>
+                <ol class="mt-3 ml-5" type="1">
+                  <li>1. Problem Definition</li>
+                  <li>2. Concept Overview</li>
+                  <li>3. Technologies Used</li>
+                  <li>4. Marketing Plan</li>
+                </ol>
                 <p class="mt-5">
-                  Participants can choose an appropriate title for their team.
+                  The proposals will be evaluated through a predefined set of criteria.
                 </p>
                 <div class="mt-5">
-                  <a href="#" class="text-base underline cursor-pointer font-bold">Download the application</a>
+                  <a href="#" class="text-base 2xl:text-2xl underline cursor-pointer font-bold mr-3">Download Sample Proposal Structure</a>
                   <i class="fas fa-file-download"></i>
                 </div>
               </div>
@@ -2738,11 +3076,11 @@ body{
         <section
         class="
           h-auto
-          md:h-60vh
+          md:h-70vh
           lg:h-50vh
           bg-gradient-to-tr
-          from-whatIsStartingGradient
-          to-whatIsEndingGradient
+          from-scoringEndColor
+          to-scoringStartingColor
           flex
           xl:hidden
         "
@@ -2756,25 +3094,32 @@ body{
             >
               Application Process
             </h1>
-            <div class="font-Noto text-base md:text-xl lg:text-2xl w-full px-4 md:px-20 lg:px-24 mt-12 md:mt-16 z-20">
-              <p>A team should consist of a maximum of five members.</p>
-              <p>
-                Every group must appoint a mentor for the team, preferably the
-                teacher-in-charge of A/L ICT subject stream, or a teacher of a
-                similar capacity.
+            <div class="font-Noto text-base md:text-xl lg:text-2xl w-full px-4 md:px-20 lg:px-24 mt-12 md:mt-5 z-20">
+              <p>Applications can be submitted from 15th July 2021 to 31st July 2021 through the Official web site
+                of the event <a href="" class="underline text-gray-800 font-bold">www.hackxjr.lk</a></p>
+              <p class="mt-3">
+                Partially completed applications will be rejected.
               </p>
-              <p>
-                No participant is allowed to represent two groups. Inclusion
-                of the same member in two different teams will lead to
-                automatic disqualification of both groups.
+              <p class="mt-3">
+                The proposal should be uploaded as a PDF document
               </p>
-              <p>
-                Participants are encouraged to design their own promotional
-                material for their team.
+              <p class="mt-3">
+                The content of the proposal should follow the following format not exceeding the word limit 2000
+words
               </p>
-              <p>
-                Participants can choose an appropriate title for their team.
+              <ol class="mt-3 ml-5" type="1">
+                <li>1. Problem Definition</li>
+                <li>2. Concept Overview</li>
+                <li>3. Technologies Used</li>
+                <li>4. Marketing Plan</li>
+              </ol>
+              <p class="mt-3">
+                The proposals will be evaluated through a predefined set of criteria.
               </p>
+              <div class="mt-5">
+                <a href="#" class="text-base underline cursor-pointer font-bold mr-2">Download Sample Proposal Structure</a>
+                <i class="fas fa-file-download"></i>
+              </div>
             </div>
           </div>
           <div
@@ -2786,7 +3131,7 @@ body{
               md:h-120
               rounded-full
               shadow-2xl
-              bg-applicationCircleColor
+              bg-teamOrgCircleColor
               left-0
               transform
               -translate-x-1/2
@@ -2962,7 +3307,7 @@ body{
             "
           >
             <h1 class="font-BebasNeue text-8xl 3xl:text-9xl text-center">Finale</h1>
-            <div class="w-full flex flex-col px-4 md:px-24 font-Noto text-base md:text-xl lg:text-2xl 3xl:text-3xl mt-6 md:mt-12">
+            <div class="w-full flex flex-col px-4 md:px-24 font-Noto text-base md:text-xl lg:text-2xl xl:text-xl 3xl:text-3xl mt-6 md:mt-12">
               <p>
                 Final round selected teams will compete on the hackathon, which
                 is scheduled to be held on 17th December 2020 via Zoom Platform.
@@ -2987,7 +3332,7 @@ body{
           <div class="h-96 w-72 md:w-3/5 overflow-hidden relative xl:hidden">
             <div class="absolute w-full h-full bg-vision-bg-5s bg-cover">
                <div class="w-full h-full relative">
-                <h1 class="font-Marcellus text-gray-50 text-6xl md:text-7xl absolute z-10 top-12 left-1/2 transform -translate-x-1/2">Our Vision</h1>
+                <h1 class="font-Marcellus text-gray-50 text-4xl w-full text-center md:text-7xl absolute z-10 top-12 left-1/2 transform -translate-x-1/2">Our Vision</h1>
                 <p class="w-full px-3 md:px-5 text-gray-50 font-Noto text-base md:text-xl lg:text-2xl text-center absolute top-1/2  transform -translate-y-1/4 z-10">Our vision is to be recognized as the pioneering platform for providing the school children of the country
                     with an opportunity to bring forth their ideas and accelerate creation and development of new radical solutions.</p>
                 <div class="w-ful h-full bg-gray-800 opacity-70"></div>
@@ -3010,7 +3355,7 @@ body{
         <div class="h-96 w-72 md:w-3/5 overflow-hidden relative mt-14 xl:hidden">
           <div class="absolute w-full h-full bg-mission-bg-5s bg-cover">
              <div class="w-full h-full relative">
-              <h1 class="font-Marcellus text-gray-50 text-6xl md:text-7xl absolute z-10 top-12 left-1/2 transform -translate-x-1/2">Our Mission</h1>
+              <h1 class="font-Marcellus text-gray-50 text-4xl w-full text-center md:text-7xl absolute z-10 top-12 left-1/2 transform -translate-x-1/2">Our Mission</h1>
               <p class="w-full px-3 md:px-5 text-gray-50 font-Noto text-base md:text-xl lg:text-2xl text-center absolute top-1/2  transform -translate-y-1/4 z-10">Our mission is to spark innovative ideas and develop a creative and entrepreneurial culture among the school community, who will in turn contribute to global knowledge and economy, by exposing them to the corporate sector.</p>
               <div class="w-ful h-full bg-gray-800 opacity-70"></div>
              </div>
