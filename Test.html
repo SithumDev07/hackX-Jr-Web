@@ -1927,7 +1927,7 @@ constraints.
               justify-start
             "
           >
-            <p class="text-gray-50 font-Noto pl-8 lg:pl-12 pr-2 lg:pr-4 text-center text-lg lg:text-2xl xl:text-3xl">
+            <p class="text-gray-50 font-Noto pl-14 lg:pl-12 pr-2 lg:pr-4 text-center text-lg lg:text-2xl xl:text-3xl">
               Awareness session
             </p>
           </div>
@@ -2065,7 +2065,7 @@ constraints.
               lg:justify-center
             "
           >
-            <p class="text-gray-50 font-Noto pl-6 pr-8 pixel:pr-2 text-center text-lg lg:text-2xl xl:text-3xl">
+            <p class="text-gray-50 font-Noto w-4/5 lg:w-full pl-10 lg:pl-6 pr-8 pixel:pr-2 text-center text-lg lg:text-2xl xl:text-3xl">
               Announcing Semi final teams
             </p>
           </div>
@@ -2132,7 +2132,7 @@ constraints.
             <p class="text-gray-50 font-Noto text-center text-lg pl-12 lg:text-2xl xl:text-3xl">
               Online workshop series
             </p>
-            <p
+            <!-- <p
               class="
                 text-gray-50
                 font-Noto
@@ -2145,7 +2145,7 @@ constraints.
               "
             >
               via Zoom Platform
-            </p>
+            </p> -->
           </div>
           <div class="w-32 lg:w-40 h-32 lg:h-40 absolute transform -translate-x-2 pixel:-translate-x-3/4 xl:-translate-x-24 2xl:-translate-x-4 left-0">
             <div class="w-full h-full relative">
@@ -2210,9 +2210,9 @@ constraints.
             <p class="text-gray-50 font-Noto pl-2 pr-8 text-center text-lg lg:text-2xl xl:text-3xl">
               Semi Final
             </p>
-            <p class="text-gray-50 font-Noto text-center text-sm lg:text-2xl mt-2">
+            <!-- <p class="text-gray-50 font-Noto text-center text-sm lg:text-2xl mt-2">
               via Zoom Platform
-            </p>
+            </p> -->
           </div>
           <div class="w-32 lg:w-40 h-32 lg:h-40 absolute transform translate-x-1/4 pixel:translate-x-3/4 xl:translate-x-14 2xl:translate-x-5 right-0">
             <div class="w-full h-full relative">
@@ -2277,7 +2277,7 @@ constraints.
             <p class="text-gray-50 font-Noto text-center text-lg pl-12 lg:text-2xl xl:text-3xl">
               Online workshop series for finalists
             </p>
-            <p
+            <!-- <p
               class="
                 text-gray-50
                 font-Noto
@@ -2290,7 +2290,7 @@ constraints.
               "
             >
               via Zoom Platform
-            </p>
+            </p> -->
           </div>
           <div class="w-32 lg:w-40 h-32 lg:h-40 absolute transform -translate-x-2 pixel:-translate-x-3/4 xl:-translate-x-24 2xl:-translate-x-4 left-0">
             <div class="w-full h-full relative">
@@ -2355,9 +2355,9 @@ constraints.
             <p class="text-gray-50 font-Noto pl-2 pr-8 text-center text-lg lg:text-2xl xl:text-3xl">
               Grand Finale
             </p>
-            <p class="text-gray-50 font-Noto text-center text-sm lg:text-2xl mt-2">
+            <!-- <p class="text-gray-50 font-Noto text-center text-sm lg:text-2xl mt-2">
               via Zoom Platform
-            </p>
+            </p> -->
           </div>
           <div class="w-32 lg:w-40 h-32 lg:h-40 absolute transform translate-x-1/4 pixel:translate-x-3/4 xl:translate-x-14 2xl:translate-x-5 right-0">
             <div class="w-full h-full relative">
@@ -2963,8 +2963,6 @@ constraints.
         <section
           class="
             h-auto
-            md:h-70vh
-            lg:h-60vh
           bg-gradient-to-tr
           from-whatIsStartingGradient
           to-whatIsEndingGradient
@@ -3103,8 +3101,6 @@ constraints.
         <section
         class="
           h-auto
-          md:h-70vh
-          lg:h-50vh
           bg-gradient-to-tr
           from-scoringEndColor
           to-scoringStartingColor
@@ -3305,9 +3301,6 @@ words
         <section
           class="
             h-auto
-            md:h-50vh
-            lg:h-40vh
-            xl:h-auto
             bg-gradient-to-tr
             from-finaleStartingColor
             to-finaleEndColor
@@ -3822,6 +3815,7 @@ var ball = document.getElementsByClassName("ball");
         const TimelineNav = document.querySelector('#NavTimeline')
         TimelineNav.addEventListener('click', () => {
             console.log('navigating T Timeline')
+            MenuToggleDefault()
             scroll.scrollTo('#TimelineTab', {
                 
             })
