@@ -28,6 +28,7 @@
   from {
     border: 150px solid #fff;
   }
+
   to {
     border: 2px solid #fff;
   }
@@ -37,6 +38,7 @@
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
@@ -46,6 +48,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -55,6 +58,7 @@
   0% {
     transform: rotate(360deg);
   }
+
   100% {
     transform: rotate(0deg);
   }
