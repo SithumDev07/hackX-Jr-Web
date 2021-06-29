@@ -367,11 +367,11 @@ body{
                   <div class="w-full flex justify-end">
                     <ul class="text-2xl md:text-3xl lg:text-5xl font-Noto text-gray-100 flex flex-col items-end h-96 md:h-50vh justify-around w-full mt-8 z-50">
                         <li class="cursor-pointer" id="NavHome"><a href="#Home">Home</a></li>
-                        <li class="cursor-pointer">Info</li>
+                        <li class="cursor-pointer" id="InfoMobile">Info</li>
                         <li class="cursor-pointer" id="NavTimeline"><a href="#Timeline">Schedule</a></li>
-                        <li class="cursor-pointer">Rules</li>
+                        <li class="cursor-pointer" id="RulesMobileNav">Rules</li>
                         <li class="cursor-pointer" id="NavAbout"><a href="#AboutUs">About</a></li>
-                        <li class="cursor-pointer">Register</li>
+                        <li class="cursor-pointer" id="RegisterMobileNav">Register</li>
                         <li class="cursor-pointer" id="NavContact"><a href="#ContactUs">Contact Us</a></li>
                     </ul>
                   </div>
@@ -880,6 +880,7 @@ body{
             xl:relative
           "
           data-scroll-section="1"
+          id="compete-details-m"
         >
           <div class="w-full h-full flex flex-col">
             <!-- <h1
@@ -2664,7 +2665,7 @@ constraints.
      <!-- End of Swaggers -->
 
         <!-- Scoring -->
-        <section
+        <!-- <section
           class="
             h-auto
             xl:h-screen
@@ -2674,7 +2675,6 @@ constraints.
             hidden
           "
           data-scroll-section="1"
-          id="scoring"
         >
           <div class="w-full mt-12 mb-16 relative">
             <div class="w-full flex items-center flex-col xl:flex-row text-gray-50">
@@ -2728,7 +2728,7 @@ constraints.
               data-scroll-target="#scoring"
             ></div>
           </div>
-        </section>
+        </section> -->
         <!-- End of Scoring -->
 
         <!-- Scoring Mobile -->
@@ -3313,6 +3313,7 @@ words
             flex
           "
           data-scroll-section="1"
+          id="finale"
         >
           <div
             class="
@@ -3326,7 +3327,7 @@ words
               mb-16
             "
           >
-            <h1 class="font-BebasNeue text-8xl 3xl:text-9xl text-center">Register Now</h1>
+            <h1 class="font-BebasNeue text-6xl md:text-8xl 3xl:text-9xl text-center">Register Now</h1>
             <div class="w-full flex flex-col px-4 md:px-24 font-Noto text-base md:text-xl lg:text-2xl xl:text-xl 3xl:text-3xl mt-6 md:mt-12 items-center">
               <p class="text-center">
                 No data charges will cause for attending all the sessions conducting via Zoom.
@@ -3815,6 +3816,27 @@ var ball = document.getElementsByClassName("ball");
             console.log('navigating T Home')
             scroll.scrollTo('#Home', {})
         })
+
+        const InfoMobile = document.querySelector('#InfoMobile')
+        InfoMobile.addEventListener('click', () => {
+            console.log('navigating T Home')
+            scroll.scrollTo('#compete-details-m', {})
+        })
+
+        const RulesMobileNav = document.querySelector('#RulesMobileNav')
+        RulesMobileNav.addEventListener('click', () => {
+            console.log('navigating T Home')
+            scroll.scrollTo('#scoring', {})
+        })
+
+        const RegisterMobileNav = document.querySelector('#RegisterMobileNav')
+        RegisterMobileNav.addEventListener('click', () => {
+            console.log('navigating T Home')
+            scroll.scrollTo('#finale', {})
+        })
+
+        
+        //ss
 
         const About = document.querySelector('#NavAbout')
         About.addEventListener('click', () => {
