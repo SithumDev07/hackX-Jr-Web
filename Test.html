@@ -378,6 +378,7 @@ body{
             </div>
         </section>
 
+        
       <div
         class="bg-gradient-to-br from-stratingColorGradient to-endColorGradient overflow-hidden"
         data-scroll-container="1"
@@ -3714,7 +3715,7 @@ var ball = document.getElementsByClassName("ball");
        Parent.classList.remove('ParentDefault')
        Logo.classList.add('transit');
        Burger.classList.add('opacity-0')
-       console.log('Working')
+       console.log('Working M')
    })
 
    Close.addEventListener('click', () => {
@@ -3726,7 +3727,14 @@ var ball = document.getElementsByClassName("ball");
        Burger.classList.remove('opacity-0')
    })
 
-
+   function MenuToggleDefault()  {
+    SideBar.classList.remove('sideBar')
+       SideBar.classList.add('sideDefault')
+       Parent.classList.remove('ParentMove')
+       Parent.classList.add('ParentDefault')
+       Logo.classList.remove('transit');
+       Burger.classList.remove('opacity-0')
+   }
 
 </script>
   <script src="./locomotive-scroll.min.js"></script>
@@ -3792,12 +3800,21 @@ var ball = document.getElementsByClassName("ball");
       var isMobile = false;
       if(Width < 768 ? isMobile = true : isMobile = false );
 
+      // NavHome
+      //   InfoMobile
+      //   NavTimeline
+      //   RulesMobileNav
+      //   NavAbout
+      //   RegisterMobileNav
+      //   NavContact
+
       if(isMobile){
         const TimelineNav = document.querySelector('#NavTimeline')
         TimelineNav.addEventListener('click', () => {
             console.log('navigating M Timeline')
+            MenuToggleDefault()
             scroll.scrollTo('#Timeline', {
-                
+              
             })
         })
       }
@@ -3814,24 +3831,28 @@ var ball = document.getElementsByClassName("ball");
         const Home = document.querySelector('#NavHome')
         Home.addEventListener('click', () => {
             console.log('navigating T Home')
+            MenuToggleDefault()
             scroll.scrollTo('#Home', {})
         })
 
         const InfoMobile = document.querySelector('#InfoMobile')
         InfoMobile.addEventListener('click', () => {
             console.log('navigating T Home')
+            MenuToggleDefault()
             scroll.scrollTo('#compete-details-m', {})
         })
 
         const RulesMobileNav = document.querySelector('#RulesMobileNav')
         RulesMobileNav.addEventListener('click', () => {
             console.log('navigating T Home')
+            MenuToggleDefault()
             scroll.scrollTo('#scoring', {})
         })
 
         const RegisterMobileNav = document.querySelector('#RegisterMobileNav')
         RegisterMobileNav.addEventListener('click', () => {
             console.log('navigating T Home')
+            MenuToggleDefault()
             scroll.scrollTo('#finale', {})
         })
 
@@ -3841,12 +3862,14 @@ var ball = document.getElementsByClassName("ball");
         const About = document.querySelector('#NavAbout')
         About.addEventListener('click', () => {
             console.log('navigating T About')
+            MenuToggleDefault()
             scroll.scrollTo('#AboutUs', {})
         })
 
         const Contact = document.querySelector('#NavContact')
         Contact.addEventListener('click', () => {
             console.log('navigating T Contact')
+            MenuToggleDefault()
             scroll.scrollTo('#ContactUs', {})
         })
 
