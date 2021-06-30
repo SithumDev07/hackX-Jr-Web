@@ -395,7 +395,7 @@ body{
                         <li class="cursor-pointer" id="NavTimeline"><a href="#Timeline">Schedule</a></li>
                         <li class="cursor-pointer" id="RulesMobileNav">Rules</li>
                         <li class="cursor-pointer" id="NavAbout"><a href="#AboutUs">About</a></li>
-                        <li class="cursor-pointer" id="RegisterMobileNav">Register</li>
+                        <li class="cursor-pointer" id="RegisterMobileNav"><a href="https://forms.gle/dTaCF4Sp7ddGSsrE9" target="_blank">Register</a></li>
                         <li class="cursor-pointer" id="NavContact"><a href="#ContactUs">Contact Us</a></li>
                     </ul>
                   </div>
@@ -578,6 +578,7 @@ body{
               transform
               -translate-x-1/2
             "
+            id="RegisterButtonTab"
           >
             <h2 class="text-gray-100 font-Noto text-xl lg:text-3xl py-3 pixel:py-4 lg:py-6 px-2">
               Register
@@ -623,6 +624,7 @@ body{
                 mt-10
                 shadow-3xl
               "
+              id="RegisterButtonMobile"
             >
               <h2 class="text-gray-100 font-Noto text-xl py-3 pixel:py-4 px-2">
                 Register
@@ -3679,6 +3681,16 @@ words
       win.focus();
     }
 
+    const RegisterButtonMobile = document.querySelector('#RegisterButtonMobile');
+    RegisterButtonMobile.addEventListener('click', () => {
+      openInNewTab('https://forms.gle/dTaCF4Sp7ddGSsrE9');
+    })
+
+    const RegisterButtonTab = document.querySelector('#RegisterButtonTab');
+    RegisterButtonTab.addEventListener('click', () => {
+      openInNewTab('https://forms.gle/dTaCF4Sp7ddGSsrE9');
+    })
+
     const RegisterButtonFinale = document.querySelector('#RegisterButtonFinale');
     RegisterButtonFinale.addEventListener('click', () => {
       openInNewTab('https://forms.gle/dTaCF4Sp7ddGSsrE9');
@@ -3889,7 +3901,6 @@ var ball = document.getElementsByClassName("ball");
         RegisterMobileNav.addEventListener('click', () => {
             console.log('navigating T Home')
             MenuToggleDefault()
-            scroll.scrollTo('#finale', {})
         })
 
         
