@@ -13,10 +13,14 @@ module.exports = {
         'mascotty-main' : "url('../public/images/Mas/mascotty.png')",
         'mascotty-eye' : "url('../public/images/Mas/minion-eye.png')",
         'mascotty-mobile' : "url('../public/images/Mas/mascotty-mobile.png')",
-        'vision-bg-5s': "url('../public/images/vision-bg/bg-vison-large-5s.png')",
-        'mission-bg-5s': "url('../public/images/mission-bg/bg-mission-large-5s.png')",
-        'coordinator-5s': "url('../public/images/coordinators/cordinator-5s.png')",
-        'lets-talk' : "url('../public/images/coordinators/letstalk.png')",
+        'vision-bg-5s': "url('../public/images/vision-bg/bg-vison-large-5s.webp')",
+        'mission-bg-5s': "url('../public/images/mission-bg/bg-mission-large-5s.webp')",
+        'coordinator-thamindu': "url('../public/images/coordinators/Thamindu.webp')",
+        'coordinator-venushi': "url('../public/images/coordinators/Venushi.webp')",
+        'coordinator-chirath': "url('../public/images/coordinators/Chirath.webp')",
+        'coordinator-nawoda': "url('../public/images/coordinators/Nawoda.webp')",
+        'coordinator-kosala': "url('../public/images/coordinators/Kosala.webp')",
+        'lets-talk' : "url('../public/images/coordinators/letstalk.webp')",
       })
     },
     screens: {
