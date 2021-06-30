@@ -15,7 +15,11 @@ module.exports = {
         'mascotty-mobile' : "url('../public/images/Mas/mascotty-mobile.png')",
         'vision-bg-5s': "url('../public/images/vision-bg/bg-vison-large-5s.png')",
         'mission-bg-5s': "url('../public/images/mission-bg/bg-mission-large-5s.png')",
-        'coordinator-5s': "url('../public/images/coordinators/cordinator-5s.png')",
+        'coordinator-thamindu': "url('../public/images/coordinators/Thamindu.png')",
+        'coordinator-venushi': "url('../public/images/coordinators/Venushi.png')",
+        'coordinator-chirath': "url('../public/images/coordinators/Chirath.png')",
+        'coordinator-nawoda': "url('../public/images/coordinators/Nawoda.png')",
+        'coordinator-kosala': "url('../public/images/coordinators/Kosala.png')",
         'lets-talk' : "url('../public/images/coordinators/letstalk.png')",
       })
     },
