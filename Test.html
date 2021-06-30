@@ -333,7 +333,7 @@ body{
             <li class="cursor-pointer" id="navHomeS">Schedule</li>
             <li class="cursor-pointer" id="navHomeR">Rules</li>
             <li class="cursor-pointer" id="navHomeA">About</li>
-            <li class="cursor-pointer" id="navHomeReg">Register</li>
+            <li class="cursor-pointer" id="navHomeReg"><a href="https://forms.gle/dTaCF4Sp7ddGSsrE9" target="_blank">Register</a></li>
             <li class="cursor-pointer" id="navHomeC">Contact Us</li>
           </ul>
         </nav>
@@ -460,6 +460,7 @@ body{
                     xl:cursor-pointer
                     register-button-landing
                   "
+                  id="RegisterButtonHome"
                 >
                   <h2 class="text-gray-100 font-Noto text-lg px-6 py-4">
                     Register
@@ -3344,6 +3345,7 @@ words
               3xl:mt-20
               mb-16
             "
+            id="RegisterButtonFinale"
           >
             <h1 class="font-BebasNeue text-6xl md:text-8xl 3xl:text-9xl text-center">Register Now</h1>
             <div class="w-full flex flex-col px-4 md:px-24 font-Noto text-base md:text-xl lg:text-2xl xl:text-xl 3xl:text-3xl mt-6 md:mt-12 items-center">
@@ -3672,6 +3674,22 @@ words
   <script src="./public/typed.js" charset="utf-8"></script>
   <script>
 
+    function openInNewTab(url) {
+      const win = window.open(url, '_blank');
+      win.focus();
+    }
+
+    const RegisterButtonFinale = document.querySelector('#RegisterButtonFinale');
+    RegisterButtonFinale.addEventListener('click', () => {
+      openInNewTab('https://forms.gle/dTaCF4Sp7ddGSsrE9');
+    })
+
+    const RegisterButtonHome = document.querySelector('#RegisterButtonHome');
+    RegisterButtonHome.addEventListener('click', () => {
+      openInNewTab('https://forms.gle/dTaCF4Sp7ddGSsrE9');
+      
+    });
+
 var typed = new Typed('.typing', {
 strings: ['2021', '4.0','Innovative','Creative'],
 typeSpeed: 60,
@@ -3916,10 +3934,10 @@ var ball = document.getElementsByClassName("ball");
           scroll.scrollTo('#AboutUs', {})
         })
 
-        const navHomeReg = document.querySelector('#navHomeReg')
-        navHomeReg.addEventListener('click', () => {
-        scroll.scrollTo('#finale', {})
-        })
+        // const navHomeReg = document.querySelector('#navHomeReg')
+        // navHomeReg.addEventListener('click', () => {
+        // scroll.scrollTo('#finale', {})
+        // })
 
         const navHomeC = document.querySelector('#navHomeC')
         navHomeC.addEventListener('click', () => {
