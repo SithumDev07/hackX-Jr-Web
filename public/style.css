@@ -2258,6 +2258,10 @@ video {
     margin-top: 1rem;
   }
 
+  .xl\:mt-8{
+    margin-top: 2rem;
+  }
+
   .xl\:mr-8{
     margin-right: 2rem;
   }
@@ -2447,6 +2451,10 @@ video {
 
   .\32xl\:mb-0{
     margin-bottom: 0px;
+  }
+
+  .\32xl\:mt-10{
+    margin-top: 2.5rem;
   }
 
   .\32xl\:ml-16{
