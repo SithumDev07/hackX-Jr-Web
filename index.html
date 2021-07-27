@@ -3454,6 +3454,7 @@ words
               <p class="mt-4 text-center">
                 Winning team will get the opportunity to present their idea in the Exposition Magazine launch.
               </p>
+              <div class="flex flex-col xl:flex-row ">
               <div
                   class="
                     bg-getStartedButtonColor
@@ -3465,6 +3466,7 @@ words
                     xl:cursor-pointer
                     mt-8
                     mb-8
+                    mr-10
                     register-button-landing
                   "
                   id="RegisterButtonFinale"
@@ -3473,6 +3475,26 @@ words
                     Register
                   </h2>
                 </div>
+                <div
+                class="
+                  bg-getStartedButtonColor
+                  w-52
+                  flex
+                  justify-center
+                  rounded-full
+                  shadow-3xl
+                  xl:cursor-pointer
+                  mt-8
+                  mb-8
+                  register-button-landing
+                "
+                id="SubmitButtonFinale"
+              >
+                <h2 class="text-gray-100 font-Noto text-lg px-6 py-4">
+                  Submit proposal
+                </h2>
+              </div>
+            </div>
             </div>
           </div>
         </section>
@@ -3789,6 +3811,10 @@ words
     const RegisterButtonFinale = document.querySelector('#RegisterButtonFinale');
     RegisterButtonFinale.addEventListener('click', () => {
       openInNewTab('https://forms.gle/dTaCF4Sp7ddGSsrE9');
+    })
+    const SubmitButtonFinale = document.querySelector('#SubmitButtonFinale');
+    SubmitButtonFinale.addEventListener('click', () => {
+      openInNewTab('http://bit.ly/hackXJr_ProposalSubmission');
     })
 
     const RegisterButtonHome = document.querySelector('#RegisterButtonHome');
